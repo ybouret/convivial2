@@ -1,0 +1,334 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0302 
+header_name {.h} 
+code_name {.cxx}
+decl {\#include "main.hpp"} {public global
+} 
+
+# decl {\#include "conviv.hpp"} {public global
+# } 
+
+decl {\#include "yocto/FLTK/Matte_Button.hpp"} {public global
+} 
+
+decl {\#include "yocto/FLTK/Gel_Tabs.hpp"} {public global
+} 
+
+Function {uiMakeWindows()} {open return_type void
+} {
+  Fl_Window AppWindow {
+    label {CONVIV Interface and Layout}
+    callback {ConfirmQuit();} open
+    xywh {355 129 700 760} type Double resizable visible
+  } {
+    Fl_Tabs MainTabs {open
+      xywh {0 0 700 757} labeltype NO_LABEL resizable
+      class {FLTK::Gel_Tabs}
+    } {
+      Fl_Group WatcorGroup {
+        label WATCOR open
+        xywh {0 24 700 736} labelfont 5 hide
+      } {}
+      Fl_Group ConvivGroup {
+        label CONVIV open
+        xywh {0 24 700 736} labelfont 5
+      } {
+        Fl_Tabs ConvivTabs {open
+          xywh {8 38 684 710} labeltype NO_LABEL
+          class {FLTK::Gel_Tabs}
+        } {
+          Fl_Group {} {
+            label Configuration open selected
+            xywh {8 60 684 692} labelfont 5 labelsize 12
+          } {
+            Fl_Group IOGroup {
+              label {Input/Output}
+              xywh {16 79 668 88} box ENGRAVED_FRAME labelfont 1 labelsize 12 align 17
+            } {
+              Fl_Output FileName {
+                label {Edited File:}
+                xywh {20 114 455 23} labelsize 12 align 5 textsize 12
+              }
+              Fl_Box Modified {
+                label {N/A}
+                xywh {20 139 455 23} box ENGRAVED_BOX labelsize 12 labelcolor 5 align 64
+              }
+              Fl_Button LoadButton {
+                label Load
+                xywh {480 114 63 23} labelsize 12
+                code0 {o->color(FL_ORANGE);}
+                class {FLTK::Matte_Button}
+              }
+              Fl_Button SaveButton {
+                label Save
+                xywh {545 114 63 23} labelsize 12
+                code0 {o->color(FL_ORANGE);}
+                class {FLTK::Matte_Button}
+              }
+              Fl_Button SaveAsButton {
+                label {Save As}
+                xywh {610 114 63 23} labelsize 12
+                code0 {o->color(FL_ORANGE);}
+                class {FLTK::Matte_Button}
+              }
+              Fl_Button ImportButton {
+                label Import
+                xywh {480 139 63 23} labelsize 12
+                code0 {o->color(FL_ORANGE);}
+                class {FLTK::Matte_Button}
+              }
+              Fl_Button ExportButton {
+                label Export
+                xywh {545 139 63 23} labelsize 12
+                code0 {o->color(FL_ORANGE);}
+                class {FLTK::Matte_Button}
+              }
+            }
+            Fl_Group InfoGroup {
+              label {Molecule Information}
+              xywh {15 189 669 101} box ENGRAVED_FRAME labelfont 1 labelsize 12 align 17
+            } {
+              Fl_Input ComputationTitle {
+                label {Computation Title:}
+                callback {SetDirty();}
+                xywh {25 217 455 23} labelsize 12 align 5 when 1 textsize 12
+              }
+              Fl_Box SymInfo {
+                label {N/A}
+                xywh {181 259 300 23} box ENGRAVED_BOX labelsize 12 labelcolor 1 align 64
+              }
+              Fl_Choice Symetry {
+                label {Symmetry:}
+                callback {SetSymetry();}
+                xywh {25 259 65 23} box DOWN_BOX down_box DOWN_BOX labelsize 12 align 5 when 1 textfont 1 textsize 12 textcolor 1
+              } {}
+              Fl_Button UsedSym {
+                label {in use}
+                callback {SetUsedSym();}
+                xywh {95 259 80 23} type Toggle value 1 selection_color 0 labelsize 12 when 1
+                code0 {o->down_color(FL_RED);}
+                class {FLTK::Matte_Button}
+              }
+              Fl_Group {} {
+                label {Modes Summary} open
+                xywh {504 215 164 67} box ENGRAVED_FRAME labelsize 12 align 17
+              } {
+                Fl_Value_Output NumModes {
+                  label {\#Modes=}
+                  xywh {586 235 48 20} labelsize 12 textsize 12
+                }
+                Fl_Value_Output NumDOF {
+                  label {\#DOF=}
+                  xywh {586 257 48 20} labelsize 12 textsize 12
+                }
+              }
+            }
+            Fl_Group PotentialGroup {
+              label {Potential Description}
+              xywh {16 313 668 74} box ENGRAVED_FRAME labelfont 1 labelsize 12 align 17
+            } {
+              Fl_Choice PotentialFormat {
+                label {Format:}
+                callback {SetPotentialFormat();} open
+                xywh {577 348 97 23} down_box BORDER_BOX labelsize 12 align 5 textfont 13 textsize 12
+              } {
+                MenuItem {} {
+                  label EXTENDED
+                  xywh {0 0 31 20} labelfont 5 labelsize 12
+                }
+                MenuItem {} {
+                  label COMPACT
+                  xywh {0 0 31 20} labelfont 5 labelsize 12
+                }
+              }
+              Fl_Input PotentialFile {
+                label {Potential File:}
+                callback {SetPotentialFile();}
+                xywh {22 348 460 23} labelsize 12 align 5 when 1 textsize 12
+              }
+              Fl_Button BrowsePotential {
+                label Browse
+                callback {BrowsePotentialFile();}
+                xywh {487 348 85 23} labelsize 12
+                class {FLTK::Matte_Button}
+              }
+            }
+            Fl_Group ObsGroup {
+              label {Observables Computation} open
+              xywh {16 410 668 72} box ENGRAVED_FRAME labelfont 1 labelsize 12 align 17
+            } {
+              Fl_Input ObsFile {
+                label {Observables File:}
+                callback {SetObsFile();}
+                xywh {22 445 460 23} labelsize 12 align 5 when 1 textsize 12 textcolor 59
+              }
+              Fl_Button BrowseObs {
+                label Browse
+                callback {BrowseObsFile();}
+                xywh {487 445 85 23} labelsize 12 labelcolor 59
+                class {FLTK::Matte_Button}
+              }
+            }
+	    Fl_Group MFCIGroup {
+              label {MFCI Types}
+              xywh {16 533 668 205} box ENGRAVED_FRAME labelfont 1 labelsize 12 align 17
+            } {
+	      Fl_Output ExecutableConviv {
+                label {Executable Conviv:}
+                xywh {20 562 455 23} labelsize 12 align 5 textsize 12
+              }
+	      Fl_Button BrowseExecutableConviv {
+                label Browse
+                callback {BrowseExeConviv();}
+                xywh {485 562 85 23} labelsize 12
+                class {FLTK::Matte_Button}
+              }
+	      Fl_Output ConvivInput {
+                label {Conviv Input:}
+                xywh {20 608 455 23} labelsize 12 align 5 textsize 12
+              }
+	      Fl_Button BrowseConvivInp {
+                label Browse
+                callback {BrowseConvivInput();}
+                xywh {485 608 85 23} labelsize 12
+                class {FLTK::Matte_Button}
+              }
+              Fl_Output ConvivOutput {
+                label {Conviv Output:}
+                xywh {20 654 455 23} labelsize 12 align 5 textsize 12
+              }
+	      Fl_Button BrowseConvivOut {
+                label Browse
+                callback {BrowseConvivOutput();}
+                xywh {485 654 85 23} labelsize 12
+                class {FLTK::Matte_Button}
+              }
+              Fl_Input SCFtol {
+                label {SCF tolerance:}
+		callback {SetTolerance();}
+                xywh {20 703 100 23} labelsize 12 align 5 textsize 12
+              }
+	      Fl_Input BasisTrunc {
+                label {Basis truncation:}
+		callback {SetBasisTrunc();}
+                xywh {130 703 100 23} labelsize 12 align 5 textsize 12
+              }
+              Fl_Button SimpleRun {
+		label {Simple Run}
+                callback {ExeSimpleRun();}
+                xywh {240 703 95 23} labelsize 12
+                code0 {o->color(FL_ORANGE);}
+                class {FLTK::Matte_Button}
+              }
+              Fl_Button SCFRun {
+                label {SCF Run}
+		callback {ExeSCFRun();}
+                xywh {340 703 95 23} labelsize 12
+                code0 {o->color(FL_ORANGE);}
+                class {FLTK::Matte_Button}
+              }
+              Fl_Button DanceParty {
+                label {Make Pairing}
+		callback {Pairing();}
+                xywh {440 703 95 23} labelsize 12
+                code0 {o->color(FL_ORANGE);}
+                class {FLTK::Matte_Button}
+              }
+              Fl_Button FindHierarchy {
+                label {Make Hierarchy}
+		callback {Hierarchy();}
+                xywh {540 703 95 23} labelsize 12
+                code0 {o->color(FL_ORANGE);}
+                class {FLTK::Matte_Button}
+              }
+	      Fl_Button CleanWork {
+                label {Clean}
+		callback {Clean();}
+                xywh {640 703 40 23} labelsize 12
+                code0 {o->color(FL_ORANGE);}
+                class {FLTK::Matte_Button}
+	      }
+            }
+          }
+          Fl_Group {} {
+            label Modes open
+            xywh {8 60 684 692} labelfont 5 labelsize 12 hide
+          } {
+            Fl_Group ModeParam {
+              label {Mode Parameters} open
+              xywh {28 110 300 360} box ENGRAVED_FRAME labelfont 1 labelsize 12 align 17 deactivate
+            } {
+              Fl_Choice ModeSym {
+                label {Symbol:} open
+                xywh {84 145 65 23} down_box BORDER_BOX labelsize 12 textfont 1 textsize 12 textcolor 1
+              } {}
+              Fl_Value_Input BasisSize {
+                label {size:}
+                xywh {75 369 40 23} labelsize 12 maximum 100 step 1 value 10 textsize 12
+              }
+              Fl_Tabs BasisTabs {open
+                xywh {36 192 282 157} labeltype NO_LABEL labelsize 12
+                class {FLTK::Gel_Tabs}
+              } {}
+              Fl_Box ModeSymInfo {
+                label label
+                xywh {154 145 66 23} box ENGRAVED_BOX labelfont 1 labelsize 12 labelcolor 1
+              }
+            }
+            Fl_Browser ModeBrowser {
+              label {Modes List}
+              xywh {344 110 338 360} labelfont 1 labelsize 12 align 1 textsize 12 deactivate
+              code0 {o->column_char('\\t');}
+            }
+            Fl_Button {} {
+              label {Create New Mode}
+              xywh {28 82 300 23} labelsize 12
+              class {FLTK::Matte_Button}
+            }
+          }
+          Fl_Group {} {
+            label Contractions open
+            xywh {8 60 684 692} labelfont 5 labelsize 12 hide
+          } {}
+          Fl_Group {} {
+            label Help
+            xywh {8 60 684 692} labelfont 5 labelsize 12 hide
+          } {
+            Fl_Help_View ConvivHelp {
+              xywh {25 80 650 395}
+            }
+          }
+          Fl_Group {} {
+            label Settings open
+            xywh {8 60 684 692} labelfont 5 labelsize 12 hide
+          } {
+            Fl_Group {} {
+              label Theme open
+              xywh {45 80 95 85} box ENGRAVED_FRAME labelsize 12 align 17
+            } {
+              Fl_Round_Button ThemeNone {
+                label none
+                callback {SetTheme();}
+                xywh {57 100 70 20} type Radio down_box ROUND_DOWN_BOX labelsize 12
+              }
+              Fl_Round_Button ThemeGtk {
+                label gtk
+                callback {SetTheme();}
+                xywh {57 120 70 20} type Radio down_box ROUND_DOWN_BOX value 1 labelsize 12
+              }
+              Fl_Round_Button ThemePlastic {
+                label plastic
+                callback {SetTheme();}
+                xywh {57 140 70 20} type Radio down_box ROUND_DOWN_BOX labelsize 12
+              }
+            }
+          }
+        }
+      }
+      Fl_Group MueffGroup {
+        label MUEFF open
+        xywh {0 24 700 736} labelfont 5 hide
+      } {}
+    }
+  }
+} 
