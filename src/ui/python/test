@@ -1,0 +1,29 @@
+C2V  .T.
+EXTENDED watcor.H2O.ccord307
+norot
+H2O-example
+1
+.F. 0 
+IN
+step0
+NO
+3 0 0
+A1 A1 B1 
+HO 
+10
+0.0d0 0.0d0
+HO 
+10
+0.0d0 0.0d0
+HO 
+10
+0.0d0 0.0d0
+0 0 0
+2
+1
+1
+0.0d0 0.0d0
+2
+2 3
+0.0d0 0.0d0 0.0d0
+80 80

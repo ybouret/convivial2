@@ -1,0 +1,14 @@
+ Initial time
+   0.0000000000000000     
+  
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+H2O-example                    CALCULATION
+   Step(s)   9
+   symmetry:  C2V
+ multiplication table for this group not yet implemented
+ use C2V irreps if possible or set sym to false
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+  
+ The file containing the Hamiltonian -\sum_i 1/2P_i^2 in EXTENDED format will be read on file:
+ watcor.H2O.ccord307                                                                                                                                                                                                                                             
+  

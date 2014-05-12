@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>InputFile CONVIV</title>
+<body>          
+<h1> How to write an input file for CONVIV <br />
+</h1>
+<p>
+<strong><i>Read statement 1</i></strong> <strong>:</strong> sym_name, sym
+</p>
+<p>
+character(len=3) :: sym_name<br />
+logical :: sym
+</p>
+<p>
+<i>sym_name :</i> Symmetry group in Schoenflies notation<br />
+<i>sym :</i> Flag for symmetry usage
+</p>
+<ul><li>true  : take in account symmetry in calculations
+</li><li>false : use symmetry information in print out only 
+</li></ul><hr />
+<p>
+<strong><i>Read statement 2</i> :</strong> pot_fmt,fn
+</p>
+<p>
+character(len=8) :: pot_fmt<br />
+character(len=256) :: fn
+</p>
+<p>
+<i>pot_fmt :</i> file format "EXTENDED" or "COMPACT" (the latter is not yet implemented)<br />
+<i>fn :</i> Path of the PES + kinetic terms file
+</p>
+<hr />
+<p>
+<strong><i>Read statement 3</i> :</strong> fnrot
+</p>
+<p>
+character(len=64) :: fnrot
+</p>
+<p>
+<i>fnrot :</i> Path to observable coefficients file. If energy level calculation only write "norot".
+</p>
+<hr />
+<p>
+<strong><i>Read statement 4</i> :</strong> title
+</p>
+<p>
+character(len=64) :: title<br />
+</p>
+<p>
+    
+<i>title :</i> job title
+</p>
+<hr />
+<p>
+<strong><i>Read statement 5</i> :</strong> nstep
+</p>
+<p>
+integer(4) :: nstep
+</p>
+<p>
+<i>nstep :</i> number of VMFCI steps after step 0. nstep must be set to 0 if only step 0 is to be performed.
+</p>
+<hr />
+<p>
+<strong><i>Read statement 6</i> :</strong> poten,n_window
+</p>
+<p>
+logical :: poten<br />
+integer(4) :: n_window
+</p>
+<p>
+<i>poten :</i> Flag for printout information
+</p>
+<ul><li>true : print debug information in output file<br />
+</li><li>false : print only regular output information<br />
+</li></ul><p>
+<i>n_window :</i> number of wave number windows. The eigenvectors whose eigenvalues fall in the windows will be printed out if poten is true
+</p>
+<hr />
+<p>
+(in do_loop from i=1 to n_window)<br />
+</p>
+<p>
+    
+<strong><i>Read statement 7</i> :</strong> windlow(i),windup(i) 
+</p>
+<p>
+real(8) :: windlow(i),windup(i)<br />
+</p>
+<p>
+<i>windlow(i) :</i> lower bound for i<sup>th</sup> window (in cm-1).<br />
+<i>windup(i) :</i> upper bound for i<sup>th</sup> window (in cm-1).<br />
+</p>
+<p>
+(end-loop i)
+</p>
+<hr />
+<p>
+(in do_loop from i=0 to nstep)<br />
+</p>
+<p>
+<strong><i>read statement 8</i> :</strong> rest(i) 
+</p>
+<p>
+character(len=3) :: rest(i)
+</p>
+<p>
+<i>rest(i) :</i> controls restart facilities 
+</p>
+<ul><li>"NO" or "no" means no restart for step i<br />
+</li><li>"OUT" or "out" means save step i for restart (useful in case
+of accidental or voluntary interruption of a hierarchical VMFCI
+calculation).<br /> Also used at the last step, if everything is contracted, to save an observable integral file. <br />
+</li><li>"IN" or "in" means restart from step i<br />
+</li></ul><hr />
+<p>
+<strong><i>read statement 9</i> :</strong> fnr (if rest(i) is "IN", "in", "OUT" or "out")
+</p>
+<p>
+character(len=64) :: fnr
+</p>
+<p>
+<i>fnr :</i> filename for restart file of step i
+</p>
+<p>
+(end-loop i)
+</p>
+<hr />
+<p>
+<strong><i>Read statement 10</i> :</strong> modeg
+</p>
+<p>
+integer(4), dimension(3) :: modeg
+</p>
+<p>
+<i>modeg :</i> give the numbers of mode with degeneracy 1, 2, 3, respectively.
+</p>
+<hr />
+<p>
+<strong><i>Read statement 11</i> :</strong> irrep
+</p>
+<p>
+character(len=3), dimension(:), pointer :: irrep
+</p>
+<p>
+<i>irrep :</i> irreductible representation symbols of the modes. A pointer whose length equals the number of modes.
+</p>
+<hr />
+<p>
+(in do-loop i= 1 to dim(irrep))<br />
+</p>
+<p>
+<strong><i>Read statement 12</i> :</strong> basis(i)%type,basis(i)%size 
+</p>
+<p>
+character(len=3) :: basis(i)%type<br />
+integer(4) :: basis(i)%size
+</p>
+<p>
+<i>basis(i)%type :</i> basis set type for mode i.<br />
+Available types are: HO harmonic potential eigenfunctions, MOR Morse
+potential eigenfunctions, KRA Kratzer potential eigenfunctions, TPT
+Trigonometric Pösch-Teller potential eigenfunctions<br />
+basis(i)%size : Maximum quantum number +1 for the basis functions of
+mode i. If the mode is non-degenerate, it is the size of the basis set.<br /> 
+In the case of a Chebyshev basis, it is the number of quadrature points used for integration of matrix elements.  
+</p>
+<hr />
+<p>
+<strong><i>Read statement 13</i> :</strong> basis(i)%param 
+</p>
+<p>
+Real(8), dimension(:), Pointer :: basis(i)%param
+</p>
+<p>
+<i>basis(i)%param :</i> vector of parameters defining the basis
+functions for mode i. The basis functions are constructed as
+eigenfunctions of a model Hamiltonian whose potential is determined by
+this vector of parameters.<br />
+</p>
+<ul><li>For harmonic oscillator (HO) basis functions, the dimension of basis(i)%param is 2: 
+<ul><li>basis(i)%param(1) : harmonic wave number in cm-1 (if 0.0 use
+the quadratic force constant of the Hamiltonian to determine its
+value), </li><li>basis(i)%param(2) : shift of model potential minimum with
+respect to the molecule equilibrium geometry in a.u. (defaut is 0.0), </li></ul></li></ul><ul><li>For Morse (MOR) basis functions, the dimension of basis(i)%param is 3:
+<ul><li>basis(i)%param(1) : Morse wave number in cm-1 (if 0.0 use the wave number given by basis(i)%param(2)*sqrt(2*basis(i)%param(3))),
+</li><li>basis(i)%param(2) : width of the Morse potential in a.u.,
+</li><li>basis(i)%param(3) : well depth, D, of the Morse potential in a.u.,
+</li></ul></li></ul><ul><li>For Kratzer (KRA) basis functions, the dimension of basis(i)%param is 3:
+<ul><li>basis(i)%param(1) : Kratzer wave number in cm-1 (if 0.0 use the
+quadratic force constant of the Hamiltonian to determine its value),
+</li><li>basis(i)%param(2) : well depth of the Kratzer potential in cm-1,
+</li><li>basis(i)%param(3) : dimensionless equilibrium position of the
+initial modified Kratzer potential: basis(i)%param(2) *
+(Q-basis(i)%param(3))**2 / Q**2
+</li></ul></li></ul><ul><li>For Trigonometric Pösch-Teller (TPT) basis functions, the dimension of basis(i)%param is 3:
+<ul><li>basis(i)%param(1) : wave number in cm-1 (if 0.0 use the quadratic force constant of the Hamiltonian to determine its value),
+</li><li>basis(i)%param(2) : scaling parameter (dimensionless)
+controling the periodicity of the potential on
+[-pi/(2*basis(i)%param(2),pi/(2*basis(i)%param(2)]
+</li><li>basis(i)%param(3) : strength parameter (dimensionless)
+</li></ul></li></ul><ul><li>For Chebyshev polynomial (CHE) basis functions, the dimension of basis(i)%param is 0, there is no parameter implemented.
+</li></ul><p>
+(end-loop i)
+</p>
+<hr />
+<p>
+<strong>'Read statement 14<i> :</i></strong><i> j1 
+</i></p>
+<p>
+integer(4), dimension(:) :: j1<br />
+</p>
+<p>j1(i) : Approximate number of eigenpairs to be found by the
+diagonalizer for mode i. If 0 finds all eigenpairs. (i=1, to
+dim(irrep))
+</p>
+<hr />
+<p>
+(in do-loop i= 1 to nstep)<br />
+</p>
+<p>
+<strong><i>Read statement 15</i> :</strong> ncontr 
+</p>
+<p>
+integer(4) :: ncontr
+</p>
+<p>
+ncontr : number of contractions 
+</p>
+<hr />
+<p>
+(in do-loop j= 1 to ncontr)
+</p>
+<p>
+<strong><i>Read statement 16</i> :</strong> ncon(j)
+</p>
+<p>
+integer(4) :: ncon(j) <br />
+</p>
+<p>
+<i>ncon(j) :</i> number of components of contraction j
+  
+</p>
+<hr />
+<p>
+<strong><i>Read statement 17</i> :</strong> , icon(j)%comp
+</p>
+<p>
+integer(4), dimension(:) :: icon(j)%comp
+</p>
+<p>
+<i>icon(j)%comp(k) :</i> contraction number in step i-1 of component k of contraction j in step i (k=1 to ncon(j))
+       
+</p>
+<hr />
+<p>
+<strong><i>Read statement 18</i> :</strong> delmax(j)%coord, emax(j)
+</p>
+<p>
+real(8), dimension(:) :: delmax(j)%coord<br />
+real(8) :: emax(j)
+</p>
+<p>
+<i>delmax(j)%coord(k) :</i>  energy threshold for component k of contraction j in step i
+<i>emax(j) :</i> energy threshold on the sum of component energies of contraction j in step i
+</p>
+<p>
+(end-loop j)
+</p>
+<hr />
+<p>
+<strong><i>Read statement 19</i> :</strong> j1
+</p>
+<p>
+integer(4), dimension(:) :: j1<br />
+</p>
+<p>
+<i>j1(j) :</i> Approximate number of eigenpairs to be found by the diagonalizer for contraction j in step i. If 0 finds all eigenpairs.
+</p>
+<p>
+(end-loop i)
+</p>
+<hr /></div></div></div><br />
+</body></html>
