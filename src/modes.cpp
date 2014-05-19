@@ -4,6 +4,7 @@ Modes:: Modes() throw() : vector<ModePtr>() {}
 
 Modes:: ~Modes() throw()
 {
+#if 0
     vector<ModePtr> &self = *this;
     for( size_t n=size();n>0;--n)
     {
@@ -13,4 +14,5 @@ Modes:: ~Modes() throw()
             self[n] = 0;
         }
     }
+#endif
 }

@@ -57,7 +57,6 @@ void Hierarchy();
 
 void Clean();
 
-extern Conviv *App;
-
+extern Conviv             *App;
 
 #endif
