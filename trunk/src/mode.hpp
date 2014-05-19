@@ -4,6 +4,7 @@
 
 #include "./basis.hpp"
 #include "./schoenflies.hpp"
+#include "yocto/ptr/shared.hpp"
 
 class Mode
 {
@@ -18,7 +19,7 @@ public:
     const size_t  DOF;       //!< degrees of freedom : A|B=1, E=2, F=3
     Basis         basis;     //!< basis for this mode
     
-       
+#if 0
     class List : public core::list_of<Mode>
     {
     public:
@@ -27,7 +28,7 @@ public:
     private:
         YOCTO_DISABLE_COPY_AND_ASSIGN(List);
     };
-    
+#endif
     
 private:
     YOCTO_DISABLE_COPY_AND_ASSIGN(Mode);

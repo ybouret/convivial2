@@ -3,7 +3,7 @@
 
 #include "./mode.hpp"
 
-typedef Mode *ModePtr;
+typedef shared_ptr<Mode> ModePtr;
 class Modes : public vector<ModePtr>
 {
 public:
