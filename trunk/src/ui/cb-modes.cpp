@@ -9,4 +9,6 @@ void CreateNewMode()
     
     //success
     Symetry->deactivate();
+    ModeParam->activate();
+    ModeBrowser->activate();
 }
