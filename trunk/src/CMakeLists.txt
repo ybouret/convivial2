@@ -75,6 +75,7 @@ SET(UI_SRCS 	ui/messages.hpp
 		ui/cb-sym.cpp
 		ui/cb-pot.cpp
 		ui/cb-obs.cpp
+		ui/cb-modes.cpp
 		ui/basis.hpp
 		ui/basis.cpp
 		ui/MFCI.cpp

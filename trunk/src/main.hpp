@@ -26,6 +26,9 @@ void BrowsePotentialFile();
 void SetObsFile();
 void BrowseObsFile();
 
+//cb-mode.cpp
+void CreateNewMode();
+
 //MFCI.cpp
 void BrowseExeConviv();
 void BrowseConvivInput();
