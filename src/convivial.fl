@@ -5,9 +5,6 @@ code_name {.cxx}
 decl {\#include "main.hpp"} {public global
 } 
 
-# decl {\#include "conviv.hpp"} {public global
-# } 
-
 decl {\#include "yocto/FLTK/Matte_Button.hpp"} {public global
 } 
 
@@ -169,25 +166,25 @@ Function {uiMakeWindows()} {open return_type void
                 class {FLTK::Matte_Button}
               }
             }
-	    Fl_Group MFCIGroup {
+            Fl_Group MFCIGroup {
               label {MFCI Types}
               xywh {16 533 668 205} box ENGRAVED_FRAME labelfont 1 labelsize 12 align 17
             } {
-	      Fl_Output ExecutableConviv {
+              Fl_Output ExecutableConviv {
                 label {Executable Conviv:}
                 xywh {20 562 455 23} labelsize 12 align 5 textsize 12
               }
-	      Fl_Button BrowseExecutableConviv {
+              Fl_Button BrowseExecutableConviv {
                 label Browse
                 callback {BrowseExeConviv();}
                 xywh {485 562 85 23} labelsize 12
                 class {FLTK::Matte_Button}
               }
-	      Fl_Output ConvivInput {
+              Fl_Output ConvivInput {
                 label {Conviv Input:}
                 xywh {20 608 455 23} labelsize 12 align 5 textsize 12
               }
-	      Fl_Button BrowseConvivInp {
+              Fl_Button BrowseConvivInp {
                 label Browse
                 callback {BrowseConvivInput();}
                 xywh {485 608 85 23} labelsize 12
@@ -197,7 +194,7 @@ Function {uiMakeWindows()} {open return_type void
                 label {Conviv Output:}
                 xywh {20 654 455 23} labelsize 12 align 5 textsize 12
               }
-	      Fl_Button BrowseConvivOut {
+              Fl_Button BrowseConvivOut {
                 label Browse
                 callback {BrowseConvivOutput();}
                 xywh {485 654 85 23} labelsize 12
@@ -205,16 +202,16 @@ Function {uiMakeWindows()} {open return_type void
               }
               Fl_Input SCFtol {
                 label {SCF tolerance:}
-		callback {SetTolerance();}
+                callback {SetTolerance();}
                 xywh {20 703 100 23} labelsize 12 align 5 textsize 12
               }
-	      Fl_Input BasisTrunc {
+              Fl_Input BasisTrunc {
                 label {Basis truncation:}
-		callback {SetBasisTrunc();}
+                callback {SetBasisTrunc();}
                 xywh {130 703 100 23} labelsize 12 align 5 textsize 12
               }
               Fl_Button SimpleRun {
-		label {Simple Run}
+                label {Simple Run}
                 callback {ExeSimpleRun();}
                 xywh {240 703 95 23} labelsize 12
                 code0 {o->color(FL_ORANGE);}
@@ -222,32 +219,32 @@ Function {uiMakeWindows()} {open return_type void
               }
               Fl_Button SCFRun {
                 label {SCF Run}
-		callback {ExeSCFRun();}
+                callback {ExeSCFRun();}
                 xywh {340 703 95 23} labelsize 12
                 code0 {o->color(FL_ORANGE);}
                 class {FLTK::Matte_Button}
               }
               Fl_Button DanceParty {
                 label {Make Pairing}
-		callback {Pairing();}
+                callback {Pairing();}
                 xywh {440 703 95 23} labelsize 12
                 code0 {o->color(FL_ORANGE);}
                 class {FLTK::Matte_Button}
               }
               Fl_Button FindHierarchy {
                 label {Make Hierarchy}
-		callback {Hierarchy();}
+                callback {Hierarchy();}
                 xywh {540 703 95 23} labelsize 12
                 code0 {o->color(FL_ORANGE);}
                 class {FLTK::Matte_Button}
               }
-	      Fl_Button CleanWork {
-                label {Clean}
-		callback {Clean();}
+              Fl_Button CleanWork {
+                label Clean
+                callback {Clean();}
                 xywh {640 703 40 23} labelsize 12
                 code0 {o->color(FL_ORANGE);}
                 class {FLTK::Matte_Button}
-	      }
+              }
             }
           }
           Fl_Group {} {
@@ -282,6 +279,7 @@ Function {uiMakeWindows()} {open return_type void
             }
             Fl_Button {} {
               label {Create New Mode}
+              callback {CreateNewMode();}
               xywh {28 82 300 23} labelsize 12
               class {FLTK::Matte_Button}
             }
