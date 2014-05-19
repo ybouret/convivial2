@@ -1,0 +1,3082 @@
+ Initial time
+   0.0000000000000000     
+  
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+SO2-example                    CALCULATION
+   8 Step(s)
+   symmetry:  C2V
+ multiplication table for this group not yet implemented
+ use C2V irreps if possible or set sym to false
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+  
+ The file containing the Hamiltonian -\sum_i 1/2P_i^2 in EXTENDED format will be read on file:
+ watcor.SO2_o10.cor                                                                                                                                                                                                                                              
+  
+ Total # of modes=            3
+ # of one-dimensional oscillators:            3
+ # of modes of degenaracy 1,2,3=            3           0           0
+  
+  
+ basis set:
+  
+  mode      degen     vmax+1 type    irrep
+    1         1        10     KRA     A1 
+    2         1        10     TPT     A1 
+    3         1        10     HO      B1 
+  
+ Order for the vibrational part =           10
+ # terms in the potential (+ Watson) =          161
+  
+  
+ Kratzer frequency(cm-1) of Mode=           1   1167.6936697528365     
+ TPT frequency(cm-1) of Mode=           2   522.26334700066639     
+ Harmonic frequency(cm-1) of Mode=           3   1381.9855274560614       Lambda (shift)=   0.0000000000000000     
+  
+ CORIOLIS CONTRIBUTIONS:         295    terms
+ # of Q**n P terms =           99
+ # of Q**n P**2 terms =          196
+  
+  
+ Q**n P**1 terms (first below)
+   165)   0.119160E-16  Q 5 0 0  P 0 1 0
+   263)   0.121161E-22  Q 6 1 0  P 1 0 0
+ Q**n P**1 terms (last above)
+  
+  
+ Q**n P**2 terms (first below)
+   264)  -0.821718E-06  Q 1 0 1  P 0 1 1
+   459)  -0.522547E-17  Q 1 5 0  P 0 0 2
+ Q**n P**2 terms (last above)
+  
+  
+ HO basis wave numbers (cm-1)
+  
+           1 )   1167.6936697528365     
+           2 )   522.26334700066639     
+           3 )   1381.9855274560614     
+  
+  
+        2250  integrals for dof #           1  have been written on file          21
+  
+        2250  integrals for dof #           2  have been written on file          22
+  
+        2250  integrals for dof #           3  have been written on file          23
+  
+  
+ # of basis function for contraction           1 =          10
+ # of basis function for contraction           2 =          10
+ # of basis function for contraction           3 =          10
+
+ MSP-VMFCI CALCULATION ON MODE           1
+ =============================
+
+ # of terms in the reduced H=           26
+
+           2250 integrals have been read in from file 21
+       This file has been closed
+
+ Conditionning of H, total number of terms:          51
+
+
+ VMFCI eigensolutions
+ ====================
+
+
+ Summary of contraction           1   of  step           0
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        1531.303389          0.000000          0.997761   1
+    2)        2689.420119       1158.116730          0.992903   2
+    3)        3840.740740       2309.437351          0.987147   3
+    4)        4985.260065       3453.956675          0.980349   4
+    5)        6122.972925       4591.669535          0.972341   5
+    6)        7253.874522       5722.571133          0.962936   6
+    7)        8377.963766       6846.660377          0.951939   7
+    8)        9495.534336       7964.230946          0.939190   8
+    9)       10606.220053       9074.916664          0.925104   9
+   10)       11768.804461      10237.501072          0.958197  10
+
+ maximum memory used up to this stage (octet)       84341
+
+ # of different integral types in final contraction =          26
+
+ # of integral types allowing (anti)symmetryzation          13
+
+        1950  integrals from VMFCI contraction #           1  have been written on file          24
+
+ MSP-VMFCI CALCULATION ON MODE           2
+ =============================
+
+ # of terms in the reduced H=           25
+
+           2250 integrals have been read in from file 22
+       This file has been closed
+
+ Conditionning of H, total number of terms:          49
+
+
+ VMFCI eigensolutions
+ ====================
+
+
+ Summary of contraction           2   of  step           0
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        1533.627472          0.000000          0.999411   1
+    2)        2051.024994        517.397522          0.996578   2
+    3)        2568.094969       1034.467497          0.989233   3
+    4)        3084.785236       1551.157764          0.974896   4
+    5)        3601.063469       2067.435997          0.951056   5
+    6)        4117.072016       2583.444544          0.915942   6
+    7)        4634.656391       3101.028919          0.872439   7
+    8)        5159.091930       3625.464458          0.834510   8
+    9)        5702.660439       4169.032967          0.832687   9
+   10)        6283.356494       4749.729022          0.913994  10
+
+ maximum memory used up to this stage (octet)       84341
+
+ # of different integral types in final contraction =          26
+
+ # of integral types allowing (anti)symmetryzation          13
+
+        1950  integrals from VMFCI contraction #           2  have been written on file          25
+
+ MSP-VMFCI CALCULATION ON MODE           3
+ =============================
+
+ # of terms in the reduced H=            8
+
+           2250 integrals have been read in from file 23
+       This file has been closed
+
+ Conditionning of H, total number of terms:          15
+
+
+ VMFCI eigensolutions
+ ====================
+
+
+ Summary of contraction           3   of  step           0
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        1533.945148          0.000000          0.999999   1
+    2)        2920.701010       1386.755862          0.999980   2
+    3)        4315.850488       2781.905340          0.999904   3
+    4)        5719.317741       4185.372594          0.999692   4
+    5)        7131.029975       5597.084827          0.999223   5
+    6)        8550.916135       7016.970987          0.998330   6
+    7)        9979.183113       8445.237965          0.996797   7
+    8)       11415.304437       9881.359289          0.994371   8
+    9)       12879.478599      11345.533452          0.997436   9
+   10)       14341.968703      12808.023556          0.995678  10
+
+ maximum memory used up to this stage (octet)       84341
+
+ # of different integral types in final contraction =           8
+
+ # of integral types allowing (anti)symmetryzation           7
+
+         430  integrals from VMFCI contraction #           3  have been written on file          26
+
+
+ =*=*=*=*=*=*=*=*=*=
+ MSP-VMFCI STEP DONE
+ =*=*=*=*=*=*=*=*=*=
+
+
+ Contraction step number           1
+ ==========================
+
+  
+ Contraction scheme
+ ==================
+  
+ # of contractions:            3
+  
+Contraction  1 :  1
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  2 :  2
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  3 :  3
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+ # of basis function for contraction           1 =          10
+ # of basis function for contraction           2 =          10
+ # of basis function for contraction           3 =          10
+
+ Contraction number           1
+ =====================
+
+ Time, timing for basisucao
+   408.65753899999999        0.0000000000000000     
+
+ Number of basis functions          10
+
+ # of terms in the reduced H=           26
+
+           1950 integrals have been read in from file 24
+       This file has been closed
+
+ Conditionning of H, total number of terms:          51
+
+ Time, timing for potcond
+   408.65753899999999        0.0000000000000000     
+
+ size of the blocks
+ A1           10
+ A2            0
+ B1            0
+ B2            0
+
+ Start matrix construction for block:   A1 
+
+ Time, timing for matrix
+   408.65753899999999        0.0000000000000000     
+
+ 
+ Start diagonalization for block:   A1 
+ 
+ Time, timing for diagonalisation
+   408.65753899999999        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   A1 
+ 
+
+ Summary of contraction           1   of  step           1
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        1531.001822          0.000000          1.000000   1
+    2)        2688.496761       1157.494939          1.000000   2
+    3)        3839.206222       2308.204401          1.000000   3
+    4)        4983.124981       3452.123160          0.999999   4
+    5)        6120.247831       4589.246010          0.999999   5
+    6)        7250.569919       5719.568098          0.999998   6
+    7)        8374.090226       6843.088405          0.999998   7
+    8)        9491.094680       7960.092858          0.999997   8
+    9)       10601.267664       9070.265843          0.999997   9
+   10)       11762.504858      10231.503036          0.999997  10
+
+ maximum memory used up to this stage (octet)       84341
+Step  1   ZPE  (1)(2)(3).1-1 >                                                        1531.00182152
+  
+
+ # of different integral types in final contraction =          26
+
+ # of integral types allowing (anti)symmetryzation          13
+ Time, timing for integr1
+   408.65753899999999        0.0000000000000000     
+
+
+        1950  integrals from contraction #           1  of step           1  have been written on file          27
+
+ Contraction number           2
+ =====================
+
+ Time, timing for basisucao
+   408.65753899999999        0.0000000000000000     
+
+ Number of basis functions          10
+
+ # of terms in the reduced H=           25
+
+           1950 integrals have been read in from file 25
+       This file has been closed
+
+ Conditionning of H, total number of terms:          49
+
+ Time, timing for potcond
+   408.65753899999999        0.0000000000000000     
+
+ size of the blocks
+ A1           10
+ A2            0
+ B1            0
+ B2            0
+
+ Start matrix construction for block:   A1 
+
+ Time, timing for matrix
+   408.65753899999999        0.0000000000000000     
+
+ 
+ Start diagonalization for block:   A1 
+ 
+ Time, timing for diagonalisation
+   408.65753899999999        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   A1 
+ 
+
+ Summary of contraction           2   of  step           1
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        1531.001671          0.000000          1.000000   1
+    2)        2049.100546        518.098876          0.999999   2
+    3)        2566.873023       1035.871353          0.999997   3
+    4)        3084.267520       1553.265849          0.999994   4
+    5)        3601.251160       2070.249490          0.999989   5
+    6)        4117.956891       2586.955220          0.999984   6
+    7)        4636.169241       3105.167570          0.999979   7
+    8)        5160.982578       3629.980907          0.999979   8
+    9)        5704.277664       4173.275993          0.999990   9
+   10)        6285.147162       4754.145491          0.999995  10
+
+ maximum memory used up to this stage (octet)       84341
+Step  1   ZPE  (1)(2)(3).1-2 >                                                        1531.00167071
+  
+
+ # of different integral types in final contraction =          26
+
+ # of integral types allowing (anti)symmetryzation          13
+ Time, timing for integr1
+   408.65753899999999        0.0000000000000000     
+
+
+        1950  integrals from contraction #           2  of step           1  have been written on file          28
+
+ Contraction number           3
+ =====================
+
+ Time, timing for basisucao
+   408.65753899999999        0.0000000000000000     
+
+ Number of basis functions          10
+
+ # of terms in the reduced H=            8
+
+            430 integrals have been read in from file 26
+       This file has been closed
+
+ Conditionning of H, total number of terms:          15
+
+ Time, timing for potcond
+   408.65753899999999        0.0000000000000000     
+
+ size of the blocks
+ A1            5
+ A2            0
+ B1            5
+ B2            0
+
+ Start matrix construction for block:   A1 
+
+ Time, timing for matrix
+   408.65753899999999        0.0000000000000000     
+
+
+ Start matrix construction for block:   B1 
+
+ Time, timing for matrix
+   408.65753899999999        0.0000000000000000     
+
+ 
+ Start diagonalization for block:   A1 
+ 
+ Time, timing for diagonalisation
+   408.65753899999999        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   A1 
+ 
+
+ Summary of contraction           3   of  step           1
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        1530.981644          0.000000          0.999993   1
+    2)        4291.757490       2760.775846          0.999949   3
+    3)        7085.896517       5554.914873          0.999850   5
+    4)        9913.158192       8382.176548          0.999697   7
+    5)       12784.878923      11253.897279          0.999803   9
+
+ maximum memory used up to this stage (octet)       84341
+ 
+ Start diagonalization for block:   B1 
+ 
+ Time, timing for diagonalisation
+   408.65753899999999        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   B1 
+ 
+
+ Summary of contraction           3   of  step           1
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        2907.160896       1376.179252          0.999978   2
+    2)        5684.694174       4153.712531          0.999907   4
+    3)        8495.292361       6964.310717          0.999781   6
+    4)       11338.873612       9807.891968          0.999603   8
+    5)       14234.039929      12703.058286          0.999751  10
+
+ maximum memory used up to this stage (octet)       84341
+Step  1   ZPE  (1)(2)(3).1-3 >                                                        1530.98164388
+  
+
+ # of different integral types in final contraction =           8
+
+ # of integral types allowing (anti)symmetryzation           7
+ Time, timing for integr1
+   408.65753899999999        0.0000000000000000     
+
+
+         430  integrals from contraction #           3  of step           1  have been written on file          29
+ 
+
+
+ =*=*=*=*=*=*=*=*=*=*=*=
+ general VMFCI STEP DONE
+ =*=*=*=*=*=*=*=*=*=*=*=
+
+
+ Contraction step number           2
+ ==========================
+
+  
+ Contraction scheme
+ ==================
+  
+ # of contractions:            3
+  
+Contraction  1 :  1
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  2 :  2
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  3 :  3
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+ # of basis function for contraction           1 =          10
+ # of basis function for contraction           2 =          10
+ # of basis function for contraction           3 =          10
+
+ Contraction number           1
+ =====================
+
+ Time, timing for basisucao
+   408.65753899999999        0.0000000000000000     
+
+ Number of basis functions          10
+
+ # of terms in the reduced H=           26
+
+           1950 integrals have been read in from file 27
+       This file has been closed
+
+ Conditionning of H, total number of terms:          51
+
+ Time, timing for potcond
+   408.65753899999999        0.0000000000000000     
+
+ size of the blocks
+ A1           10
+ A2            0
+ B1            0
+ B2            0
+
+ Start matrix construction for block:   A1 
+
+ Time, timing for matrix
+   408.65753899999999        0.0000000000000000     
+
+ 
+ Start diagonalization for block:   A1 
+ 
+ Time, timing for diagonalisation
+   408.65753899999999        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   A1 
+ 
+
+ Summary of contraction           1   of  step           2
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        1530.981254          0.000000          1.000000   1
+    2)        2688.475174       1157.493919          1.000000   2
+    3)        3839.183375       2308.202120          0.999999   3
+    4)        4983.100633       3452.119379          0.999999   4
+    5)        6120.221743       4589.240489          0.999999   5
+    6)        7250.541854       5719.560599          0.999998   6
+    7)        8374.060032       6843.078778          0.999998   7
+    8)        9491.062115       7960.080860          0.999998   8
+    9)       10601.234500       9070.253245          0.999998   9
+   10)       11763.083213      10232.101959          0.999999  10
+
+ maximum memory used up to this stage (octet)       84341
+Step  2   ZPE  (1)(2)(3).2-1 >                                                        1530.98125449
+  
+
+ # of different integral types in final contraction =          26
+
+ # of integral types allowing (anti)symmetryzation          13
+ Time, timing for integr1
+   408.65753899999999        0.0000000000000000     
+
+
+        1950  integrals from contraction #           1  of step           2  have been written on file          30
+
+ Contraction number           2
+ =====================
+
+ Time, timing for basisucao
+   408.65753899999999        0.0000000000000000     
+
+ Number of basis functions          10
+
+ # of terms in the reduced H=           25
+
+           1950 integrals have been read in from file 28
+       This file has been closed
+
+ Conditionning of H, total number of terms:          49
+
+ Time, timing for potcond
+   408.65753899999999        0.0000000000000000     
+
+ size of the blocks
+ A1           10
+ A2            0
+ B1            0
+ B2            0
+
+ Start matrix construction for block:   A1 
+
+ Time, timing for matrix
+   408.65753899999999        0.0000000000000000     
+
+ 
+ Start diagonalization for block:   A1 
+ 
+ Time, timing for diagonalisation
+   408.65753899999999        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   A1 
+ 
+
+ Summary of contraction           2   of  step           2
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        1530.981416          0.000000          1.000000   1
+    2)        2049.050178        518.068762          1.000000   2
+    3)        2566.792839       1035.811423          1.000000   3
+    4)        3084.157798       1553.176382          1.000000   4
+    5)        3601.112198       2070.130782          1.000000   5
+    6)        4117.789240       2586.807824          1.000000   6
+    7)        4635.975141       3104.993725          1.000000   7
+    8)        5160.769188       3629.787771          1.000000   8
+    9)        5704.070208       4173.088792          1.000000   9
+   10)        6284.896916       4753.915500          1.000000  10
+
+ maximum memory used up to this stage (octet)       84341
+Step  2   ZPE  (1)(2)(3).2-2 >                                                        1530.98141618
+  
+
+ # of different integral types in final contraction =          26
+
+ # of integral types allowing (anti)symmetryzation          13
+ Time, timing for integr1
+   408.65753899999999        0.0000000000000000     
+
+
+        1950  integrals from contraction #           2  of step           2  have been written on file          31
+
+ Contraction number           3
+ =====================
+
+ Time, timing for basisucao
+   408.65753899999999        0.0000000000000000     
+
+ Number of basis functions          10
+
+ # of terms in the reduced H=            8
+
+            430 integrals have been read in from file 29
+       This file has been closed
+
+ Conditionning of H, total number of terms:          15
+
+ Time, timing for potcond
+   408.65753899999999        0.0000000000000000     
+
+ size of the blocks
+ A1            5
+ A2            0
+ B1            5
+ B2            0
+
+ Start matrix construction for block:   A1 
+
+ Time, timing for matrix
+   408.65753899999999        0.0000000000000000     
+
+
+ Start matrix construction for block:   B1 
+
+ Time, timing for matrix
+   408.65753899999999        0.0000000000000000     
+
+ 
+ Start diagonalization for block:   A1 
+ 
+ Time, timing for diagonalisation
+   408.65753899999999        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   A1 
+ 
+
+ Summary of contraction           3   of  step           2
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        1530.981416          0.000000          1.000000   1
+    2)        4291.850360       2760.868944          1.000000   3
+    3)        7086.081681       5555.100264          1.000000   5
+    4)        9913.434613       8382.453197          1.000000   7
+    5)       12785.276171      11254.294755          1.000000   9
+
+ maximum memory used up to this stage (octet)       84341
+ 
+ Start diagonalization for block:   B1 
+ 
+ Time, timing for diagonalisation
+   408.66153900000000        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   B1 
+ 
+
+ Summary of contraction           3   of  step           2
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        2907.207322       1376.225906          1.000000   2
+    2)        5684.833288       4153.851872          1.000000   4
+    3)        8495.523390       6964.541974          1.000000   6
+    4)       11339.195328       9808.213911          1.000000   8
+    5)       14234.494287      12703.512871          1.000000  10
+
+ maximum memory used up to this stage (octet)       84341
+Step  2   ZPE  (1)(2)(3).2-3 >                                                        1530.98141626
+  
+
+ # of different integral types in final contraction =           8
+
+ # of integral types allowing (anti)symmetryzation           7
+ Time, timing for integr1
+   408.66153900000000        0.0000000000000000     
+
+
+         430  integrals from contraction #           3  of step           2  have been written on file          32
+ 
+
+
+ =*=*=*=*=*=*=*=*=*=*=*=
+ general VMFCI STEP DONE
+ =*=*=*=*=*=*=*=*=*=*=*=
+
+
+ Contraction step number           3
+ ==========================
+
+  
+ Contraction scheme
+ ==================
+  
+ # of contractions:            3
+  
+Contraction  1 :  1
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  2 :  2
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  3 :  3
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+ # of basis function for contraction           1 =          10
+ # of basis function for contraction           2 =          10
+ # of basis function for contraction           3 =          10
+
+ Contraction number           1
+ =====================
+
+ Time, timing for basisucao
+   408.66153900000000        0.0000000000000000     
+
+ Number of basis functions          10
+
+ # of terms in the reduced H=           26
+
+           1950 integrals have been read in from file 30
+       This file has been closed
+
+ Conditionning of H, total number of terms:          51
+
+ Time, timing for potcond
+   408.66153900000000        0.0000000000000000     
+
+ size of the blocks
+ A1           10
+ A2            0
+ B1            0
+ B2            0
+
+ Start matrix construction for block:   A1 
+
+ Time, timing for matrix
+   408.66153900000000        0.0000000000000000     
+
+ 
+ Start diagonalization for block:   A1 
+ 
+ Time, timing for diagonalisation
+   408.66153900000000        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   A1 
+ 
+
+ Summary of contraction           1   of  step           3
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        1530.981255          0.000000          1.000000   1
+    2)        2688.475337       1157.494081          1.000000   2
+    3)        3839.183697       2308.202442          1.000000   3
+    4)        4983.101113       3452.119857          1.000000   4
+    5)        6120.222378       4589.241122          1.000000   5
+    6)        7250.542640       5719.561385          1.000000   6
+    7)        8374.060968       6843.079713          1.000000   7
+    8)        9491.063201       7960.081946          1.000000   8
+    9)       10601.235712       9070.254457          1.000000   9
+   10)       11763.081717      10232.100462          1.000000  10
+
+ maximum memory used up to this stage (octet)       84341
+Step  3   ZPE  (1)(2)(3).3-1 >                                                        1530.98125518
+  
+
+ # of different integral types in final contraction =          26
+
+ # of integral types allowing (anti)symmetryzation          13
+ Time, timing for integr1
+   408.66153900000000        0.0000000000000000     
+
+
+        1950  integrals from contraction #           1  of step           3  have been written on file          33
+
+ Contraction number           2
+ =====================
+
+ Time, timing for basisucao
+   408.66153900000000        0.0000000000000000     
+
+ Number of basis functions          10
+
+ # of terms in the reduced H=           25
+
+           1950 integrals have been read in from file 31
+       This file has been closed
+
+ Conditionning of H, total number of terms:          49
+
+ Time, timing for potcond
+   408.66153900000000        0.0000000000000000     
+
+ size of the blocks
+ A1           10
+ A2            0
+ B1            0
+ B2            0
+
+ Start matrix construction for block:   A1 
+
+ Time, timing for matrix
+   408.66153900000000        0.0000000000000000     
+
+ 
+ Start diagonalization for block:   A1 
+ 
+ Time, timing for diagonalisation
+   408.66153900000000        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   A1 
+ 
+
+ Summary of contraction           2   of  step           3
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        1530.981255          0.000000          1.000000   1
+    2)        2049.055343        518.074088          1.000000   2
+    3)        2566.803339       1035.822084          1.000000   3
+    4)        3084.173647       1553.192392          1.000000   4
+    5)        3601.133405       2070.152150          1.000000   5
+    6)        4117.815749       2586.834494          1.000000   6
+    7)        4636.006452       3105.025197          1.000000   7
+    8)        5160.803457       3629.822202          1.000000   8
+    9)        5704.102638       4173.121383          1.000000   9
+   10)        6284.931477       4753.950222          1.000000  10
+
+ maximum memory used up to this stage (octet)       84341
+Step  3   ZPE  (1)(2)(3).3-2 >                                                        1530.98125517
+  
+
+ # of different integral types in final contraction =          26
+
+ # of integral types allowing (anti)symmetryzation          13
+ Time, timing for integr1
+   408.66153900000000        0.0000000000000000     
+
+
+        1950  integrals from contraction #           2  of step           3  have been written on file          34
+
+ Contraction number           3
+ =====================
+
+ Time, timing for basisucao
+   408.66153900000000        0.0000000000000000     
+
+ Number of basis functions          10
+
+ # of terms in the reduced H=            8
+
+            430 integrals have been read in from file 32
+       This file has been closed
+
+ Conditionning of H, total number of terms:          15
+
+ Time, timing for potcond
+   408.66153900000000        0.0000000000000000     
+
+ size of the blocks
+ A1            5
+ A2            0
+ B1            5
+ B2            0
+
+ Start matrix construction for block:   A1 
+
+ Time, timing for matrix
+   408.66153900000000        0.0000000000000000     
+
+
+ Start matrix construction for block:   B1 
+
+ Time, timing for matrix
+   408.66153900000000        0.0000000000000000     
+
+ 
+ Start diagonalization for block:   A1 
+ 
+ Time, timing for diagonalisation
+   408.66153900000000        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   A1 
+ 
+
+ Summary of contraction           3   of  step           3
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        1530.981254          0.000000          1.000000   1
+    2)        4291.682826       2760.701572          1.000000   3
+    3)        7085.747036       5554.765782          1.000000   5
+    4)        9912.933540       8381.952286          1.000000   7
+    5)       12784.554539      11253.573285          1.000000   9
+
+ maximum memory used up to this stage (octet)       84341
+ 
+ Start diagonalization for block:   B1 
+ 
+ Time, timing for diagonalisation
+   408.66153900000000        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   B1 
+ 
+
+ Summary of contraction           3   of  step           3
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        2907.123436       1376.142182          1.000000   2
+    2)        5684.582171       4153.600917          1.000000   4
+    3)        8495.105264       6964.124010          1.000000   6
+    4)       11338.611221       9807.629967          1.000000   8
+    5)       14233.667703      12702.686449          1.000000  10
+
+ maximum memory used up to this stage (octet)       84341
+Step  3   ZPE  (1)(2)(3).3-3 >                                                        1530.98125390
+  
+
+ # of different integral types in final contraction =           8
+
+ # of integral types allowing (anti)symmetryzation           7
+ Time, timing for integr1
+   408.66153900000000        0.0000000000000000     
+
+
+         430  integrals from contraction #           3  of step           3  have been written on file          35
+ 
+
+
+ =*=*=*=*=*=*=*=*=*=*=*=
+ general VMFCI STEP DONE
+ =*=*=*=*=*=*=*=*=*=*=*=
+
+
+ Contraction step number           4
+ ==========================
+
+  
+ Contraction scheme
+ ==================
+  
+ # of contractions:            3
+  
+Contraction  1 :  1
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  2 :  2
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  3 :  3
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+ # of basis function for contraction           1 =          10
+ # of basis function for contraction           2 =          10
+ # of basis function for contraction           3 =          10
+
+ Contraction number           1
+ =====================
+
+ Time, timing for basisucao
+   408.66153900000000        0.0000000000000000     
+
+ Number of basis functions          10
+
+ # of terms in the reduced H=           26
+
+           1950 integrals have been read in from file 33
+       This file has been closed
+
+ Conditionning of H, total number of terms:          51
+
+ Time, timing for potcond
+   408.66153900000000        0.0000000000000000     
+
+ size of the blocks
+ A1           10
+ A2            0
+ B1            0
+ B2            0
+
+ Start matrix construction for block:   A1 
+
+ Time, timing for matrix
+   408.66153900000000        0.0000000000000000     
+
+ 
+ Start diagonalization for block:   A1 
+ 
+ Time, timing for diagonalisation
+   408.66153900000000        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   A1 
+ 
+
+ Summary of contraction           1   of  step           4
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        1530.981254          0.000000          1.000000   1
+    2)        2688.475289       1157.494035          1.000000   2
+    3)        3839.183601       2308.202347          1.000000   3
+    4)        4983.100967       3452.119713          1.000000   4
+    5)        6120.222181       4589.240927          1.000000   5
+    6)        7250.542392       5719.561138          1.000000   6
+    7)        8374.060668       6843.079414          1.000000   7
+    8)        9491.062846       7960.081592          1.000000   8
+    9)       10601.235321       9070.254067          1.000000   9
+   10)       11763.086147      10232.104893          1.000000  10
+
+ maximum memory used up to this stage (octet)       84341
+Step  4   ZPE  (1)(2)(3).4-1 >                                                        1530.98125389
+  
+
+ # of different integral types in final contraction =          26
+
+ # of integral types allowing (anti)symmetryzation          13
+ Time, timing for integr1
+   408.66153900000000        0.0000000000000000     
+
+
+        1950  integrals from contraction #           1  of step           4  have been written on file          36
+
+ Contraction number           2
+ =====================
+
+ Time, timing for basisucao
+   408.66153900000000        0.0000000000000000     
+
+ Number of basis functions          10
+
+ # of terms in the reduced H=           25
+
+           1950 integrals have been read in from file 34
+       This file has been closed
+
+ Conditionning of H, total number of terms:          49
+
+ Time, timing for potcond
+   408.66153900000000        0.0000000000000000     
+
+ size of the blocks
+ A1           10
+ A2            0
+ B1            0
+ B2            0
+
+ Start matrix construction for block:   A1 
+
+ Time, timing for matrix
+   408.66153900000000        0.0000000000000000     
+
+ 
+ Start diagonalization for block:   A1 
+ 
+ Time, timing for diagonalisation
+   408.66153900000000        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   A1 
+ 
+
+ Summary of contraction           2   of  step           4
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        1530.981254          0.000000          1.000000   1
+    2)        2049.055107        518.073853          1.000000   2
+    3)        2566.802869       1035.821615          1.000000   3
+    4)        3084.172945       1553.191692          1.000000   4
+    5)        3601.132474       2070.151221          1.000000   5
+    6)        4117.814594       2586.833340          1.000000   6
+    7)        4636.005089       3105.023835          1.000000   7
+    8)        5160.801940       3629.820686          1.000000   8
+    9)        5704.101160       4173.119906          1.000000   9
+   10)        6284.929627       4753.948373          1.000000  10
+
+ maximum memory used up to this stage (octet)       84341
+Step  4   ZPE  (1)(2)(3).4-2 >                                                        1530.98125390
+  
+
+ # of different integral types in final contraction =          26
+
+ # of integral types allowing (anti)symmetryzation          13
+ Time, timing for integr1
+   408.66153900000000        0.0000000000000000     
+
+
+        1950  integrals from contraction #           2  of step           4  have been written on file          37
+
+ Contraction number           3
+ =====================
+
+ Time, timing for basisucao
+   408.66153900000000        0.0000000000000000     
+
+ Number of basis functions          10
+
+ # of terms in the reduced H=            8
+
+            430 integrals have been read in from file 35
+       This file has been closed
+
+ Conditionning of H, total number of terms:          15
+
+ Time, timing for potcond
+   408.66153900000000        0.0000000000000000     
+
+ size of the blocks
+ A1            5
+ A2            0
+ B1            5
+ B2            0
+
+ Start matrix construction for block:   A1 
+
+ Time, timing for matrix
+   408.66153900000000        0.0000000000000000     
+
+
+ Start matrix construction for block:   B1 
+
+ Time, timing for matrix
+   408.66153900000000        0.0000000000000000     
+
+ 
+ Start diagonalization for block:   A1 
+ 
+ Time, timing for diagonalisation
+   408.66153900000000        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   A1 
+ 
+
+ Summary of contraction           3   of  step           4
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        1530.981254          0.000000          1.000000   1
+    2)        4291.683699       2760.702445          1.000000   3
+    3)        7085.748778       5554.767524          1.000000   5
+    4)        9912.936146       8381.954892          1.000000   7
+    5)       12784.558291      11253.577037          1.000000   9
+
+ maximum memory used up to this stage (octet)       84341
+ 
+ Start diagonalization for block:   B1 
+ 
+ Time, timing for diagonalisation
+   408.66153900000000        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   B1 
+ 
+
+ Summary of contraction           3   of  step           4
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        2907.123873       1376.142619          1.000000   2
+    2)        5684.583479       4153.602225          1.000000   4
+    3)        8495.107439       6964.126186          1.000000   6
+    4)       11338.614257       9807.633003          1.000000   8
+    5)       14233.671999      12702.690745          1.000000  10
+
+ maximum memory used up to this stage (octet)       84341
+Step  4   ZPE  (1)(2)(3).4-3 >                                                        1530.98125390
+  
+
+ # of different integral types in final contraction =           8
+
+ # of integral types allowing (anti)symmetryzation           7
+ Time, timing for integr1
+   408.66553900000002        0.0000000000000000     
+
+
+         430  integrals from contraction #           3  of step           4  have been written on file          38
+ 
+
+
+ =*=*=*=*=*=*=*=*=*=*=*=
+ general VMFCI STEP DONE
+ =*=*=*=*=*=*=*=*=*=*=*=
+
+
+ Contraction step number           5
+ ==========================
+
+  
+ Contraction scheme
+ ==================
+  
+ # of contractions:            3
+  
+Contraction  1 :  1
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  2 :  2
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  3 :  3
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+ # of basis function for contraction           1 =          10
+ # of basis function for contraction           2 =          10
+ # of basis function for contraction           3 =          10
+
+ Contraction number           1
+ =====================
+
+ Time, timing for basisucao
+   408.66553900000002        0.0000000000000000     
+
+ Number of basis functions          10
+
+ # of terms in the reduced H=           26
+
+           1950 integrals have been read in from file 36
+       This file has been closed
+
+ Conditionning of H, total number of terms:          51
+
+ Time, timing for potcond
+   408.66553900000002        0.0000000000000000     
+
+ size of the blocks
+ A1           10
+ A2            0
+ B1            0
+ B2            0
+
+ Start matrix construction for block:   A1 
+
+ Time, timing for matrix
+   408.66553900000002        0.0000000000000000     
+
+ 
+ Start diagonalization for block:   A1 
+ 
+ Time, timing for diagonalisation
+   408.66553900000002        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   A1 
+ 
+
+ Summary of contraction           1   of  step           5
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        1530.981254          0.000000          1.000000   1
+    2)        2688.475291       1157.494037          1.000000   2
+    3)        3839.183606       2308.202352          1.000000   3
+    4)        4983.100975       3452.119721          1.000000   4
+    5)        6120.222192       4589.240938          1.000000   5
+    6)        7250.542406       5719.561152          1.000000   6
+    7)        8374.060684       6843.079430          1.000000   7
+    8)        9491.062865       7960.081611          1.000000   8
+    9)       10601.235342       9070.254088          1.000000   9
+   10)       11763.086146      10232.104892          1.000000  10
+
+ maximum memory used up to this stage (octet)       84341
+Step  5   ZPE  (1)(2)(3).5-1 >                                                        1530.98125389
+  
+
+ # of different integral types in final contraction =          26
+
+ # of integral types allowing (anti)symmetryzation          13
+ Time, timing for integr1
+   408.66553900000002        0.0000000000000000     
+
+
+        1950  integrals from contraction #           1  of step           5  have been written on file          39
+
+ Contraction number           2
+ =====================
+
+ Time, timing for basisucao
+   408.66553900000002        0.0000000000000000     
+
+ Number of basis functions          10
+
+ # of terms in the reduced H=           25
+
+           1950 integrals have been read in from file 37
+       This file has been closed
+
+ Conditionning of H, total number of terms:          49
+
+ Time, timing for potcond
+   408.66553900000002        0.0000000000000000     
+
+ size of the blocks
+ A1           10
+ A2            0
+ B1            0
+ B2            0
+
+ Start matrix construction for block:   A1 
+
+ Time, timing for matrix
+   408.66553900000002        0.0000000000000000     
+
+ 
+ Start diagonalization for block:   A1 
+ 
+ Time, timing for diagonalisation
+   408.66553900000002        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   A1 
+ 
+
+ Summary of contraction           2   of  step           5
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        1530.981254          0.000000          1.000000   1
+    2)        2049.055149        518.073895          1.000000   2
+    3)        2566.802954       1035.821700          1.000000   3
+    4)        3084.173073       1553.191819          1.000000   4
+    5)        3601.132645       2070.151391          1.000000   5
+    6)        4117.814807       2586.833553          1.000000   6
+    7)        4636.005341       3105.024087          1.000000   7
+    8)        5160.802215       3629.820961          1.000000   8
+    9)        5704.101420       4173.120166          1.000000   9
+   10)        6284.929905       4753.948651          1.000000  10
+
+ maximum memory used up to this stage (octet)       84341
+Step  5   ZPE  (1)(2)(3).5-2 >                                                        1530.98125389
+  
+
+ # of different integral types in final contraction =          26
+
+ # of integral types allowing (anti)symmetryzation          13
+ Time, timing for integr1
+   408.66553900000002        0.0000000000000000     
+
+
+        1950  integrals from contraction #           2  of step           5  have been written on file          40
+
+ Contraction number           3
+ =====================
+
+ Time, timing for basisucao
+   408.66553900000002        0.0000000000000000     
+
+ Number of basis functions          10
+
+ # of terms in the reduced H=            8
+
+            430 integrals have been read in from file 38
+       This file has been closed
+
+ Conditionning of H, total number of terms:          15
+
+ Time, timing for potcond
+   408.66553900000002        0.0000000000000000     
+
+ size of the blocks
+ A1            5
+ A2            0
+ B1            5
+ B2            0
+
+ Start matrix construction for block:   A1 
+
+ Time, timing for matrix
+   408.66553900000002        0.0000000000000000     
+
+
+ Start matrix construction for block:   B1 
+
+ Time, timing for matrix
+   408.66553900000002        0.0000000000000000     
+
+ 
+ Start diagonalization for block:   A1 
+ 
+ Time, timing for diagonalisation
+   408.66553900000002        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   A1 
+ 
+
+ Summary of contraction           3   of  step           5
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        1530.981254          0.000000          1.000000   1
+    2)        4291.682365       2760.701111          1.000000   3
+    3)        7085.746112       5554.764858          1.000000   5
+    4)        9912.932153       8381.950900          1.000000   7
+    5)       12784.552541      11253.571287          1.000000   9
+
+ maximum memory used up to this stage (octet)       84341
+ 
+ Start diagonalization for block:   B1 
+ 
+ Time, timing for diagonalisation
+   408.66553900000002        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   B1 
+ 
+
+ Summary of contraction           3   of  step           5
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        2907.123206       1376.141952          1.000000   2
+    2)        5684.581479       4153.600225          1.000000   4
+    3)        8495.104108       6964.122854          1.000000   6
+    4)       11338.609603       9807.628349          1.000000   8
+    5)       14233.665412      12702.684158          1.000000  10
+
+ maximum memory used up to this stage (octet)       84341
+Step  5   ZPE  (1)(2)(3).5-3 >                                                        1530.98125389
+  
+
+ # of different integral types in final contraction =           8
+
+ # of integral types allowing (anti)symmetryzation           7
+ Time, timing for integr1
+   408.66553900000002        0.0000000000000000     
+
+
+         430  integrals from contraction #           3  of step           5  have been written on file          41
+ 
+
+
+ =*=*=*=*=*=*=*=*=*=*=*=
+ general VMFCI STEP DONE
+ =*=*=*=*=*=*=*=*=*=*=*=
+
+
+ Contraction step number           6
+ ==========================
+
+  
+ Contraction scheme
+ ==================
+  
+ # of contractions:            3
+  
+Contraction  1 :  1
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  2 :  2
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  3 :  3
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+ # of basis function for contraction           1 =          10
+ # of basis function for contraction           2 =          10
+ # of basis function for contraction           3 =          10
+
+ Contraction number           1
+ =====================
+
+ Time, timing for basisucao
+   408.66553900000002        0.0000000000000000     
+
+ Number of basis functions          10
+
+ # of terms in the reduced H=           26
+
+           1950 integrals have been read in from file 39
+       This file has been closed
+
+ Conditionning of H, total number of terms:          51
+
+ Time, timing for potcond
+   408.66553900000002        0.0000000000000000     
+
+ size of the blocks
+ A1           10
+ A2            0
+ B1            0
+ B2            0
+
+ Start matrix construction for block:   A1 
+
+ Time, timing for matrix
+   408.66553900000002        0.0000000000000000     
+
+ 
+ Start diagonalization for block:   A1 
+ 
+ Time, timing for diagonalisation
+   408.66553900000002        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   A1 
+ 
+
+ Summary of contraction           1   of  step           6
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        1530.981254          0.000000          1.000000   1
+    2)        2688.475291       1157.494037          1.000000   2
+    3)        3839.183605       2308.202352          1.000000   3
+    4)        4983.100974       3452.119720          1.000000   4
+    5)        6120.222191       4589.240937          1.000000   5
+    6)        7250.542404       5719.561150          1.000000   6
+    7)        8374.060682       6843.079428          1.000000   7
+    8)        9491.062862       7960.081608          1.000000   8
+    9)       10601.235339       9070.254085          1.000000   9
+   10)       11763.086181      10232.104927          1.000000  10
+
+ maximum memory used up to this stage (octet)       84341
+Step  6   ZPE  (1)(2)(3).6-1 >                                                        1530.98125389
+  
+
+ # of different integral types in final contraction =          26
+
+ # of integral types allowing (anti)symmetryzation          13
+ Time, timing for integr1
+   408.66553900000002        0.0000000000000000     
+
+
+        1950  integrals from contraction #           1  of step           6  have been written on file          42
+
+ Contraction number           2
+ =====================
+
+ Time, timing for basisucao
+   408.66553900000002        0.0000000000000000     
+
+ Number of basis functions          10
+
+ # of terms in the reduced H=           25
+
+           1950 integrals have been read in from file 40
+       This file has been closed
+
+ Conditionning of H, total number of terms:          49
+
+ Time, timing for potcond
+   408.66553900000002        0.0000000000000000     
+
+ size of the blocks
+ A1           10
+ A2            0
+ B1            0
+ B2            0
+
+ Start matrix construction for block:   A1 
+
+ Time, timing for matrix
+   408.66553900000002        0.0000000000000000     
+
+ 
+ Start diagonalization for block:   A1 
+ 
+ Time, timing for diagonalisation
+   408.66553900000002        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   A1 
+ 
+
+ Summary of contraction           2   of  step           6
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        1530.981254          0.000000          1.000000   1
+    2)        2049.055147        518.073893          1.000000   2
+    3)        2566.802950       1035.821696          1.000000   3
+    4)        3084.173068       1553.191814          1.000000   4
+    5)        3601.132638       2070.151384          1.000000   5
+    6)        4117.814797       2586.833543          1.000000   6
+    7)        4636.005330       3105.024076          1.000000   7
+    8)        5160.802203       3629.820949          1.000000   8
+    9)        5704.101408       4173.120154          1.000000   9
+   10)        6284.929890       4753.948636          1.000000  10
+
+ maximum memory used up to this stage (octet)       84341
+Step  6   ZPE  (1)(2)(3).6-2 >                                                        1530.98125389
+  
+
+ # of different integral types in final contraction =          26
+
+ # of integral types allowing (anti)symmetryzation          13
+ Time, timing for integr1
+   408.66553900000002        0.0000000000000000     
+
+
+        1950  integrals from contraction #           2  of step           6  have been written on file          43
+
+ Contraction number           3
+ =====================
+
+ Time, timing for basisucao
+   408.66553900000002        0.0000000000000000     
+
+ Number of basis functions          10
+
+ # of terms in the reduced H=            8
+
+            430 integrals have been read in from file 41
+       This file has been closed
+
+ Conditionning of H, total number of terms:          15
+
+ Time, timing for potcond
+   408.66553900000002        0.0000000000000000     
+
+ size of the blocks
+ A1            5
+ A2            0
+ B1            5
+ B2            0
+
+ Start matrix construction for block:   A1 
+
+ Time, timing for matrix
+   408.66553900000002        0.0000000000000000     
+
+
+ Start matrix construction for block:   B1 
+
+ Time, timing for matrix
+   408.66553900000002        0.0000000000000000     
+
+ 
+ Start diagonalization for block:   A1 
+ 
+ Time, timing for diagonalisation
+   408.66553900000002        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   A1 
+ 
+
+ Summary of contraction           3   of  step           6
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        1530.981254          0.000000          1.000000   1
+    2)        4291.682373       2760.701119          1.000000   3
+    3)        7085.746128       5554.764874          1.000000   5
+    4)        9912.932177       8381.950923          1.000000   7
+    5)       12784.552575      11253.571321          1.000000   9
+
+ maximum memory used up to this stage (octet)       84341
+ 
+ Start diagonalization for block:   B1 
+ 
+ Time, timing for diagonalisation
+   408.66553900000002        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   B1 
+ 
+
+ Summary of contraction           3   of  step           6
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        2907.123210       1376.141956          1.000000   2
+    2)        5684.581491       4153.600237          1.000000   4
+    3)        8495.104128       6964.122874          1.000000   6
+    4)       11338.609630       9807.628376          1.000000   8
+    5)       14233.665451      12702.684198          1.000000  10
+
+ maximum memory used up to this stage (octet)       84341
+Step  6   ZPE  (1)(2)(3).6-3 >                                                        1530.98125389
+  
+
+ # of different integral types in final contraction =           8
+
+ # of integral types allowing (anti)symmetryzation           7
+ Time, timing for integr1
+   408.66953899999999       3.99999999996225597E-003
+
+
+         430  integrals from contraction #           3  of step           6  have been written on file          44
+ 
+
+
+ =*=*=*=*=*=*=*=*=*=*=*=
+ general VMFCI STEP DONE
+ =*=*=*=*=*=*=*=*=*=*=*=
+
+
+ Contraction step number           7
+ ==========================
+
+  
+ Contraction scheme
+ ==================
+  
+ # of contractions:            2
+  
+Contraction  1 :  1  3
+Energy thresholds :     0.0     0.0
+Total energy threshold : 40000.0
+  
+  
+Contraction  2 :  2
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+ # of basis function for contraction           1 =         100
+ # of basis function for contraction           2 =          10
+
+ Contraction number           1
+ =====================
+
+ Time, timing for basisucao
+   408.66953899999999        0.0000000000000000     
+
+ Number of basis functions         100
+
+ # of terms in the reduced H=           82
+
+           1950 integrals have been read in from file 42
+       This file has been closed
+
+            430 integrals have been read in from file 44
+       This file has been closed
+
+ Conditionning of H, total number of terms:         273
+
+ Time, timing for potcond
+   408.66953899999999        0.0000000000000000     
+
+ size of the blocks
+ A1           50
+ A2            0
+ B1           50
+ B2            0
+
+ Start matrix construction for block:   A1 
+
+ Time, timing for matrix
+   408.66953899999999        0.0000000000000000     
+
+
+ Start matrix construction for block:   B1 
+
+ Time, timing for matrix
+   408.66953899999999        0.0000000000000000     
+
+ 
+ Start diagonalization for block:   A1 
+ 
+ Time, timing for diagonalisation
+   408.67354000000000       4.00100000001657463E-003
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   A1 
+ 
+
+ Summary of contraction           1   of  step           7
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        1529.371500          0.000000          0.999583   1   1
+    2)        2681.294866       1151.923365          0.996598   2   1
+    3)        3826.290107       2296.918606          0.992937   3   1
+    4)        4242.857786       2713.486286          0.957303   1   3
+    5)        4964.338479       3434.966978          0.988503   4   1
+    6)        5367.045328       3837.673828          0.864940   2   3
+    7)        6095.418673       4566.047172          0.983179   5   1
+    8)        6483.749270       4954.377769          0.772540   3   3
+    9)        6913.574786       5384.203285          0.838538   1   5
+   10)        7219.506468       5690.134967          0.976816   6   1
+   11)        7592.931174       6063.559674          0.681172   4   3
+   12)        8011.222728       6481.851227          0.557184   2   5
+   13)        8336.580270       6807.208770          0.969238   7   1
+   14)        8694.587738       7165.216237          0.592109   5   3
+   15)        9102.051136       7572.679636          0.343942   3   5
+   16)        9446.877062       7917.505561          0.960205   8   1
+   17)        9545.046292       8015.674791          0.677262   1   7
+   18)        9788.788968       8259.417468          0.506870   6   3
+   19)       10187.606159       8658.234658          0.273895   3   5
+   20)       10551.130275       9021.758775          0.950704   9   1
+   21)       10637.232139       9107.860638          0.262265   2   7
+   22)       10875.928483       9346.556983          0.427536   7   3
+   23)       11268.849588       9739.478087          0.292679   4   5
+   24)       11722.379791      10193.008291          0.941094  10   1
+   25)       11736.846013      10207.474513          0.285542   2   7
+   26)       11963.680168      10434.308667          0.362446   8   3
+   27)       12287.069591      10757.698090          0.600044   1   9
+   28)       12346.756215      10817.384714          0.288161   5   5
+   29)       12840.769073      11311.397572          0.266365   3   7
+   30)       13132.168236      11602.796736          0.372677   9   3
+   31)       13433.737594      11904.366093          0.269961   6   5
+   32)       13536.215274      12006.843773          0.393320   3   9
+   33)       13948.248003      12418.876503          0.227800   4   7
+   34)       14526.146899      12996.775399          0.254780   9   5
+   35)       14760.379328      13231.007827          0.392815   4   9
+   36)       14897.024444      13367.652944          0.747357  10   3
+   37)       15070.017702      13540.646202          0.195190   5   7
+   38)       15924.069260      14394.697759          0.167020   5   9
+   39)       16016.236369      14486.864869          0.162911   5   9
+   40)       16279.286887      14749.915387          0.206977   9   5
+   41)       17155.391283      15626.019782          0.242912   6   9
+   42)       17501.050656      15971.679156          0.177192   9   7
+   43)       18340.415755      16811.044255          0.315475  10   5
+   44)       18410.475791      16881.104291          0.256967  10   5
+   45)       19266.275499      17736.903998          0.184115   9   9
+   46)       19733.906606      18204.535105          0.226229  10   7
+   47)       21083.389713      19554.018212          0.194207   9   9
+   48)       22343.920745      20814.549245          0.445081  10   7
+   49)       23731.842652      22202.471152          0.329076  10   9
+   50)       28078.306544      26548.935043          0.340859  10   9
+
+ maximum memory used up to this stage (octet)       89042
+ 
+ Start diagonalization for block:   B1 
+ 
+ Time, timing for diagonalisation
+   408.67354000000000        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   B1 
+ 
+
+ Summary of contraction           1   of  step           7
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        2891.462732       1362.091231          0.989258   1   2
+    2)        4029.385629       2500.014128          0.961385   2   2
+    3)        5160.080209       3630.708708          0.931097   3   2
+    4)        5583.557247       4054.185746          0.905949   1   4
+    5)        6283.504052       4754.132552          0.898326   4   2
+    6)        6694.258268       5164.886767          0.722925   2   4
+    7)        7399.608647       5870.237147          0.863003   5   2
+    8)        7797.262140       6267.890640          0.559012   3   4
+    9)        8232.916426       6703.544926          0.759124   1   6
+   10)        8508.339853       6978.968352          0.825071   6   2
+   11)        8892.581253       7363.209752          0.416534   4   4
+   12)        9317.910913       7788.539413          0.390254   2   6
+   13)        9609.699062       8080.327562          0.784548   7   2
+   14)        9980.370164       8450.998664          0.297247   5   4
+   15)       10397.437153       8868.065653          0.282174   2   6
+   16)       10704.542134       9175.170633          0.742998   8   2
+   17)       10846.276157       9316.904657          0.590271   1   8
+   18)       11061.020095       9531.648595          0.265551   5   4
+   19)       11474.062274       9944.690774          0.301835   3   6
+   20)       11816.293523      10286.922023          0.728521   9   2
+   21)       11938.982866      10409.611365          0.287238   1   8
+   22)       12137.102169      10607.730668          0.274414   6   4
+   23)       12548.718562      11019.347062          0.279486   4   6
+   24)       13039.152031      11509.780530          0.275976   2   8
+   25)       13166.056863      11636.685363          0.280517  10   2
+   26)       13299.645421      11770.273920          0.619502  10   2
+   27)       13618.186825      12088.815325          0.527007   1  10
+   28)       13625.030005      12095.658505          0.235226   5   6
+   29)       14145.733558      12616.362057          0.211560   3   8
+   30)       14498.687730      12969.316229          0.285604   8   4
+   31)       14755.662214      13226.290714          0.261203   9   4
+   32)       14888.423865      13359.052364          0.392379   3  10
+   33)       15260.423155      13731.051655          0.152715   4   8
+   34)       15887.158987      14357.787486          0.164178   7   6
+   35)       16127.544627      14598.173126          0.343148   4  10
+   36)       16393.348257      14863.976757          0.157762   9   6
+   37)       16599.748033      15070.376533          0.661975  10   4
+   38)       17306.532450      15777.160950          0.193931   6  10
+   39)       17452.781172      15923.409671          0.203682   7   8
+   40)       17766.375375      16237.003875          0.258251  10   6
+   41)       18555.641541      17026.270041          0.274729   7  10
+   42)       18994.099724      17464.728224          0.209084   8   8
+   43)       19804.770841      18275.399340          0.254058   8  10
+   44)       20167.993838      18638.622338          0.477851  10   6
+   45)       20823.356774      19293.985274          0.269376   9  10
+   46)       21346.234567      19816.863067          0.337298  10   8
+   47)       22738.859276      21209.487775          0.212941  10  10
+   48)       24346.495619      22817.124119          0.372940  10   8
+   49)       25722.300575      24192.929074          0.307563  10  10
+   50)       30519.836347      28990.464847          0.308003  10  10
+
+ maximum memory used up to this stage (octet)       89442
+Step  7   ZPE  (1-3)(2).7-1 >                                                         1529.37150047
+  
+
+ # of different integral types in final contraction =          84
+
+ # of integral types allowing (anti)symmetryzation          49
+ Time, timing for integr1
+   408.86555199999998       0.19201199999997698     
+
+
+      592200  integrals from contraction #           1  of step           7  have been written on file          45
+
+ Contraction number           2
+ =====================
+
+ Time, timing for basisucao
+   408.86555199999998        0.0000000000000000     
+
+ Number of basis functions          10
+
+ # of terms in the reduced H=           25
+
+           1950 integrals have been read in from file 43
+       This file has been closed
+
+ Conditionning of H, total number of terms:          49
+
+ Time, timing for potcond
+   408.86555199999998        0.0000000000000000     
+
+ size of the blocks
+ A1           10
+ A2            0
+ B1            0
+ B2            0
+
+ Start matrix construction for block:   A1 
+
+ Time, timing for matrix
+   408.86555199999998        0.0000000000000000     
+
+ 
+ Start diagonalization for block:   A1 
+ 
+ Time, timing for diagonalisation
+   408.86555199999998        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   A1 
+ 
+
+ Summary of contraction           2   of  step           7
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        1530.981254          0.000000          1.000000   1
+    2)        2049.055147        518.073894          1.000000   2
+    3)        2566.802951       1035.821697          1.000000   3
+    4)        3084.173069       1553.191815          1.000000   4
+    5)        3601.132639       2070.151385          1.000000   5
+    6)        4117.814799       2586.833545          1.000000   6
+    7)        4636.005332       3105.024078          1.000000   7
+    8)        5160.802205       3629.820951          1.000000   8
+    9)        5704.101410       4173.120156          1.000000   9
+   10)        6284.929892       4753.948638          1.000000  10
+
+ maximum memory used up to this stage (octet)     9591470
+Step  7   ZPE  (1-3)(2).7-2 >                                                         1530.98125389
+  
+
+ # of different integral types in final contraction =          26
+
+ # of integral types allowing (anti)symmetryzation          13
+ Time, timing for integr1
+   408.86555199999998        0.0000000000000000     
+
+
+        1950  integrals from contraction #           2  of step           7  have been written on file          46
+ 
+
+
+ =*=*=*=*=*=*=*=*=*=*=*=
+ general VMFCI STEP DONE
+ =*=*=*=*=*=*=*=*=*=*=*=
+
+
+ Contraction step number           8
+ ==========================
+
+  
+ Contraction scheme
+ ==================
+  
+ # of contractions:            1
+  
+Contraction  1 :  1  2
+Energy thresholds :     0.0     0.0
+Total energy threshold : 20000.0
+  
+  
+ # of basis function for contraction           1 =         857
+
+ Contraction number           1
+ =====================
+
+ Time, timing for basisucao
+   408.86555199999998        0.0000000000000000     
+
+ Number of basis functions         857
+
+ # of terms in the reduced H=          459
+
+         592200 integrals have been read in from file 45
+       This file has been closed
+
+           1950 integrals have been read in from file 46
+       This file has been closed
+
+ Conditionning of H, total number of terms:        1653
+
+ Time, timing for potcond
+   408.87355200000002        0.0000000000000000     
+
+ size of the blocks
+ A1          441
+ A2            0
+ B1          416
+ B2            0
+
+ Start matrix construction for block:   A1 
+
+ Time, timing for matrix
+   409.59759700000001       0.72404499999998961     
+
+
+ Start matrix construction for block:   B1 
+
+ Time, timing for matrix
+   410.24163800000002       0.64404100000001563     
+
+ 
+ Start diagonalization for block:   A1 
+ 
+ Time, timing for diagonalisation
+   410.52565499999997       0.28401699999994889     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   A1 
+ 
+
+ Summary of contraction           1   of  step           8
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        1529.325163          0.000000          0.999983   1   1
+    2)        2047.238381        517.913217          0.999891   1   2
+    3)        2564.496344       1035.171181          0.998115   1   3
+    4)        2681.018238       1151.693075          0.997732   2   1
+    5)        3081.007743       1551.682579          0.994325   1   4
+    6)        3195.665226       1666.340063          0.992712   2   2
+    7)        3596.697722       2067.372559          0.988169   1   5
+    8)        3709.677587       2180.352423          0.982017   2   3
+    9)        3825.138214       2295.813051          0.994151   4   1
+   10)        4111.672328       2582.347165          0.979246   1   6
+   11)        4222.970268       2693.645105          0.964633   2   4
+   12)        4242.725704       2713.400541          0.999827   6   1
+   13)        4336.524439       2807.199275          0.981547   4   2
+   14)        4627.774617       3098.449454          0.966344   1   7
+   15)        4735.528357       3206.203194          0.938695   2   5
+   16)        4752.280744       3222.955581          0.999430   6   2
+   17)        4847.297505       3317.972341          0.959435   4   3
+   18)        4961.681366       3432.356202          0.989254   7   1
+   19)        5150.255259       3620.930095          0.944004   1   8
+   20)        5247.803318       3718.478154          0.898043   2   6
+   21)        5261.301012       3731.975848          0.997348   6   3
+   22)        5357.383860       3828.058696          0.926271   4   4
+   23)        5366.867620       3837.542457          0.997910   9   1
+   24)        5469.811633       3940.486470          0.966528   7   2
+   25)        5691.057427       4161.732263          0.880587   1   9
+   26)        5763.177777       4233.852614          0.809714   2   7
+   27)        5769.696494       4240.371331          0.992859   6   4
+   28)        5866.872793       4337.547629          0.878247   4   5
+   29)        5873.125233       4343.800069          0.993215   9   2
+   30)        5977.351510       4448.026347          0.930787   7   3
+   31)        6090.641905       4561.316742          0.983063  11   1
+   32)        6255.606354       4726.281190          0.505419   2   8
+   33)        6277.390610       4748.065447          0.986677   6   5
+   34)        6299.575125       4770.249961          0.549736   1  10
+   35)        6376.890064       4847.564901          0.792994   4   6
+   36)        6378.878048       4849.552884          0.978317   9   3
+   37)        6482.884583       4953.559419          0.992985  13   1
+   38)        6484.251241       4954.926078          0.878920   7   4
+   39)        6595.520657       5066.195494          0.947822  11   2
+   40)        6784.562724       5255.237560          0.977296   6   6
+   41)        6817.990191       5288.665028          0.750880   2   9
+   42)        6884.006845       5354.681682          0.965468   9   4
+   43)        6892.115292       5362.790129          0.648554   4   7
+   44)        6913.222929       5383.897766          0.999164  15   1
+   45)        6985.863329       5456.538165          0.982335  13   2
+   46)        6990.773218       5461.448055          0.808459   7   5
+   47)        7099.834214       5570.509050          0.896575  11   3
+   48)        7212.012096       5682.686932          0.975606  16   1
+   49)        7293.440203       5764.115039          0.963613   6   7
+   50)        7378.190050       5848.864886          0.640804   4   8
+   51)        7388.570187       5859.245024          0.940362   9   5
+   52)        7414.442597       5885.117434          0.997651  15   2
+   53)        7444.465614       5915.140451          0.728664   2  10
+   54)        7488.350954       5959.025790          0.961574  13   3
+   55)        7499.633622       5970.308458          0.664339   7   6
+   56)        7590.764564       6061.439401          0.990076  18   1
+   57)        7603.570793       6074.245629          0.827257  11   4
+   58)        7713.645045       6184.319882          0.925639  16   2
+   59)        7809.888374       6280.563210          0.937126   6   8
+   60)        7893.124738       6363.799575          0.896726   9   6
+   61)        7915.246250       6385.921086          0.994266  15   3
+   62)        7938.599400       6409.274237          0.608129   4   9
+   63)        7990.278179       6460.953016          0.929542  13   4
+   64)        8011.003360       6481.678197          0.997056  20   1
+   65)        8015.185569       6485.860406          0.485934   7   7
+   66)        8090.483529       6561.158366          0.968461  18   2
+   67)        8107.292836       6577.967673          0.730630  11   5
+   68)        8214.745298       6685.420135          0.857413  16   3
+   69)        8325.795501       6796.470338          0.966941  22   1
+   70)        8350.655626       6821.330463          0.817041   6   9
+   71)        8402.960369       6873.635205          0.753610   9   7
+   72)        8415.546937       6886.221774          0.988116  15   4
+   73)        8491.759013       6962.433849          0.864334  13   5
+   74)        8493.817920       6964.492756          0.639247   7   8
+   75)        8508.897392       6979.572228          0.991421  20   2
+   76)        8581.841688       7052.516525          0.679779   4  10
+   77)        8589.735901       7060.410738          0.934198  18   3
+   78)        8618.390097       7089.064934          0.441057  11   6
+   79)        8690.518667       7161.193503          0.984254  24   1
+   80)        8715.379414       7186.054251          0.768598  16   4
+   81)        8824.214686       7294.889522          0.900354  22   2
+   82)        8895.074874       7365.749711          0.606724   9   8
+   83)        8915.251036       7385.925873          0.979384  15   5
+   84)        8936.414041       7407.088878          0.659094   6  10
+   85)        8994.393131       7465.067968          0.785926  13   6
+   86)        9006.407209       7477.082046          0.979765  20   3
+   87)        9052.322691       7522.997528          0.463241   7   9
+   88)        9088.476691       7559.151528          0.884524  18   4
+   89)        9101.312364       7571.987201          0.993457  26   1
+   90)        9132.948498       7603.623334          0.456429   7   9
+   91)        9186.996929       7657.671766          0.950365  24   2
+   92)        9216.612893       7687.287730          0.645225  16   5
+   93)        9322.174410       7792.849247          0.814464  22   3
+   94)        9414.648234       7885.323071          0.968038  15   6
+   95)        9432.215184       7902.890020          0.957057  28   1
+   96)        9449.730388       7920.405224          0.644159   9   9
+   97)        9503.300009       7973.974846          0.916759  20   4
+   98)        9506.202523       7976.877360          0.531750  13   7
+   99)        9544.393035       8015.067872          0.997780  29   1
+  100)        9587.090375       8057.765212          0.808117  18   5
+  101)        9596.013708       8066.688545          0.979434  26   2
+  102)        9602.653208       8073.328044          0.599891  11   8
+  103)        9683.034843       8153.709680          0.900737  24   3
+  104)        9704.092984       8174.767820          0.436143  16   6
+  105)        9740.466153       8211.140989          0.558323   7  10
+  106)        9782.236701       8252.911538          0.977145  31   1
+  107)        9819.906917       8290.581754          0.706258  22   4
+  108)        9916.472305       8387.147141          0.952539  15   7
+  109)        9927.469077       8398.143914          0.872192  28   2
+  110)        9989.174123       8459.848959          0.682659  13   8
+  111)       10000.031328       8470.706165          0.932367  20   5
+  112)       10037.682889       8508.357725          0.994251  29   2
+  113)       10052.927716       8523.602553          0.744428   9  10
+  114)       10089.329540       8560.004377          0.491518  18   6
+  115)       10090.558647       8561.233483          0.794198  26   3
+  116)       10158.917393       8629.592230          0.390896  16   7
+  117)       10178.638575       8649.313411          0.831847  24   4
+  118)       10185.711077       8656.385913          0.988144  33   1
+  119)       10245.822390       8716.497227          0.536542  11   9
+  120)       10275.497522       8746.172359          0.928670  31   2
+  121)       10319.310507       8789.985344          0.555667  22   5
+  122)       10422.501652       8893.176489          0.769998  28   3
+  123)       10426.794374       8897.469210          0.918901  15   8
+  124)       10496.914316       8967.589153          0.881980  20   6
+  125)       10530.705153       9001.379989          0.988555  29   3
+  126)       10534.217470       9004.892307          0.950400  35   1
+  127)       10541.377507       9012.052343          0.477307  13   9
+  128)       10584.211042       9054.885879          0.919941  26   4
+  129)       10603.337455       9074.012292          0.484968  13   9
+  130)       10636.982667       9107.657504          0.993624  36   1
+  131)       10674.597338       9145.272175          0.714427  24   5
+  132)       10677.368889       9148.043726          0.951576  33   2
+  133)       10705.354667       9176.029503          0.528198  16   8
+  134)       10768.354667       9239.029504          0.862334  31   3
+  135)       10810.294081       9280.968918          0.451102  22   6
+  136)       10866.452843       9337.127679          0.968077  39   1
+  137)       10867.128347       9337.803184          0.776827  11  10
+  138)       10918.036925       9388.711762          0.646434  28   4
+  139)       10966.810548       9437.485385          0.656662  15   9
+  140)       11003.119119       9473.793956          0.603206  20   7
+  141)       11023.375085       9494.049922          0.980005  29   4
+  142)       11029.909384       9500.584220          0.857762  35   2
+  143)       11076.328143       9547.002980          0.513463  18   8
+  144)       11078.363234       9549.038070          0.707714  26   5
+  145)       11128.085124       9598.759961          0.984265  36   2
+  146)       11156.910421       9627.585258          0.479129  13  10
+  147)       11168.606426       9639.281262          0.922471  33   3
+  148)       11183.862849       9654.537686          0.401814  13  10
+  149)       11259.401919       9730.076755          0.394621  22   7
+  150)       11260.909389       9731.584225          0.772248  31   4
+  151)       11265.161132       9735.835968          0.980755  41   1
+  152)       11354.234920       9824.909756          0.569669  16   9
+  153)       11356.735128       9827.409965          0.900439  39   2
+  154)       11417.209263       9887.884100          0.479445  28   5
+  155)       11492.024958       9962.699794          0.705446  20   8
+  156)       11515.589012       9986.263849          0.966221  29   5
+  157)       11525.831408       9996.506245          0.760959  35   3
+  158)       11535.801784      10006.476621          0.767875  15  10
+  159)       11573.543861      10044.218698          0.742597  26   6
+  160)       11618.977456      10089.652293          0.969201  36   3
+  161)       11625.222990      10095.897827          0.482666  24   7
+  162)       11659.515922      10130.190758          0.868978  33   4
+  163)       11694.919927      10165.594764          0.590231  18   9
+  164)       11697.221952      10167.896789          0.934075  43   1
+  165)       11736.094139      10206.768975          0.967176  44   1
+  166)       11753.869779      10224.544616          0.786214  41   2
+  167)       11754.917674      10225.592510          0.557135  31   5
+  168)       11803.960050      10274.634887          0.459506  22   8
+  169)       11846.632683      10317.307520          0.822305  39   3
+  170)       11909.947432      10380.622268          0.418762  28   6
+  171)       11951.318853      10421.993690          0.961171  47   1
+  172)       11991.663583      10462.338420          0.837717  16  10
+  173)       12007.739250      10478.414086          0.951343  29   6
+  174)       12022.592614      10493.267451          0.646439  35   4
+  175)       12038.098731      10508.773568          0.467045  26   7
+  176)       12084.301191      10554.976028          0.517626  20   9
+  177)       12109.600794      10580.275630          0.947451  36   4
+  178)       12150.462481      10621.137318          0.752615  33   5
+  179)       12157.538634      10628.213470          0.599449  24   8
+  180)       12185.065523      10655.740360          0.817956  43   2
+  181)       12224.058944      10694.733780          0.932000  44   2
+  182)       12241.789862      10712.464699          0.336122  31   6
+  183)       12242.855815      10713.530651          0.610375  41   3
+  184)       12283.982561      10754.657397          0.745960  18  10
+  185)       12286.602528      10757.277365          0.997488  49   1
+  186)       12336.426881      10807.101718          0.713044  39   4
+  187)       12340.758136      10811.432972          0.974323  50   1
+  188)       12358.361483      10829.036320          0.389107  28   7
+  189)       12438.704009      10909.378846          0.883183  47   2
+  190)       12462.183065      10932.857902          0.593218  22   9
+  191)       12503.185790      10973.860626          0.936148  29   7
+  192)       12522.696496      10993.371333          0.508566  35   5
+  193)       12560.316328      11030.991165          0.701898  26   8
+  194)       12599.838806      11070.513643          0.909746  36   5
+  195)       12624.765484      11095.440321          0.658147  20  10
+  196)       12648.508972      11119.183808          0.457497  33   6
+  197)       12675.085584      11145.760421          0.717915  43   3
+  198)       12701.373440      11172.048277          0.500011  31   7
+  199)       12711.891966      11182.566802          0.891611  44   3
+  200)       12730.734058      11201.408895          0.768717  41   4
+  201)       12779.905536      11250.580373          0.992306  49   2
+  202)       12780.818501      11251.493338          0.635961  24   9
+  203)       12825.517815      11296.192652          0.877075  50   2
+  204)       12829.151008      11299.825844          0.527938  39   5
+  205)       12840.443824      11311.118660          0.943314  52   1
+  206)       12907.238438      11377.913274          0.460907  28   8
+  207)       12925.994084      11396.668920          0.792496  47   3
+  208)       13007.977769      11478.652606          0.902224  29   8
+  209)       13018.304313      11488.979150          0.461840  35   6
+  210)       13090.424935      11561.099771          0.812824  36   6
+  211)       13104.316118      11574.990955          0.499585  33   7
+  212)       13111.776091      11582.450927          0.865163  22  10
+  213)       13119.952518      11590.627354          0.966400  54   1
+  214)       13161.362161      11632.036998          0.625219  26   9
+  215)       13167.295461      11637.970298          0.627883  43   4
+  216)       13199.672180      11670.347017          0.853723  44   4
+  217)       13219.595990      11690.270826          0.633857  41   5
+  218)       13231.449824      11702.124661          0.527464  31   8
+  219)       13273.246103      11743.920940          0.984157  49   3
+  220)       13310.197377      11780.872213          0.787830  50   3
+  221)       13316.768060      11787.442897          0.451081  39   6
+  222)       13326.441979      11797.116815          0.892002  52   2
+  223)       13383.173209      11853.848046          0.840308  24  10
+  224)       13413.752500      11884.427337          0.674640  47   4
+  225)       13425.663368      11896.338204          0.969567  57   1
+  226)       13471.458163      11942.132999          0.374496  35   7
+  227)       13536.515276      12007.190113          0.996322  58   1
+  228)       13550.312217      12020.987054          0.659639  29   9
+  229)       13571.712538      12042.387375          0.584305  28   9
+  230)       13592.374746      12063.049583          0.605605  36   7
+  231)       13601.028716      12071.703552          0.897902  54   2
+  232)       13625.006220      12095.681057          0.649192  33   8
+  233)       13663.286691      12133.961528          0.538150  43   5
+  234)       13686.761590      12157.436427          0.737161  44   5
+  235)       13701.316132      12171.990968          0.415975  41   6
+  236)       13728.422761      12199.097598          0.583143  26  10
+  237)       13766.512995      12237.187832          0.972160  49   4
+  238)       13771.295468      12241.970305          0.483546  39   7
+  239)       13794.966495      12265.641331          0.693318  50   4
+  240)       13812.191727      12282.866564          0.838892  52   3
+  241)       13862.274434      12332.949271          0.640539  31   9
+  242)       13906.063932      12376.738769          0.449919  47   5
+  243)       13908.693269      12379.368106          0.849992  57   2
+  244)       13945.693000      12416.367836          0.976879  61   1
+  245)       14023.448191      12494.123028          0.491819  35   8
+  246)       14026.349624      12497.024461          0.985187  58   2
+  247)       14070.087086      12540.761923          0.594399  36   8
+  248)       14082.451254      12553.126091          0.823098  54   3
+  249)       14116.354110      12587.028947          0.653771  29  10
+  250)       14159.478821      12630.153658          0.456161  43   6
+  251)       14163.652352      12634.327188          0.519902  41   7
+  252)       14179.727519      12650.402355          0.729362  44   6
+  253)       14228.283390      12698.958227          0.834647  28  10
+  254)       14235.104052      12705.778888          0.668950  33   9
+  255)       14259.655118      12730.329954          0.954555  49   5
+  256)       14281.861121      12752.535957          0.509779  50   5
+  257)       14297.713529      12768.388366          0.713884  52   4
+  258)       14301.358037      12772.032874          0.444585  39   8
+  259)       14390.936195      12861.611032          0.776274  57   3
+  260)       14394.660541      12865.335377          0.391898  47   6
+  261)       14427.762794      12898.437631          0.936591  61   2
+  262)       14478.405592      12949.080428          0.869995  31  10
+  263)       14516.103432      12986.778269          0.890207  58   3
+  264)       14517.421563      12988.096400          0.888712  64   1
+  265)       14564.383781      13035.058618          0.740497  54   4
+  266)       14601.467428      13072.142264          0.312453  35   9
+  267)       14625.625421      13096.300258          0.541781  36   9
+  268)       14680.238058      13150.912895          0.326862  36   9
+  269)       14688.335562      13159.010398          0.402295  41   8
+  270)       14705.171309      13175.846146          0.468267  35   9
+  271)       14753.023192      13223.698028          0.927517  49   6
+  272)       14760.339382      13231.014218          0.991012  66   1
+  273)       14763.855137      13234.529973          0.447017  50   6
+  274)       14783.169758      13253.844595          0.714817  52   5
+  275)       14811.852141      13282.526978          0.751143  33  10
+  276)       14843.938928      13314.613765          0.467619  47   7
+  277)       14850.507079      13321.181916          0.873574  68   1
+  278)       14874.176076      13344.850913          0.730570  57   4
+  279)       14909.914208      13380.589045          0.881418  61   3
+  280)       14949.822133      13420.496969          0.711007  39   9
+  281)       14996.533058      13467.207894          0.884098  64   2
+  282)       15006.039736      13476.714573          0.941844  58   4
+  283)       15048.465064      13519.139901          0.643592  54   5
+  284)       15064.681334      13535.356170          0.968685  69   1
+  285)       15146.293882      13616.968719          0.603929  44   8
+  286)       15178.001178      13648.676014          0.540439  43   8
+  287)       15211.973904      13682.648741          0.629832  36  10
+  288)       15223.934669      13694.609506          0.514255  50   7
+  289)       15246.461859      13717.136696          0.968106  66   2
+  290)       15250.202732      13720.877569          0.891596  49   7
+  291)       15270.841908      13741.516744          0.633593  52   6
+  292)       15300.522414      13771.197251          0.681534  68   2
+  293)       15308.426468      13779.101304          0.684328  41   9
+  294)       15344.956350      13815.631187          0.834694  35  10
+  295)       15359.750240      13830.425077          0.571865  57   5
+  296)       15385.833202      13856.508038          0.526884  47   8
+  297)       15392.095915      13862.770752          0.808378  61   4
+  298)       15475.395964      13946.070800          0.804714  64   3
+  299)       15495.802082      13966.476919          0.913294  58   5
+  300)       15531.773561      14002.448398          0.506786  54   6
+  301)       15542.466647      14013.141484          0.912544  69   2
+  302)       15572.012949      14042.687786          0.771880  39  10
+  303)       15703.374393      14174.049230          0.433983  44   9
+  304)       15732.051077      14202.725914          0.894780  66   3
+  305)       15747.282279      14217.957116          0.521881  50   8
+  306)       15754.801421      14225.476258          0.507331  68   3
+  307)       15757.791296      14228.466132          0.845635  49   8
+  308)       15776.739486      14247.414323          0.454582  44   9
+  309)       15803.117927      14273.792764          0.743138  43   9
+  310)       15840.751158      14311.425995          0.478591  57   6
+  311)       15875.179210      14345.854047          0.712207  61   5
+  312)       15895.393603      14366.068439          0.782004  41  10
+  313)       15919.106900      14389.781737          0.975228  72   1
+  314)       15953.597711      14424.272548          0.618867  64   4
+  315)       15964.557797      14435.232634          0.339357  47   9
+  316)       15986.264382      14456.939219          0.874179  58   6
+  317)       16007.530384      14478.205220          0.779772  73   1
+  318)       16024.026458      14494.701295          0.675168  69   3
+  319)       16063.184754      14533.859590          0.456565  47   9
+  320)       16208.311453      14678.986290          0.327476  68   4
+  321)       16222.323917      14692.998754          0.723097  66   4
+  322)       16227.175542      14697.850378          0.574743  52   8
+  323)       16271.510679      14742.185516          0.970480  75   1
+  324)       16292.457433      14763.132270          0.476419  57   7
+  325)       16300.678289      14771.353125          0.806040  49   9
+  326)       16312.087277      14782.762114          0.633399  44  10
+  327)       16365.192624      14835.867461          0.481356  61   6
+  328)       16384.986493      14855.661330          0.619208  50   9
+  329)       16396.521502      14867.196339          0.899807  72   2
+  330)       16438.001945      14908.676782          0.557781  64   5
+  331)       16478.056054      14948.730891          0.740357  73   2
+  332)       16480.156826      14950.831662          0.875592  43  10
+  333)       16481.859044      14952.533880          0.810569  58   7
+  334)       16504.459632      14975.134469          0.620083  69   4
+  335)       16532.188087      15002.862923          0.544804  54   8
+  336)       16658.546651      15129.221488          0.628284  47  10
+  337)       16680.275440      15150.950276          0.240019  68   5
+  338)       16707.473674      15178.148511          0.819899  66   5
+  339)       16739.632979      15210.307816          0.914038  75   2
+  340)       16786.707577      15257.382413          0.420767  61   7
+  341)       16824.629532      15295.304369          0.516043  57   8
+  342)       16834.341955      15305.016792          0.746440  49  10
+  343)       16870.198667      15340.873503          0.520285  72   3
+  344)       16875.765093      15346.439930          0.331990  52   9
+  345)       16919.247662      15389.922499          0.503480  64   6
+  346)       16951.136019      15421.810855          0.682688  73   3
+  347)       16979.024157      15449.698994          0.720198  50  10
+  348)       16987.006494      15457.681331          0.528534  69   5
+  349)       16993.739829      15464.414666          0.727033  58   8
+  350)       17123.294845      15593.969682          0.327816  54   9
+  351)       17153.387073      15624.061909          0.974059  78   1
+  352)       17174.510384      15645.185221          0.470578  54   9
+  353)       17195.872702      15666.547539          0.756604  66   6
+  354)       17208.886469      15679.561305          0.837513  75   3
+  355)       17316.370484      15787.045320          0.568481  61   8
+  356)       17348.131800      15818.806637          0.677117  72   4
+  357)       17381.327991      15852.002828          0.522134  64   7
+  358)       17412.051752      15882.726589          0.521303  52  10
+  359)       17431.517531      15902.192368          0.561131  73   4
+  360)       17468.178121      15938.852957          0.598639  57   9
+  361)       17477.993571      15948.668407          0.406186  69   6
+  362)       17495.660441      15966.335278          0.978927  81   1
+  363)       17519.497052      15990.171888          0.781374  58   9
+  364)       17631.163962      16101.838799          0.917187  78   2
+  365)       17654.733658      16125.408495          0.317101  68   6
+  366)       17679.783875      16150.458712          0.742094  75   4
+  367)       17691.557611      16162.232448          0.666745  66   7
+  368)       17783.719528      16254.394365          0.881155  54  10
+  369)       17825.176467      16295.851304          0.575220  72   5
+  370)       17880.945128      16351.619965          0.382670  69   7
+  371)       17909.864638      16380.539474          0.419657  73   5
+  372)       17924.356043      16395.030880          0.563509  64   8
+  373)       17958.812274      16429.487110          0.932995  81   2
+  374)       17984.824114      16455.498950          0.444797  61   9
+  375)       18054.646120      16525.320957          0.672718  58  10
+  376)       18062.399003      16533.073839          0.842416  57  10
+  377)       18109.477341      16580.152178          0.833234  78   3
+  378)       18154.766078      16625.440915          0.625788  75   5
+  379)       18207.372142      16678.046979          0.456670  66   8
+  380)       18217.683042      16688.357878          0.378778  68   8
+  381)       18287.739245      16758.414081          0.775511  83   1
+  382)       18315.128612      16785.803448          0.499965  72   6
+  383)       18388.909867      16859.584703          0.803224  84   1
+  384)       18389.714053      16860.388890          0.426337  73   6
+  385)       18426.217368      16896.892204          0.388879  81   3
+  386)       18429.167081      16899.841917          0.423862  81   3
+  387)       18521.702188      16992.377024          0.815485  64   9
+  388)       18537.371360      17008.046197          0.660081  61  10
+  389)       18590.145540      17060.820377          0.756556  78   4
+  390)       18641.517484      17112.192320          0.516347  75   6
+  391)       18706.575585      17177.250422          0.486758  83   2
+  392)       18721.491716      17192.166552          0.680248  66   9
+  393)       18809.749553      17280.424389          0.381076  72   7
+  394)       18849.783352      17320.458189          0.617314  84   2
+  395)       18854.701339      17325.376176          0.574879  68   9
+  396)       18892.872265      17363.547101          0.436690  73   7
+  397)       18902.165908      17372.840745          0.681945  81   4
+  398)       19018.498894      17489.173731          0.573019  69   9
+  399)       19074.750336      17545.425173          0.692009  78   5
+  400)       19119.323373      17589.998210          0.753044  64  10
+  401)       19128.141408      17598.816245          0.304404  83   3
+  402)       19148.809885      17619.484721          0.389282  75   7
+  403)       19254.192971      17724.867807          0.933059  87   1
+  404)       19268.087079      17738.761916          0.575913  66  10
+  405)       19319.056258      17789.731094          0.493750  84   3
+  406)       19346.060780      17816.735616          0.421322  72   8
+  407)       19384.650761      17855.325598          0.603427  81   5
+  408)       19416.421117      17887.095953          0.356713  73   8
+  409)       19496.689075      17967.363911          0.873587  68  10
+  410)       19558.529790      18029.204627          0.159756  78   6
+  411)       19569.397948      18040.072785          0.164576  78   6
+  412)       19579.659364      18050.334201          0.315213  78   6
+  413)       19686.547420      18157.222256          0.452879  69  10
+  414)       19698.027037      18168.701874          0.638869  87   2
+  415)       19735.412292      18206.087128          0.733031  88   1
+  416)       19792.770663      18263.445499          0.420025  84   4
+  417)       19877.014426      18347.689263          0.559638  81   6
+  418)       19905.888884      18376.563721          0.748463  72   9
+  419)       19952.580520      18423.255356          0.672070  73   9
+  420)       20036.572730      18507.247566          0.248957  83   5
+  421)       20079.703311      18550.378148          0.492253  78   7
+  422)       20150.661933      18621.336770          0.472104  87   3
+  423)       20194.741838      18665.416675          0.609831  88   2
+  424)       20225.174029      18695.848865          0.695055  75   9
+  425)       20285.231608      18755.906445          0.394959  84   5
+  426)       20388.754614      18859.429451          0.607805  81   7
+  427)       20499.444540      18970.119377          0.752161  72  10
+  428)       20537.696738      19008.371574          0.645120  73  10
+  429)       20589.828366      19060.503203          0.346731  83   6
+  430)       20620.329291      19091.004127          0.392312  78   8
+  431)       20637.419127      19108.093964          0.509548  88   3
+  432)       20672.730922      19143.405758          0.460292  87   4
+  433)       20783.160628      19253.835465          0.328983  84   6
+  434)       20809.565697      19280.240534          0.533455  75  10
+  435)       20932.437028      19403.111864          0.616954  81   8
+  436)       21086.442506      19557.117342          0.990549  92   1
+  437)       21121.670186      19592.345023          0.367154  87   5
+  438)       21149.232999      19619.907835          0.783197  88   4
+  439)       21166.357351      19637.032187          0.506121  78   9
+  440)       21199.035853      19669.710689          0.297518  83   7
+  441)       21363.377513      19834.052350          0.546267  84   7
+
+ maximum memory used up to this stage (octet)     9591470
+ 
+ Start diagonalization for block:   B1 
+ 
+ Time, timing for diagonalisation
+   410.76967100000002       0.24001500000002807     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+ Block:   B1 
+ 
+
+ Summary of contraction           1   of  step           8
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        2891.391322       1362.066159          0.999955   3   1
+    2)        3405.122524       1875.797361          0.999805   3   2
+    3)        3918.258901       2388.933737          0.998009   3   3
+    4)        4029.177039       2499.851876          0.997926   5   1
+    5)        4430.708880       2901.383717          0.994221   3   4
+    6)        4539.628163       3010.303000          0.993294   5   2
+    7)        4942.401612       3413.076449          0.988071   3   5
+    8)        5049.505633       3520.180470          0.983080   5   3
+    9)        5159.095718       3629.770555          0.994572   8   1
+   10)        5453.471702       3924.146538          0.979118   3   6
+   11)        5558.724906       4029.399743          0.966200   5   4
+   12)        5583.330973       4054.005810          0.999576  10   1
+   13)        5666.278237       4136.953074          0.982710   8   2
+   14)        5965.943054       4436.617891          0.965979   3   7
+   15)        6067.281383       4537.956220          0.940552   5   5
+   16)        6088.715084       4559.389921          0.998736  10   2
+   17)        6172.909033       4643.583869          0.961472   8   3
+   18)        6281.122864       4751.797701          0.989914  12   1
+   19)        6485.424306       4956.099142          0.941950   3   8
+   20)        6575.694416       5046.369253          0.898842   5   6
+   21)        6593.623894       5064.298731          0.996135  10   3
+   22)        6678.916416       5149.591253          0.929147   8   4
+   23)        6694.075919       5164.750755          0.997657  14   1
+   24)        6785.046074       5255.720911          0.968239  12   2
+   25)        7026.203934       5496.878771          0.856131   3   9
+   26)        7088.165384       5558.840221          0.788980   5   7
+   27)        7097.968712       5568.643549          0.990965  10   4
+   28)        7184.415583       5655.090420          0.881208   8   5
+   29)        7196.139031       5666.813867          0.992726  14   2
+   30)        7288.440823       5759.115660          0.933704  12   3
+   31)        7395.229105       5865.903941          0.983979  17   1
+   32)        7580.599189       6051.274026          0.552223   5   8
+   33)        7601.665464       6072.340300          0.983829  10   5
+   34)        7622.757542       6093.432378          0.599503   3  10
+   35)        7690.704357       6161.379194          0.794137   8   6
+   36)        7697.754485       6168.429322          0.981452  14   3
+   37)        7791.258123       6261.932960          0.883778  12   4
+   38)        7796.479811       6267.154647          0.994159  19   1
+   39)        7895.900564       6366.575401          0.950092  17   2
+   40)        8104.946030       6575.620866          0.973662  10   6
+   41)        8139.254737       6609.929574          0.708127   5   9
+   42)        8198.784752       6669.459588          0.958132  14   4
+   43)        8203.940721       6674.615558          0.607519   8   7
+   44)        8232.409294       6703.084130          0.998523  21   1
+   45)        8293.800569       6764.475406          0.796184  12   5
+   46)        8295.278772       6765.953608          0.966326  19   2
+   47)        8396.069114       6866.743951          0.900350  17   3
+   48)        8501.381132       6972.055969          0.976802  23   1
+   49)        8610.271682       7080.946518          0.959167  10   7
+   50)        8688.846731       7159.521567          0.663554   8   8
+   51)        8699.377113       7170.051949          0.937781  14   5
+   52)        8729.470051       7200.144887          0.996050  21   2
+   53)        8753.386255       7224.061092          0.741975   5  10
+   54)        8793.578139       7264.252976          0.956551  19   3
+   55)        8799.358125       7270.032961          0.646057  12   6
+   56)        8890.569752       7361.244588          0.989092  25   1
+   57)        8895.733651       7366.408487          0.831926  17   4
+   58)        8998.807379       7469.482215          0.928507  23   2
+   59)        9123.661283       7594.336119          0.929441  10   8
+   60)        9200.075876       7670.750712          0.891246  14   6
+   61)        9226.174074       7696.848910          0.991565  21   3
+   62)        9245.386148       7716.060985          0.552385   8   9
+   63)        9291.430828       7762.105665          0.926770  19   4
+   64)        9313.760134       7784.434971          0.435075  12   7
+   65)        9317.622407       7788.297243          0.995938  27   1
+   66)        9386.087911       7856.762748          0.966188  25   2
+   67)        9395.569449       7866.244286          0.732602  17   5
+   68)        9495.760586       7966.435422          0.862045  23   3
+   69)        9599.613925       8070.288762          0.968451  30   1
+   70)        9664.262014       8134.936851          0.754294  10   9
+   71)        9707.720782       8178.395619          0.694895  14   7
+   72)        9722.437030       8193.111866          0.984061  21   4
+   73)        9788.792739       8259.467575          0.774375  19   5
+   74)        9790.465283       8261.140120          0.599577  12   8
+   75)        9811.362049       8282.036886          0.989013  27   2
+   76)        9874.431389       8345.106226          0.607904   8  10
+   77)        9881.205981       8351.880818          0.931443  25   3
+   78)        9904.969593       8375.644430          0.367219  17   6
+   79)        9976.531379       8447.206216          0.983635  32   1
+   80)        9992.319411       8462.994248          0.774092  23   4
+   81)       10093.827144       8564.501981          0.903862  30   2
+   82)       10198.832115       8669.506952          0.661611  14   8
+   83)       10218.156304       8688.831141          0.973203  21   5
+   84)       10240.662962       8711.337799          0.720262  10  10
+   85)       10287.952348       8758.627185          0.768685  19   6
+   86)       10304.783473       8775.458310          0.976147  27   3
+   87)       10344.046618       8814.721455          0.419441  17   7
+   88)       10375.872127       8846.546963          0.880795  25   4
+   89)       10396.705756       8867.380593          0.991695  34   1
+   90)       10418.087194       8888.762031          0.521717  12   9
+   91)       10468.838006       8939.512842          0.947831  32   2
+   92)       10489.770260       8960.445097          0.643610  23   5
+   93)       10587.611025       9058.285862          0.819788  30   3
+   94)       10691.029539       9161.704375          0.959453  37   1
+   95)       10713.674353       9184.349190          0.960125  21   6
+   96)       10749.154896       9219.829732          0.553907  14   9
+   97)       10797.363989       9268.038826          0.738668  27   4
+   98)       10799.261181       9269.936017          0.378108  19   7
+   99)       10845.453124       9316.127961          0.996724  38   1
+  100)       10870.547153       9341.221989          0.797770  25   5
+  101)       10884.784680       9355.459516          0.608682  17   8
+  102)       10887.360093       9358.034929          0.975459  34   2
+  103)       10960.764541       9431.439378          0.896295  32   3
+  104)       10977.674400       9448.349237          0.486281  23   6
+  105)       11015.644560       9486.319397          0.665038  12  10
+  106)       11054.779428       9525.454265          0.976481  40   1
+  107)       11081.204704       9551.879540          0.710984  30   4
+  108)       11182.200872       9652.875708          0.877729  37   2
+  109)       11212.052470       9682.727307          0.943559  21   7
+  110)       11279.088549       9749.763386          0.694428  19   8
+  111)       11290.463458       9761.138294          0.923501  27   5
+  112)       11334.915752       9805.590589          0.991819  38   2
+  113)       11342.796160       9813.470996          0.713643  14  10
+  114)       11370.479910       9841.154746          0.529868  25   6
+  115)       11377.760286       9848.435123          0.946092  34   3
+  116)       11434.943003       9905.617840          0.449532  23   7
+  117)       11452.341127       9923.015964          0.826934  32   4
+  118)       11472.232433       9942.907269          0.985505  42   1
+  119)       11516.939773       9987.614610          0.592129  17   9
+  120)       11543.951488      10014.626325          0.925190  40   2
+  121)       11576.949035      10047.623871          0.543336  30   5
+  122)       11673.002660      10143.677497          0.778449  37   3
+  123)       11719.312617      10189.987454          0.905387  21   8
+  124)       11783.550859      10254.225695          0.867941  27   6
+  125)       11801.897268      10272.572105          0.957672  45   1
+  126)       11824.189724      10294.864561          0.984581  38   3
+  127)       11826.327624      10297.002460          0.492780  25   7
+  128)       11867.640990      10338.315827          0.906994  34   4
+  129)       11884.119211      10354.794048          0.569273  19   9
+  130)       11938.668670      10409.343507          0.985823  46   1
+  131)       11944.543134      10415.217970          0.710397  32   5
+  132)       11960.003173      10430.678009          0.949640  42   2
+  133)       11972.313220      10442.988057          0.530875  23   8
+  134)       12032.774094      10503.448931          0.856533  40   3
+  135)       12066.246193      10536.921029          0.450397  30   6
+  136)       12128.230200      10598.905037          0.759432  17  10
+  137)       12128.399664      10599.074501          0.901383  48   1
+  138)       12164.172224      10634.847060          0.649267  37   4
+  139)       12257.878154      10728.552991          0.514814  21   9
+  140)       12289.492311      10760.167148          0.469508  27   7
+  141)       12291.130149      10761.804986          0.874623  45   2
+  142)       12313.191424      10783.866261          0.974591  38   4
+  143)       12352.829028      10823.503865          0.611514  25   8
+  144)       12357.933935      10828.608772          0.820166  34   5
+  145)       12426.434736      10897.109572          0.968386  46   2
+  146)       12428.542600      10899.217437          0.498301  32   6
+  147)       12447.457293      10918.132129          0.895546  42   3
+  148)       12455.765495      10926.440332          0.571398  19  10
+  149)       12518.423735      10989.098572          0.437900  30   7
+  150)       12521.427641      10992.102478          0.765052  40   4
+  151)       12545.176611      11015.851447          0.977950  51   1
+  152)       12610.104583      11080.779420          0.601710  23   9
+  153)       12615.049920      11085.724757          0.900585  48   2
+  154)       12659.810260      11130.485096          0.449487  37   5
+  155)       12774.619763      11245.294600          0.734005  27   8
+  156)       12780.770455      11251.445292          0.786202  45   3
+  157)       12801.815054      11272.489890          0.957903  38   5
+  158)       12821.631945      11292.306782          0.791634  21  10
+  159)       12850.045169      11320.720006          0.697269  34   6
+  160)       12895.739270      11366.414107          0.536669  32   7
+  161)       12914.065455      11384.740292          0.945915  46   3
+  162)       12934.647375      11405.322212          0.835914  42   4
+  163)       12963.486208      11434.161045          0.651340  25   9
+  164)       13011.865177      11482.540014          0.606696  40   5
+  165)       13029.153427      11499.828264          0.885653  51   2
+  166)       13039.644693      11510.319530          0.936285  53   1
+  167)       13053.691382      11524.366219          0.448836  30   8
+  168)       13101.257681      11571.932518          0.818757  48   3
+  169)       13146.648204      11617.323041          0.908183  55   1
+  170)       13149.549016      11620.223853          0.394438  37   6
+  171)       13237.257507      11707.932343          0.862571  23  10
+  172)       13269.884238      11740.559075          0.479191  45   4
+  173)       13275.064912      11745.739749          0.677656  56   1
+  174)       13290.497088      11761.171924          0.939834  38   6
+  175)       13316.337333      11787.012170          0.540360  34   7
+  176)       13361.367274      11832.042111          0.607798  27   9
+  177)       13401.520203      11872.195039          0.919441  46   4
+  178)       13419.313122      11889.987959          0.408068  32   8
+  179)       13423.361958      11894.036795          0.602837  42   5
+  180)       13497.840775      11968.515611          0.506229  40   6
+  181)       13513.150693      11983.825530          0.812840  51   3
+  182)       13525.182874      11995.857710          0.897828  53   2
+  183)       13545.080387      12015.755224          0.798075  25  10
+  184)       13587.052206      12057.727043          0.691285  48   4
+  185)       13598.548803      12069.223640          0.419607  37   7
+  186)       13617.492258      12088.167095          0.924118  59   1
+  187)       13619.592169      12090.267006          0.894199  60   1
+  188)       13624.433780      12095.108617          0.782840  55   2
+  189)       13704.748359      12175.423195          0.659559  30   9
+  190)       13747.372091      12218.046928          0.756685  56   2
+  191)       13766.461508      12237.136345          0.538858  45   5
+  192)       13782.972541      12253.647378          0.926455  38   7
+  193)       13832.065585      12302.740421          0.697301  34   8
+  194)       13888.176182      12358.851019          0.797884  46   5
+  195)       13897.964874      12368.639711          0.524198  27  10
+  196)       13918.530521      12389.205357          0.354416  42   6
+  197)       13958.236457      12428.911294          0.534201  40   7
+  198)       13997.103108      12467.777945          0.733999  51   4
+  199)       14010.478802      12481.153638          0.865776  53   3
+  200)       14037.504502      12508.179339          0.663978  32   9
+  201)       14076.090987      12546.765823          0.458668  48   5
+  202)       14100.987707      12571.662543          0.818142  60   2
+  203)       14103.353109      12574.027945          0.569434  55   3
+  204)       14109.329481      12580.004318          0.967595  59   2
+  205)       14139.671986      12610.346823          0.467776  37   8
+  206)       14145.261091      12615.935927          0.982202  62   1
+  207)       14224.161141      12694.835978          0.664333  56   3
+  208)       14258.799424      12729.474261          0.490231  45   6
+  209)       14285.156252      12755.831089          0.892826  38   8
+  210)       14341.391491      12812.066328          0.866595  30  10
+  211)       14369.984829      12840.659666          0.510535  42   7
+  212)       14379.152504      12849.827340          0.748223  46   6
+  213)       14430.487879      12901.162715          0.670698  34   9
+  214)       14480.553225      12951.228061          0.240918  40   8
+  215)       14484.087764      12954.762600          0.367098  51   5
+  216)       14488.649405      12959.324241          0.965443  63   1
+  217)       14495.761534      12966.436371          0.801937  53   4
+  218)       14559.782918      13030.457755          0.341229  48   6
+  219)       14582.773866      13053.448703          0.596856  60   3
+  220)       14584.156924      13054.831761          0.330285  55   4
+  221)       14600.886685      13071.561521          0.962246  59   3
+  222)       14627.680228      13098.355064          0.948009  62   2
+  223)       14631.895672      13102.570509          0.849822  32  10
+  224)       14697.891000      13168.565837          0.237248  56   4
+  225)       14708.317937      13178.992774          0.353429  56   4
+  226)       14747.497649      13218.172486          0.972697  65   1
+  227)       14809.391874      13280.066710          0.603230  37   9
+  228)       14829.213718      13299.888555          0.676701  38   9
+  229)       14875.502971      13346.177808          0.580547  46   7
+  230)       14888.784373      13359.459209          0.590370  42   8
+  231)       14888.800712      13359.475549          0.982864  67   1
+  232)       14960.604130      13431.278967          0.389078  51   6
+  233)       14962.441579      13433.116415          0.746113  63   2
+  234)       14980.092429      13450.767266          0.808652  53   5
+  235)       14992.801700      13463.476536          0.588557  34  10
+  236)       15017.527097      13488.201934          0.475479  48   7
+  237)       15060.318807      13530.993643          0.459986  55   5
+  238)       15065.393136      13536.067973          0.752590  60   4
+  239)       15092.281993      13562.956829          0.926046  59   4
+  240)       15110.253775      13580.928612          0.884542  62   3
+  241)       15115.312349      13585.987186          0.708772  40   9
+  242)       15184.976819      13655.651656          0.473709  56   5
+  243)       15224.023967      13694.698804          0.918401  65   2
+  244)       15258.323399      13728.998236          0.980660  70   1
+  245)       15260.540672      13731.215509          0.582353  45   8
+  246)       15346.787366      13817.462203          0.522186  46   8
+  247)       15376.904943      13847.579779          0.985152  67   2
+  248)       15396.006551      13866.681388          0.576736  38  10
+  249)       15425.257130      13895.931967          0.568389  51   7
+  250)       15435.637550      13906.312387          0.819342  63   3
+  251)       15439.388472      13910.063309          0.854630  37  10
+  252)       15466.482444      13937.157281          0.762796  53   6
+  253)       15498.652425      13969.327261          0.688726  42   9
+  254)       15532.235833      14002.910670          0.405965  55   6
+  255)       15549.966747      14020.641584          0.613947  60   5
+  256)       15565.571271      14036.246108          0.411446  48   8
+  257)       15582.993067      14053.667904          0.786828  59   5
+  258)       15593.446833      14064.121670          0.723476  62   4
+  259)       15670.070692      14140.745529          0.405457  56   6
+  260)       15700.831122      14171.505959          0.851583  65   3
+  261)       15715.481662      14186.156499          0.819377  40  10
+  262)       15736.637890      14207.312727          0.943677  70   2
+  263)       15865.077160      14335.751996          0.965822  67   3
+  264)       15866.597046      14337.271882          0.693280  45   9
+  265)       15880.907001      14351.581838          0.974578  71   1
+  266)       15908.517524      14379.192360          0.544553  46   9
+  267)       15909.362694      14380.037530          0.761037  63   4
+  268)       15943.826999      14414.501835          0.583361  51   8
+  269)       15968.539977      14439.214814          0.489350  53   7
+  270)       16028.154013      14498.828850          0.490987  60   6
+  271)       16045.987780      14516.662617          0.515675  55   7
+  272)       16070.270321      14540.945158          0.610376  42  10
+  273)       16071.837761      14542.512598          0.398180  62   5
+  274)       16079.946138      14550.620975          0.595340  59   6
+  275)       16126.368759      14597.043596          0.314653  48   9
+  276)       16127.721222      14598.396059          0.991146  74   1
+  277)       16178.121365      14648.796201          0.772251  65   4
+  278)       16204.407793      14675.082630          0.538309  48   9
+  279)       16215.166092      14685.840928          0.891755  70   3
+  280)       16351.246305      14821.921142          0.751186  71   2
+  281)       16353.781841      14824.456677          0.765413  67   4
+  282)       16384.561613      14855.236450          0.699298  63   5
+  283)       16388.728203      14859.403040          0.972523  76   1
+  284)       16427.151244      14897.826080          0.563641  53   8
+  285)       16484.583580      14955.258417          0.539598  60   7
+  286)       16495.050721      14965.725557          0.601300  46  10
+  287)       16507.993943      14978.668780          0.628637  45  10
+  288)       16545.175406      15015.850243          0.858945  77   1
+  289)       16559.334799      15030.009636          0.557315  62   6
+  290)       16571.833506      15042.508343          0.609887  51   9
+  291)       16573.440299      15044.115135          0.767637  59   7
+  292)       16595.269332      15065.944168          0.494996  55   8
+  293)       16612.331085      15083.005921          0.970501  74   2
+  294)       16657.493710      15128.168546          0.671756  65   5
+  295)       16689.289577      15159.964414          0.477015  56   8
+  296)       16693.891386      15164.566223          0.822811  70   4
+  297)       16795.623925      15266.298762          0.828556  48  10
+  298)       16822.973445      15293.648281          0.847983  71   3
+  299)       16841.719821      15312.394657          0.907606  67   5
+  300)       16862.393009      15333.067846          0.912106  76   2
+  301)       16867.708097      15338.382934          0.612967  63   6
+  302)       16978.909509      15449.584346          0.628911  77   2
+  303)       16991.077822      15461.752658          0.462644  53   9
+  304)       17011.723027      15482.397864          0.592707  60   8
+  305)       17065.125611      15535.800447          0.433503  53   9
+  306)       17078.568968      15549.243805          0.876788  59   8
+  307)       17097.131864      15567.806700          0.938697  74   3
+  308)       17125.732339      15596.407175          0.447306  51  10
+  309)       17156.978733      15627.653570          0.423179  51  10
+  310)       17174.503679      15645.178515          0.730186  70   5
+  311)       17180.514166      15651.189003          0.736235  55   9
+  312)       17293.535746      15764.210583          0.561492  71   4
+  313)       17298.227093      15768.901930          0.460321  56   9
+  314)       17304.160648      15774.835485          0.978089  79   1
+  315)       17330.822766      15801.497603          0.869791  67   6
+  316)       17335.057391      15805.732228          0.814080  76   3
+  317)       17373.846386      15844.521223          0.501611  63   7
+  318)       17418.546656      15889.221493          0.441452  77   3
+  319)       17450.176854      15920.851691          0.966199  80   1
+  320)       17514.763057      15985.437893          0.557841  62   8
+  321)       17575.874911      16046.549747          0.389358  65   7
+  322)       17582.043356      16052.718193          0.883652  74   4
+  323)       17597.061239      16067.736076          0.621394  53  10
+  324)       17621.454271      16092.129108          0.849300  59   9
+  325)       17660.263979      16130.938816          0.344334  70   6
+  326)       17664.961242      16135.636079          0.334400  60   9
+  327)       17754.462318      16225.137155          0.923814  82   1
+  328)       17767.198507      16237.873344          0.598062  71   5
+  329)       17785.115117      16255.789954          0.883699  79   2
+  330)       17802.855309      16273.530145          0.722716  55  10
+  331)       17807.682100      16278.356937          0.659448  76   4
+  332)       17825.921306      16296.596143          0.815042  67   7
+  333)       17863.210229      16333.885066          0.271984  77   4
+  334)       17891.923596      16362.598433          0.535130  63   8
+  335)       17920.411207      16391.086044          0.889674  80   2
+  336)       17966.411506      16437.086343          0.837273  56  10
+  337)       18067.553060      16538.227896          0.775214  74   5
+  338)       18083.133232      16553.808068          0.415122  62   9
+  339)       18122.460180      16593.135017          0.582827  65   8
+  340)       18151.683588      16622.358425          0.706325  59  10
+  341)       18171.143683      16641.818520          0.450122  62   9
+  342)       18207.505987      16678.180824          0.877925  82   2
+  343)       18224.332847      16695.007683          0.584271  60  10
+  344)       18248.721858      16719.396695          0.197090  71   6
+  345)       18266.632915      16737.307751          0.794657  79   3
+  346)       18285.131530      16755.806367          0.481681  76   5
+  347)       18325.526973      16796.201809          0.200922  77   4
+  348)       18337.602464      16808.277301          0.736599  67   8
+  349)       18393.666619      16864.341455          0.792764  80   3
+  350)       18480.536567      16951.211404          0.824598  63   9
+  351)       18554.806746      17025.481583          0.975208  85   1
+  352)       18556.764187      17027.439024          0.769449  74   6
+  353)       18609.951039      17080.625876          0.541387  70   8
+  354)       18663.809287      17134.484124          0.813654  82   3
+  355)       18704.202714      17174.877550          0.281006  62  10
+  356)       18708.964279      17179.639116          0.295331  62  10
+  357)       18739.053508      17209.728344          0.200814  77   5
+  358)       18752.503261      17223.178097          0.676420  79   4
+  359)       18778.188113      17248.862950          0.368360  76   6
+  360)       18814.967351      17285.642188          0.226572  65   9
+  361)       18866.091447      17336.766284          0.759833  67   9
+  362)       18868.713424      17339.388260          0.637239  80   4
+  363)       18989.665760      17460.340597          0.982780  86   1
+  364)       19031.739312      17502.414149          0.927504  85   2
+  365)       19056.887339      17527.562176          0.711870  74   7
+  366)       19086.776423      17557.451260          0.903662  63  10
+  367)       19124.226244      17594.901081          0.740728  82   4
+  368)       19184.147386      17654.822223          0.389099  70   9
+  369)       19235.245328      17705.920164          0.660492  79   5
+  370)       19253.329980      17724.004816          0.548410  71   8
+  371)       19266.822661      17737.497498          0.209325  70   9
+  372)       19293.403198      17764.078035          0.160608  70   9
+  373)       19351.101362      17821.776199          0.519943  80   5
+  374)       19366.780015      17837.454851          0.660132  65  10
+  375)       19404.979862      17875.654699          0.715241  67  10
+  376)       19446.772801      17917.447638          0.945240  86   2
+  377)       19510.854841      17981.529678          0.862606  85   3
+  378)       19574.905467      18045.580304          0.622392  74   8
+  379)       19589.346976      18060.021813          0.665061  82   5
+  380)       19708.749555      18179.424392          0.340823  76   8
+  381)       19734.073458      18204.748295          0.494500  79   6
+  382)       19799.789781      18270.464617          0.936608  89   1
+  383)       19800.733757      18271.408594          0.369656  70  10
+  384)       19836.623631      18307.298468          0.273055  71   9
+  385)       19857.447907      18328.122743          0.248294  76   8
+  386)       19878.715167      18349.390004          0.462468  71   9
+  387)       19911.239149      18381.913985          0.882986  86   3
+  388)       19993.832907      18464.507744          0.785283  85   4
+  389)       20073.142292      18543.817129          0.608007  82   6
+  390)       20099.441637      18570.116474          0.837285  90   1
+  391)       20102.759265      18573.434102          0.736527  74   9
+  392)       20235.701656      18706.376493          0.606999  79   7
+  393)       20267.363039      18738.037876          0.889036  89   2
+  394)       20303.380181      18774.055017          0.561227  80   7
+  395)       20383.868402      18854.543239          0.616741  76   9
+  396)       20394.843797      18865.518634          0.813813  86   4
+  397)       20440.774583      18911.449419          0.851754  71  10
+  398)       20489.104852      18959.779689          0.725671  85   5
+  399)       20501.089890      18971.764727          0.602057  77   9
+  400)       20555.070683      19025.745520          0.710404  90   2
+  401)       20591.925538      19062.600374          0.657254  82   7
+  402)       20675.602372      19146.277208          0.673724  74  10
+  403)       20741.944608      19212.619444          0.800194  89   3
+  404)       20764.726703      19235.401540          0.576104  79   8
+  405)       20824.355168      19295.030004          0.910953  91   1
+  406)       20838.168923      19308.843760          0.611924  80   8
+  407)       20890.387302      19361.062139          0.849852  86   5
+  408)       20964.091555      19434.766391          0.752713  76  10
+  409)       21012.935751      19483.610588          0.657809  85   6
+  410)       21082.469380      19553.144217          0.832249  90   3
+  411)       21114.785820      19585.460657          0.585685  77  10
+  412)       21157.300731      19627.975568          0.512141  82   8
+  413)       21239.063283      19709.738120          0.591506  89   4
+  414)       21315.828153      19786.502990          0.544959  91   2
+  415)       21326.366475      19797.041311          0.927650  79   9
+  416)       21356.007246      19826.682083          0.864294  93   1
+
+ maximum memory used up to this stage (octet)     9591470
+Step  8   ZPE  (1-2).8-1 >                                                            1529.32516336
+
+
+ =*=*=*=*=*=*=*=*=*=*=*=
+ general VMFCI STEP DONE
+ =*=*=*=*=*=*=*=*=*=*=*=
+
+ final time   410.77767100000000     
