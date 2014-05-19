@@ -1,0 +1,3005 @@
+ Initial time
+   0.0000000000000000     
+  
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+CH4-ord044                     CALCULATION
+   9 Step(s)
+   symmetry:  Td 
+ Irreps symmetry properties will not be used
+ Only mode degeneracy will be taken care of
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+  
+ The file containing the Hamiltonian -\sum_i 1/2P_i^2 in EXTENDED format will be read on file:
+ watcor.CH4.ord044                                                                                                                                                                                                                                               
+  
+ The file containing the rotational constants is:rotcst.CH4.ord044-mu6Z                                          
+  
+ Total # of modes=            4
+ # of one-dimensional oscillators:            9
+ # of modes of degenaracy 1,2,3=            1           1           2
+  
+  
+ basis set:
+  
+  mode      degen     vmax+1 type    irrep
+    1         1         5     HO      A1 
+    2         2         5     HO      E  
+    3         3         5     HO      T2 
+    4         3         5     HO      T2 
+  
+ Order for the vibrational part =            4
+ # terms in the potential (+ Watson) =          163
+  
+  
+ Harmonic frequency(cm-1) of Mode=           1   3036.1862222658688       Lambda (shift)=   0.0000000000000000     
+ Harmonic frequency(cm-1) of Mode=           2   1570.3817070675757       Lambda (shift)=   0.0000000000000000     
+ Harmonic frequency(cm-1) of Mode=           3   3157.1042383574058       Lambda (shift)=   0.0000000000000000     
+ Harmonic frequency(cm-1) of Mode=           4   1345.3372416694133       Lambda (shift)=   0.0000000000000000     
+  
+ CORIOLIS CONTRIBUTIONS:         282    terms
+ # of Q**n P terms =           14
+ # of Q**n P**2 terms =          268
+  
+  
+ Q**n P**1 terms (first below)
+   173)   0.363355E-04  Q 0 1 0 0 0 0 0 0 0  P 0 1 0 0 0 0 0 0 0
+   186)   0.440064E-04  Q 0 0 0 0 0 0 0 0 1  P 0 0 0 0 0 0 0 0 1
+ Q**n P**1 terms (last above)
+  
+  
+ Q**n P**2 terms (first below)
+   187)   0.115065E-04  Q 0 0 0 0 2 0 0 0 0  P 0 2 0 0 0 0 0 0 0
+   454)   0.490572E-05  Q 0 0 0 0 0 0 0 2 0  P 0 0 0 0 0 0 0 0 2
+ Q**n P**2 terms (last above)
+  
+  
+ HO basis wave numbers (cm-1)
+  
+           1 )   3036.1862222658688     
+           2 )   1570.3817070675757     
+           3 )   3157.1042383574058     
+           4 )   1345.3372416694133     
+  
+  
+ # of Coupling constant terms =         9968
+ # of Rotational constant terms =          454
+  
+  
+ Coupling constant terms (first and last)
+  
+   455)     Q 0 0 0 0 0 1 0 0 0  P 0 1 0 0 0 0 0 0 0
+ 10422)     Q 0 0 0 0 0 0 0 1 4  P 0 0 0 0 0 0 0 0 1
+  
+  
+ Rotational constant terms (first and last)
+  
+ 10423)     Q 1 0 0 0 0 0 0 0 0
+ 10876)     Q 0 0 0 0 0 0 1 1 2
+  
+  
+         290  integrals for dof #           1  have been written on file          22
+  
+         290  integrals for dof #           2  have been written on file          23
+  
+         290  integrals for dof #           3  have been written on file          24
+  
+         290  integrals for dof #           4  have been written on file          25
+  
+         290  integrals for dof #           5  have been written on file          26
+  
+         290  integrals for dof #           6  have been written on file          27
+  
+         290  integrals for dof #           7  have been written on file          28
+  
+         290  integrals for dof #           8  have been written on file          29
+  
+         290  integrals for dof #           9  have been written on file          30
+  
+  
+ # of basis function for contraction           1 =           5
+ # of basis function for contraction           2 =          15
+ # of basis function for contraction           3 =          35
+ # of basis function for contraction           4 =          35
+
+ MSP-VMFCI CALCULATION ON MODE           1
+ =============================
+
+ # of terms in the reduced H=            6
+
+            290 integrals have been read in from file 22
+       This file has been closed
+
+ Conditionning of H, total number of terms:          11
+
+
+ VMFCI eigensolutions
+ ====================
+
+
+ Summary of contraction           1   of  step           0
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        9736.834123          0.000000          0.969657   1
+    2)       12711.387538       2974.553415          0.875910   2
+    3)       15699.057058       5962.222935          0.727218   3
+    4)       18806.819618       9069.985495          0.613433   4
+    5)       23465.344015      13728.509892          0.776993   5
+
+ maximum memory used up to this stage (octet)      527642
+
+ # of different integral types in final contraction =           6
+
+ # of integral types allowing (anti)symmetryzation           6
+
+          75  integrals from VMFCI contraction #           1  have been written on file          31
+
+ MSP-VMFCI CALCULATION ON MODE           2
+ =============================
+
+ # of terms in the reduced H=           12
+
+            290 integrals have been read in from file 23
+       This file has been closed
+
+            290 integrals have been read in from file 24
+       This file has been closed
+
+ Conditionning of H, total number of terms:          27
+
+
+ VMFCI eigensolutions
+ ====================
+
+
+ Summary of contraction           2   of  step           0
+
+                          vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+state #    1   deg= 1       1)        9830.213976          0.000000          0.999742   1   1
+state #    2   deg= 2       2)       11357.698203       1527.484227          0.999269   2   1
+                            3)       11357.698203       1527.484227          0.999269   1   2
+state #    3   deg= 1       4)       12881.643325       3051.429349          0.997641   3   1
+state #    4   deg= 2       5)       12884.307594       3054.093617          0.998662   1   3
+                            6)       12884.307594       3054.093618          0.998662   2   2
+state #    5   deg= 2       7)       14409.767956       4579.553980          0.997309   4   1
+                            8)       14409.767956       4579.553980          0.997309   1   4
+state #    6   deg= 1       9)       14413.095260       4582.881284          1.000000   3   2
+state #    7   deg= 1      10)       14413.322041       4583.108065          0.998102   2   3
+state #    8   deg= 2      11)       15936.951452       6106.737476          0.999304   1   5
+                           12)       15936.951452       6106.737476          0.999304   4   2
+state #    9   deg= 1      13)       15937.293789       6107.079813          0.998057   5   1
+state #   10   deg= 2      14)       15940.256945       6110.042969          0.998036   2   4
+                           15)       15940.256945       6110.042969          0.998036   3   3
+
+ maximum memory used up to this stage (octet)      527642
+
+ # of different integral types in final contraction =          54
+
+ # of integral types allowing (anti)symmetryzation          34
+
+        8310  integrals from VMFCI contraction #           2  have been written on file          32
+
+ MSP-VMFCI CALCULATION ON MODE           3
+ =============================
+
+ # of terms in the reduced H=           26
+
+            290 integrals have been read in from file 25
+       This file has been closed
+
+            290 integrals have been read in from file 26
+       This file has been closed
+
+            290 integrals have been read in from file 27
+       This file has been closed
+
+ Conditionning of H, total number of terms:          81
+
+
+ VMFCI eigensolutions
+ ====================
+
+
+ Summary of contraction           3   of  step           0
+
+                          vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+state #    1   deg= 1       1)        9817.922075          0.000000          0.998714   1   1   1
+state #    2   deg= 3       2)       12994.760333       3176.838258          0.986825   2   1   1
+                            3)       12994.760343       3176.838268          0.986825   1   1   2
+                            4)       12994.760343       3176.838268          0.986825   1   2   1
+state #    3   deg= 1       5)       16170.496627       6352.574552          0.941567   3   1   1
+state #    4   deg= 3       6)       16241.151084       6423.229009          0.948726   2   1   2
+                            7)       16241.151084       6423.229009          0.948726   2   2   1
+                            8)       16241.151094       6423.229019          0.948726   1   2   2
+state #    5   deg= 2       9)       16275.662300       6457.740225          0.999000   3   1   1
+                           10)       16275.662314       6457.740239          0.999000   1   1   3
+state #    6   deg= 3      11)       19416.076966       9598.154891          0.876358   4   1   1
+                           12)       19416.076978       9598.154903          0.876358   1   1   4
+                           13)       19416.076978       9598.154903          0.876358   1   4   1
+state #    7   deg= 1      14)       19513.373066       9695.450991          0.838531   2   2   2
+state #    8   deg= 3      15)       19540.227459       9722.305384          0.968049   3   1   2
+                           16)       19540.227459       9722.305384          0.968049   3   2   1
+                           17)       19540.227460       9722.305385          0.968049   2   3   1
+state #    9   deg= 3      18)       19577.629412       9759.707337          0.969937   4   1   1
+                           19)       19577.629431       9759.707356          0.969937   1   1   4
+                           20)       19577.629431       9759.707356          0.969937   1   4   1
+state #   10   deg= 2      21)       22898.460780      13080.538705          0.999862   5   1   1
+                           22)       22898.460798      13080.538723          0.999862   1   5   1
+state #   11   deg= 1      23)       22904.279159      13086.357084          0.991972   1   1   5
+state #   12   deg= 3      24)       23061.551751      13243.629676          0.968049   4   2   1
+                           25)       23061.551751      13243.629676          0.968049   4   1   2
+                           26)       23061.551771      13243.629696          0.968049   1   4   2
+state #   13   deg= 2      27)       23112.265166      13294.343091          0.999138   3   3   1
+                           28)       23112.265170      13294.343095          0.999138   1   3   3
+state #   14   deg= 3      29)       23117.000862      13299.078787          0.990341   2   1   4
+                           30)       23117.000862      13299.078787          0.990341   2   4   1
+                           31)       23117.000875      13299.078800          0.990341   1   2   4
+state #   15   deg= 1      32)       23652.913079      13834.991004          0.899488   1   3   3
+state #   16   deg= 3      33)       23701.325320      13883.403245          0.889528   3   2   2
+                           34)       23701.325322      13883.403247          0.889528   2   2   3
+                           35)       23701.325322      13883.403247          0.889528   2   3   2
+
+ maximum memory used up to this stage (octet)      626346
+
+ # of different integral types in final contraction =         227
+
+ # of integral types allowing (anti)symmetryzation         134
+
+      195720  integrals from VMFCI contraction #           3  have been written on file          33
+
+ MSP-VMFCI CALCULATION ON MODE           4
+ =============================
+
+ # of terms in the reduced H=           26
+
+            290 integrals have been read in from file 28
+       This file has been closed
+
+            290 integrals have been read in from file 29
+       This file has been closed
+
+            290 integrals have been read in from file 30
+       This file has been closed
+
+ Conditionning of H, total number of terms:          81
+
+
+ VMFCI eigensolutions
+ ====================
+
+
+ Summary of contraction           4   of  step           0
+
+                          vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+state #    1   deg= 1       1)        9828.831383          0.000000          0.999207   1   1   1
+state #    2   deg= 3       2)       11123.983108       1295.151726          0.997554   1   2   1
+                            3)       11123.983108       1295.151726          0.997554   1   1   2
+                            4)       11123.983109       1295.151726          0.997554   2   1   1
+state #    3   deg= 1       5)       12422.206077       2593.374694          0.991065   1   3   1
+state #    4   deg= 3       6)       12427.788529       2598.957146          0.993148   1   2   2
+                            7)       12427.788529       2598.957146          0.993148   2   2   1
+                            8)       12427.788529       2598.957146          0.993148   2   1   2
+state #    5   deg= 2       9)       12428.032467       2599.201085          0.998905   1   3   1
+                           10)       12428.032468       2599.201085          0.998905   3   1   1
+state #    6   deg= 3      11)       13733.986152       3905.154770          0.986898   1   4   1
+                           12)       13733.986152       3905.154770          0.986898   1   1   4
+                           13)       13733.986152       3905.154770          0.986898   4   1   1
+state #    7   deg= 3      14)       13740.528671       3911.697288          0.996840   2   1   3
+                           15)       13740.528671       3911.697288          0.996840   1   3   2
+                           16)       13740.528671       3911.697288          0.996840   1   2   3
+state #    8   deg= 3      17)       13741.290783       3912.459401          0.994012   1   4   1
+                           18)       13741.290783       3912.459401          0.994012   1   1   4
+                           19)       13741.290783       3912.459401          0.994012   4   1   1
+state #    9   deg= 1      20)       13741.728538       3912.897156          0.981379   2   2   2
+state #   10   deg= 1      21)       15053.302816       5224.471433          0.998771   1   1   5
+state #   11   deg= 2      22)       15053.429275       5224.597892          0.999263   1   1   5
+                           23)       15053.429275       5224.597892          0.999263   5   1   1
+state #   12   deg= 3      24)       15062.911202       5234.079819          0.996840   1   4   2
+                           25)       15062.911202       5234.079819          0.996840   2   1   4
+                           26)       15062.911202       5234.079819          0.996840   2   4   1
+state #   13   deg= 2      27)       15064.402284       5235.570901          0.999642   1   3   3
+                           28)       15064.402284       5235.570901          0.999642   3   1   3
+state #   14   deg= 3      29)       15064.813687       5235.982305          0.998835   1   2   4
+                           30)       15064.813687       5235.982305          0.998835   4   1   2
+                           31)       15064.813687       5235.982305          0.998835   4   2   1
+state #   15   deg= 1      32)       15083.833271       5255.001888          0.987987   3   3   1
+state #   16   deg= 3      33)       15087.621050       5258.789667          0.986480   2   2   3
+                           34)       15087.621050       5258.789667          0.986480   2   3   2
+                           35)       15087.621050       5258.789667          0.986480   3   2   2
+
+ maximum memory used up to this stage (octet)     3683202
+
+ # of different integral types in final contraction =         227
+
+ # of integral types allowing (anti)symmetryzation         134
+
+      195720  integrals from VMFCI contraction #           4  have been written on file          34
+
+
+ =*=*=*=*=*=*=*=*=*=
+ MSP-VMFCI STEP DONE
+ =*=*=*=*=*=*=*=*=*=
+
+
+ Contraction step number           1
+ ==========================
+
+  
+ Contraction scheme
+ ==================
+  
+ # of contractions:            4
+  
+Contraction  1 :  1
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  2 :  2
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  3 :  3
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  4 :  4
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+ # of basis function for contraction           1 =           5
+ # of basis function for contraction           2 =          15
+ # of basis function for contraction           3 =          35
+ # of basis function for contraction           4 =          35
+
+ Contraction number           1
+ =====================
+
+ Time, timing for basisucao
+  0.14000799999999999        0.0000000000000000     
+
+ Number of basis functions           5
+
+ # of terms in the reduced H=            6
+
+             75 integrals have been read in from file 31
+       This file has been closed
+
+ Conditionning of H, total number of terms:          11
+
+ Time, timing for potcond
+  0.14000799999999999        0.0000000000000000     
+
+ Time, timing for matrix
+  0.14000799999999999        0.0000000000000000     
+
+ Time, timing for diagonalisation
+  0.14000799999999999        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           1   of  step           1
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        9724.988581          0.000000          0.999985   1
+    2)       12698.706340       2973.717759          0.999956   2
+    3)       15684.993988       5960.005407          0.999936   3
+    4)       18786.575394       9061.586814          0.999946   4
+    5)       23413.961488      13688.972907          0.999982   5
+
+ maximum memory used up to this stage (octet)     3727710
+Step  1   ZPE  (1)(2)(3)(4).1-1 >                                                     9724.98858065
+  
+
+ # of different integral types in final contraction =           6
+
+ # of integral types allowing (anti)symmetryzation           6
+ Time, timing for integr1
+  0.14000799999999999        0.0000000000000000     
+
+
+          75  integrals from contraction #           1  of step           1  have been written on file          35
+
+ Contraction number           2
+ =====================
+
+ Time, timing for basisucao
+  0.14000799999999999        0.0000000000000000     
+
+ Number of basis functions          15
+
+ # of terms in the reduced H=           13
+
+           8310 integrals have been read in from file 32
+       This file has been closed
+
+ Conditionning of H, total number of terms:          25
+
+ Time, timing for potcond
+  0.14000799999999999        0.0000000000000000     
+
+ Time, timing for matrix
+  0.14000799999999999        0.0000000000000000     
+
+ Time, timing for diagonalisation
+  0.14000799999999999        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           2   of  step           1
+
+                          vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+state #    1   deg= 1       1)        9725.021373          0.000000          0.999996   1
+state #    2   deg= 2       2)       11259.069023       1534.047650          0.999999   3
+                            3)       11259.069023       1534.047650          0.999999   2
+state #    3   deg= 1       4)       12789.663082       3064.641709          0.999976   4
+state #    4   deg= 2       5)       12792.201521       3067.180147          0.999995   5
+                            6)       12792.201521       3067.180147          0.999995   6
+state #    5   deg= 2       7)       14323.193708       4598.172335          0.999996   7
+                            8)       14323.193708       4598.172335          0.999996   8
+state #    6   deg= 1       9)       14326.720977       4601.699604          1.000000   9
+state #    7   deg= 1      10)       14326.907984       4601.886611          0.999996  10
+state #    8   deg= 1      11)       15856.376227       6131.354854          0.999981  13
+state #    9   deg= 2      12)       15856.445750       6131.424376          0.999989  12
+                           13)       15856.445750       6131.424376          0.999989  11
+state #   10   deg= 2      14)       15859.864958       6134.843585          0.999995  14
+                           15)       15859.864958       6134.843585          0.999995  15
+
+ maximum memory used up to this stage (octet)     3727710
+Step  1   ZPE  (1)(2)(3)(4).1-2 >                                                     9725.02137328
+  
+
+ # of different integral types in final contraction =          54
+
+ # of integral types allowing (anti)symmetryzation          34
+ Time, timing for integr1
+  0.14400800000000000       4.00000000000000355E-003
+
+
+        8310  integrals from contraction #           2  of step           1  have been written on file          36
+
+ Contraction number           3
+ =====================
+
+ Time, timing for basisucao
+  0.14400800000000000        0.0000000000000000     
+
+ Number of basis functions          35
+
+ # of terms in the reduced H=           59
+
+         195720 integrals have been read in from file 33
+       This file has been closed
+
+ Conditionning of H, total number of terms:         117
+
+ Time, timing for potcond
+  0.14400800000000000        0.0000000000000000     
+
+ Time, timing for matrix
+  0.14800800000000000       4.00000000000000355E-003
+
+ Time, timing for diagonalisation
+  0.14800800000000000        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           3   of  step           1
+
+                          vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+state #    1   deg= 1       1)        9721.885062          0.000000          0.999500   1
+state #    2   deg= 3       2)       12784.790737       3062.905675          0.999947   2
+                            3)       12784.790748       3062.905686          0.999869   3
+                            4)       12784.790748       3062.905686          0.999869   4
+state #    3   deg= 1       5)       15864.328881       6142.443819          0.998263   5
+state #    4   deg= 3       6)       15926.326196       6204.441134          0.999580   6
+                            7)       15926.326196       6204.441134          0.999580   7
+                            8)       15926.326206       6204.441144          0.999952   8
+state #    5   deg= 2       9)       15951.303313       6229.418251          0.999555   9
+                           10)       15951.303328       6229.418266          0.999555  10
+state #    6   deg= 3      11)       19014.360277       9292.475215          0.999783  11
+                           12)       19014.360292       9292.475230          0.997017  13
+                           13)       19014.360292       9292.475230          0.997017  12
+state #    7   deg= 3      14)       19103.090824       9381.205762          1.000000  16
+                           15)       19103.090824       9381.205762          1.000000  15
+                           16)       19103.090824       9381.205763          1.000000  17
+state #    8   deg= 1      17)       19104.290208       9382.405146          0.999478  14
+state #    9   deg= 3      18)       19136.715761       9414.830699          0.999906  18
+                           19)       19136.715777       9414.830716          0.998781  20
+                           20)       19136.715777       9414.830716          0.998781  19
+state #   10   deg= 2      21)       22332.472784      12610.587722          0.999859  21
+                           22)       22332.472803      12610.587741          0.999859  22
+state #   11   deg= 1      23)       22339.020460      12617.135398          0.999363  23
+state #   12   deg= 3      24)       22485.034349      12763.149287          1.000000  25
+                           25)       22485.034349      12763.149287          1.000000  24
+                           26)       22485.034370      12763.149308          1.000000  26
+state #   13   deg= 2      27)       22540.908633      12819.023572          0.999846  27
+                           28)       22540.908638      12819.023576          0.999846  28
+state #   14   deg= 3      29)       22544.476051      12822.590989          0.999953  29
+                           30)       22544.476051      12822.590989          0.999953  30
+                           31)       22544.476064      12822.591002          0.999980  31
+state #   15   deg= 1      32)       23024.322184      13302.437122          0.998907  32
+state #   16   deg= 3      33)       23070.533182      13348.648120          0.999923  33
+                           34)       23070.533184      13348.648122          0.999490  34
+                           35)       23070.533184      13348.648122          0.999490  35
+
+ maximum memory used up to this stage (octet)     3727710
+Step  1   ZPE  (1)(2)(3)(4).1-3 >                                                     9721.88506177
+  
+
+ # of different integral types in final contraction =         227
+
+ # of integral types allowing (anti)symmetryzation         134
+ Time, timing for integr1
+  0.18001000000000000       3.20020000000000027E-002
+
+
+      195720  integrals from contraction #           3  of step           1  have been written on file          37
+
+ Contraction number           4
+ =====================
+
+ Time, timing for basisucao
+  0.18001000000000000        0.0000000000000000     
+
+ Number of basis functions          35
+
+ # of terms in the reduced H=           60
+
+         195720 integrals have been read in from file 34
+       This file has been closed
+
+ Conditionning of H, total number of terms:         119
+
+ Time, timing for potcond
+  0.18401099999999998        0.0000000000000000     
+
+ Time, timing for matrix
+  0.18401099999999998        0.0000000000000000     
+
+ Time, timing for diagonalisation
+  0.18401099999999998        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           4   of  step           1
+
+                          vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+state #    1   deg= 1       1)        9724.676277          0.000000          0.999864   1
+state #    2   deg= 3       2)       11044.746697       1320.070420          0.999979   2
+                            3)       11044.746697       1320.070420          0.999979   3
+                            4)       11044.746697       1320.070420          1.000000   4
+state #    3   deg= 1       5)       12368.003541       2643.327263          0.999369   5
+state #    4   deg= 2       6)       12372.771234       2648.094957          0.999891   9
+                            7)       12372.771234       2648.094957          0.999891  10
+state #    5   deg= 3       8)       12373.080522       2648.404245          0.999927   6
+                            9)       12373.080522       2648.404245          0.999795   7
+                           10)       12373.080522       2648.404245          0.999795   8
+state #    6   deg= 3      11)       13700.080741       3975.404464          0.999664  11
+                           12)       13700.080741       3975.404464          0.999664  12
+                           13)       13700.080742       3975.404464          0.999935  13
+state #    7   deg= 3      14)       13707.605807       3982.929530          0.999998  14
+                           15)       13707.605807       3982.929530          0.999980  15
+                           16)       13707.605807       3982.929530          0.999994  16
+state #    8   deg= 3      17)       13707.644828       3982.968551          0.999428  17
+                           18)       13707.644828       3982.968551          0.999428  18
+                           19)       13707.644828       3982.968551          0.999989  19
+state #    9   deg= 1      20)       13708.697842       3984.021564          0.999870  20
+state #   10   deg= 1      21)       15042.167626       5317.491348          0.998610  21
+state #   11   deg= 2      22)       15042.338459       5317.662182          0.999784  22
+                           23)       15042.338459       5317.662182          0.999784  23
+state #   12   deg= 3      24)       15052.792950       5328.116673          1.000000  24
+                           25)       15052.792950       5328.116673          0.999999  25
+                           26)       15052.792950       5328.116673          0.999999  26
+state #   13   deg= 3      27)       15054.173127       5329.496850          0.999997  29
+                           28)       15054.173127       5329.496850          0.999355  30
+                           29)       15054.173127       5329.496850          0.999355  31
+state #   14   deg= 2      30)       15054.208836       5329.532559          0.999916  27
+                           31)       15054.208837       5329.532560          0.999916  28
+state #   15   deg= 1      32)       15070.899602       5346.223325          0.998550  32
+state #   16   deg= 3      33)       15074.763462       5350.087185          0.999580  33
+                           34)       15074.763462       5350.087185          0.999580  34
+                           35)       15074.763463       5350.087185          0.999947  35
+
+ maximum memory used up to this stage (octet)     5029294
+Step  1   ZPE  (1)(2)(3)(4).1-4 >                                                     9724.67627713
+  
+
+ # of different integral types in final contraction =         227
+
+ # of integral types allowing (anti)symmetryzation         134
+ Time, timing for integr1
+  0.21601299999999998       3.20020000000000027E-002
+
+
+      195720  integrals from contraction #           4  of step           1  have been written on file          38
+ 
+
+
+ =*=*=*=*=*=*=*=*=*=*=*=
+ general VMFCI STEP DONE
+ =*=*=*=*=*=*=*=*=*=*=*=
+
+
+ Contraction step number           2
+ ==========================
+
+  
+ Contraction scheme
+ ==================
+  
+ # of contractions:            4
+  
+Contraction  1 :  1
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  2 :  2
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  3 :  3
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  4 :  4
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+ # of basis function for contraction           1 =           5
+ # of basis function for contraction           2 =          15
+ # of basis function for contraction           3 =          35
+ # of basis function for contraction           4 =          35
+
+ Contraction number           1
+ =====================
+
+ Time, timing for basisucao
+  0.22401299999999999        0.0000000000000000     
+
+ Number of basis functions           5
+
+ # of terms in the reduced H=            6
+
+             75 integrals have been read in from file 35
+       This file has been closed
+
+ Conditionning of H, total number of terms:          11
+
+ Time, timing for potcond
+  0.22401299999999999        0.0000000000000000     
+
+ Time, timing for matrix
+  0.22401299999999999        0.0000000000000000     
+
+ Time, timing for diagonalisation
+  0.22401299999999999        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           1   of  step           2
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        9721.569494          0.000000          0.999959   1
+    2)       12696.316726       2974.747232          0.999883   2
+    3)       15684.579041       5963.009547          0.999828   3
+    4)       18796.136895       9074.567401          0.999858   4
+    5)       23473.612631      13752.043137          0.999954   5
+
+ maximum memory used up to this stage (octet)     5072798
+Step  2   ZPE  (1)(2)(3)(4).2-1 >                                                     9721.56949391
+  
+
+ # of different integral types in final contraction =           6
+
+ # of integral types allowing (anti)symmetryzation           6
+ Time, timing for integr1
+  0.22401299999999999        0.0000000000000000     
+
+
+          75  integrals from contraction #           1  of step           2  have been written on file          39
+
+ Contraction number           2
+ =====================
+
+ Time, timing for basisucao
+  0.22401299999999999        0.0000000000000000     
+
+ Number of basis functions          15
+
+ # of terms in the reduced H=           17
+
+           8310 integrals have been read in from file 36
+       This file has been closed
+
+ Conditionning of H, total number of terms:          33
+
+ Time, timing for potcond
+  0.22401299999999999        0.0000000000000000     
+
+ Time, timing for matrix
+  0.22401299999999999        0.0000000000000000     
+
+ Time, timing for diagonalisation
+  0.22401299999999999        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           2   of  step           2
+
+                          vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+state #    1   deg= 1       1)        9721.691888          0.000000          1.000000   1
+state #    2   deg= 2       2)       11253.915075       1532.223187          1.000000   2
+                            3)       11253.915075       1532.223187          1.000000   3
+state #    3   deg= 1       4)       12782.676172       3060.984283          0.999998   4
+state #    4   deg= 2       5)       12785.223594       3063.531706          1.000000   5
+                            6)       12785.223594       3063.531706          1.000000   6
+state #    5   deg= 2       7)       14314.709375       4593.017487          1.000000   7
+                            8)       14314.709376       4593.017487          1.000000   8
+state #    6   deg= 1       9)       14318.135254       4596.443366          1.000000   9
+state #    7   deg= 1      10)       14318.328844       4596.636956          1.000000  10
+state #    8   deg= 2      11)       15846.219798       6124.527910          0.999999  12
+                           12)       15846.219798       6124.527910          0.999999  13
+state #    9   deg= 1      13)       15846.235782       6124.543894          0.999999  11
+state #   10   deg= 2      14)       15849.547472       6127.855584          1.000000  14
+                           15)       15849.547473       6127.855585          1.000000  15
+
+ maximum memory used up to this stage (octet)     5072798
+Step  2   ZPE  (1)(2)(3)(4).2-2 >                                                     9721.69188809
+  
+
+ # of different integral types in final contraction =          54
+
+ # of integral types allowing (anti)symmetryzation          34
+ Time, timing for integr1
+  0.22801299999999999       4.00000000000000355E-003
+
+
+        8310  integrals from contraction #           2  of step           2  have been written on file          40
+
+ Contraction number           3
+ =====================
+
+ Time, timing for basisucao
+  0.22801299999999999        0.0000000000000000     
+
+ Number of basis functions          35
+
+ # of terms in the reduced H=           62
+
+         195720 integrals have been read in from file 37
+       This file has been closed
+
+ Conditionning of H, total number of terms:         123
+
+ Time, timing for potcond
+  0.22801299999999999        0.0000000000000000     
+
+ Time, timing for matrix
+  0.23201300000000000       4.00000000000000355E-003
+
+ Time, timing for diagonalisation
+  0.23201300000000000        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           3   of  step           2
+
+                          vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+state #    1   deg= 1       1)        9721.689341          0.000000          0.999999   1
+state #    2   deg= 3       2)       12788.199307       3066.509966          1.000000   2
+                            3)       12788.199318       3066.509977          1.000000   4
+                            4)       12788.199318       3066.509977          1.000000   3
+state #    3   deg= 1       5)       15870.845607       6149.156267          0.999998   5
+state #    4   deg= 3       6)       15932.998983       6211.309643          0.999999   6
+                            7)       15932.998983       6211.309643          0.999999   7
+                            8)       15932.998993       6211.309653          1.000000   8
+state #    5   deg= 2       9)       15958.186496       6236.497155          0.999999   9
+                           10)       15958.186511       6236.497170          0.999999  10
+state #    6   deg= 3      11)       19023.583426       9301.894085          1.000000  11
+                           12)       19023.583441       9301.894100          0.999996  13
+                           13)       19023.583441       9301.894100          0.999996  12
+state #    7   deg= 3      14)       19113.324646       9391.635305          1.000000  14
+                           15)       19113.324646       9391.635305          1.000000  15
+                           16)       19113.324647       9391.635306          1.000000  16
+state #    8   deg= 1      17)       19113.722750       9392.033409          0.999999  17
+state #    9   deg= 3      18)       19146.893411       9425.204070          1.000000  18
+                           19)       19146.893428       9425.204087          0.999996  19
+                           20)       19146.893428       9425.204087          0.999996  20
+state #   10   deg= 2      21)       22346.434001      12624.744660          1.000000  21
+                           22)       22346.434020      12624.744679          1.000000  22
+state #   11   deg= 1      23)       22352.891136      12631.201795          0.999999  23
+state #   12   deg= 3      24)       22499.292620      12777.603279          1.000000  24
+                           25)       22499.292620      12777.603279          1.000000  25
+                           26)       22499.292641      12777.603301          1.000000  26
+state #   13   deg= 2      27)       22555.004667      12833.315326          1.000000  27
+                           28)       22555.004672      12833.315331          1.000000  28
+state #   14   deg= 3      29)       22558.617723      12836.928382          1.000000  29
+                           30)       22558.617723      12836.928382          1.000000  30
+                           31)       22558.617736      12836.928395          1.000000  31
+state #   15   deg= 1      32)       23039.748833      13318.059492          0.999999  32
+state #   16   deg= 3      33)       23086.003980      13364.314639          1.000000  33
+                           34)       23086.003982      13364.314641          1.000000  35
+                           35)       23086.003982      13364.314641          1.000000  34
+
+ maximum memory used up to this stage (octet)     5072798
+Step  2   ZPE  (1)(2)(3)(4).2-3 >                                                     9721.68934093
+  
+
+ # of different integral types in final contraction =         227
+
+ # of integral types allowing (anti)symmetryzation         134
+ Time, timing for integr1
+  0.26401500000000000       3.20020000000000027E-002
+
+
+      195720  integrals from contraction #           3  of step           2  have been written on file          41
+
+ Contraction number           4
+ =====================
+
+ Time, timing for basisucao
+  0.26401500000000000        0.0000000000000000     
+
+ Number of basis functions          35
+
+ # of terms in the reduced H=           62
+
+         195720 integrals have been read in from file 38
+       This file has been closed
+
+ Conditionning of H, total number of terms:         123
+
+ Time, timing for potcond
+  0.26801599999999998        0.0000000000000000     
+
+ Time, timing for matrix
+  0.26801599999999998        0.0000000000000000     
+
+ Time, timing for diagonalisation
+  0.26801599999999998        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           4   of  step           2
+
+                          vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+state #    1   deg= 1       1)        9721.688297          0.000000          0.999998   1
+state #    2   deg= 3       2)       11038.961800       1317.273503          0.999999   2
+                            3)       11038.961800       1317.273503          0.999999   3
+                            4)       11038.961800       1317.273503          1.000000   4
+state #    3   deg= 1       5)       12359.453409       2637.765111          0.999992   5
+state #    4   deg= 2       6)       12364.241995       2642.553697          0.999999   6
+                            7)       12364.241995       2642.553697          0.999999   7
+state #    5   deg= 3       8)       12364.538107       2642.849809          1.000000   8
+                            9)       12364.538107       2642.849809          0.999997   9
+                           10)       12364.538107       2642.849809          0.999997  10
+state #    6   deg= 3      11)       13689.121390       3967.433093          0.999997  12
+                           12)       13689.121390       3967.433093          0.999997  11
+                           13)       13689.121390       3967.433093          1.000000  13
+state #    7   deg= 3      14)       13696.502219       3974.813921          1.000000  14
+                           15)       13696.502219       3974.813921          1.000000  16
+                           16)       13696.502219       3974.813921          1.000000  15
+state #    8   deg= 3      17)       13696.582972       3974.894675          0.999999  17
+                           18)       13696.582972       3974.894675          0.999999  18
+                           19)       13696.582973       3974.894675          1.000000  19
+state #    9   deg= 1      20)       13697.635182       3975.946884          1.000000  20
+state #   10   deg= 1      21)       15028.480199       5306.791902          0.999986  21
+state #   11   deg= 2      22)       15028.652684       5306.964386          0.999997  22
+                           23)       15028.652684       5306.964387          0.999997  23
+state #   12   deg= 3      24)       15038.992082       5317.303785          1.000000  24
+                           25)       15038.992083       5317.303785          1.000000  26
+                           26)       15038.992083       5317.303785          1.000000  25
+state #   13   deg= 2      27)       15040.434197       5318.745900          0.999999  30
+                           28)       15040.434197       5318.745900          0.999999  31
+state #   14   deg= 3      29)       15040.436317       5318.748019          1.000000  27
+                           30)       15040.436317       5318.748020          0.999997  28
+                           31)       15040.436317       5318.748020          0.999997  29
+state #   15   deg= 1      32)       15057.229929       5335.541631          0.999986  32
+state #   16   deg= 3      33)       15061.071663       5339.383366          0.999995  34
+                           34)       15061.071663       5339.383366          0.999995  33
+                           35)       15061.071663       5339.383366          1.000000  35
+
+ maximum memory used up to this stage (octet)     5072798
+Step  2   ZPE  (1)(2)(3)(4).2-4 >                                                     9721.68829744
+  
+
+ # of different integral types in final contraction =         227
+
+ # of integral types allowing (anti)symmetryzation         134
+ Time, timing for integr1
+  0.30001800000000001       3.20020000000000304E-002
+
+
+      195720  integrals from contraction #           4  of step           2  have been written on file          42
+ 
+
+
+ =*=*=*=*=*=*=*=*=*=*=*=
+ general VMFCI STEP DONE
+ =*=*=*=*=*=*=*=*=*=*=*=
+
+
+ Contraction step number           3
+ ==========================
+
+  
+ Contraction scheme
+ ==================
+  
+ # of contractions:            4
+  
+Contraction  1 :  1
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  2 :  2
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  3 :  3
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  4 :  4
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+ # of basis function for contraction           1 =           5
+ # of basis function for contraction           2 =          15
+ # of basis function for contraction           3 =          35
+ # of basis function for contraction           4 =          35
+
+ Contraction number           1
+ =====================
+
+ Time, timing for basisucao
+  0.30801899999999999        0.0000000000000000     
+
+ Number of basis functions           5
+
+ # of terms in the reduced H=            6
+
+             75 integrals have been read in from file 39
+       This file has been closed
+
+ Conditionning of H, total number of terms:          11
+
+ Time, timing for potcond
+  0.30801899999999999        0.0000000000000000     
+
+ Time, timing for matrix
+  0.30801899999999999        0.0000000000000000     
+
+ Time, timing for diagonalisation
+  0.30801899999999999        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           1   of  step           3
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        9721.570782          0.000000          1.000000   1
+    2)       12696.218525       2974.647743          1.000000   2
+    3)       15684.347394       5962.776611          1.000000   3
+    4)       18795.438517       9073.867735          1.000000   4
+    5)       23470.622666      13749.051884          1.000000   5
+
+ maximum memory used up to this stage (octet)     5072798
+Step  3   ZPE  (1)(2)(3)(4).3-1 >                                                     9721.57078224
+  
+
+ # of different integral types in final contraction =           6
+
+ # of integral types allowing (anti)symmetryzation           6
+ Time, timing for integr1
+  0.30801899999999999        0.0000000000000000     
+
+
+          75  integrals from contraction #           1  of step           3  have been written on file          43
+
+ Contraction number           2
+ =====================
+
+ Time, timing for basisucao
+  0.30801899999999999        0.0000000000000000     
+
+ Number of basis functions          15
+
+ # of terms in the reduced H=           16
+
+           8310 integrals have been read in from file 40
+       This file has been closed
+
+ Conditionning of H, total number of terms:          31
+
+ Time, timing for potcond
+  0.30801899999999999        0.0000000000000000     
+
+ Time, timing for matrix
+  0.30801899999999999        0.0000000000000000     
+
+ Time, timing for diagonalisation
+  0.30801899999999999        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           2   of  step           3
+
+                          vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+state #    1   deg= 1       1)        9721.570991          0.000000          1.000000   1
+state #    2   deg= 2       2)       11254.052149       1532.481158          1.000000   2
+                            3)       11254.052149       1532.481158          1.000000   3
+state #    3   deg= 1       4)       12783.074374       3061.503383          1.000000   4
+state #    4   deg= 2       5)       12785.617218       3064.046228          1.000000   5
+                            6)       12785.617218       3064.046228          1.000000   6
+state #    5   deg= 2       7)       14315.321229       4593.750239          1.000000   7
+                            8)       14315.321229       4593.750239          1.000000   8
+state #    6   deg= 1       9)       14318.755157       4597.184166          1.000000   9
+state #    7   deg= 1      10)       14318.947291       4597.376301          1.000000  10
+state #    8   deg= 3      11)       15847.070589       6125.499599          1.000000  11
+                           12)       15847.070590       6125.499599          1.000000  12
+                           13)       15847.071636       6125.500645          1.000000  13
+state #    9   deg= 2      14)       15850.404307       6128.833316          1.000000  14
+                           15)       15850.404307       6128.833317          1.000000  15
+
+ maximum memory used up to this stage (octet)     5072798
+Step  3   ZPE  (1)(2)(3)(4).3-2 >                                                     9721.57099054
+  
+
+ # of different integral types in final contraction =          54
+
+ # of integral types allowing (anti)symmetryzation          34
+ Time, timing for integr1
+  0.31201899999999999       4.00000000000000355E-003
+
+
+        8310  integrals from contraction #           2  of step           3  have been written on file          44
+
+ Contraction number           3
+ =====================
+
+ Time, timing for basisucao
+  0.31201899999999999        0.0000000000000000     
+
+ Number of basis functions          35
+
+ # of terms in the reduced H=           62
+
+         195720 integrals have been read in from file 41
+       This file has been closed
+
+ Conditionning of H, total number of terms:         123
+
+ Time, timing for potcond
+  0.31201899999999999        0.0000000000000000     
+
+ Time, timing for matrix
+  0.31601899999999999       4.00000000000000355E-003
+
+ Time, timing for diagonalisation
+  0.31601899999999999        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           3   of  step           3
+
+                          vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+state #    1   deg= 1       1)        9721.566617          0.000000          0.999999   1
+state #    2   deg= 3       2)       12783.907500       3062.340883          1.000000   2
+                            3)       12783.907511       3062.340894          1.000000   4
+                            4)       12783.907511       3062.340894          1.000000   3
+state #    3   deg= 1       5)       15863.073753       6141.507136          0.999998   5
+state #    4   deg= 3       6)       15924.895789       6203.329172          0.999999   6
+                            7)       15924.895789       6203.329172          0.999999   7
+                            8)       15924.895799       6203.329182          1.000000   8
+state #    5   deg= 2       9)       15949.689927       6228.123310          0.999999   9
+                           10)       15949.689942       6228.123325          0.999999  10
+state #    6   deg= 3      11)       19012.666348       9291.099731          1.000000  11
+                           12)       19012.666363       9291.099746          0.999994  12
+                           13)       19012.666363       9291.099746          0.999994  13
+state #    7   deg= 3      14)       19101.023432       9379.456815          1.000000  15
+                           15)       19101.023432       9379.456815          1.000000  14
+                           16)       19101.023432       9379.456815          1.000000  16
+state #    8   deg= 1      17)       19102.385173       9380.818556          0.999999  17
+state #    9   deg= 3      18)       19134.481830       9412.915213          1.000000  18
+                           19)       19134.481846       9412.915229          0.999996  19
+                           20)       19134.481846       9412.915229          0.999996  20
+state #   10   deg= 2      21)       22329.586952      12608.020335          1.000000  21
+                           22)       22329.586971      12608.020354          1.000000  22
+state #   11   deg= 1      23)       22336.100311      12614.533694          0.999999  23
+state #   12   deg= 3      24)       22481.955051      12760.388434          1.000000  24
+                           25)       22481.955051      12760.388434          1.000000  25
+                           26)       22481.955072      12760.388455          1.000000  26
+state #   13   deg= 2      27)       22538.009157      12816.442540          1.000000  27
+                           28)       22538.009161      12816.442544          1.000000  28
+state #   14   deg= 3      29)       22541.518090      12819.951473          1.000000  29
+                           30)       22541.518090      12819.951473          1.000000  30
+                           31)       22541.518103      12819.951486          1.000000  31
+state #   15   deg= 1      32)       23020.746276      13299.179659          0.999998  32
+state #   16   deg= 3      33)       23066.863297      13345.296680          1.000000  33
+                           34)       23066.863300      13345.296683          0.999999  35
+                           35)       23066.863300      13345.296683          0.999999  34
+
+ maximum memory used up to this stage (octet)     5072798
+Step  3   ZPE  (1)(2)(3)(4).3-3 >                                                     9721.56661698
+  
+
+ # of different integral types in final contraction =         227
+
+ # of integral types allowing (anti)symmetryzation         134
+ Time, timing for integr1
+  0.34802099999999997       3.20019999999999749E-002
+
+
+      195720  integrals from contraction #           3  of step           3  have been written on file          45
+
+ Contraction number           4
+ =====================
+
+ Time, timing for basisucao
+  0.34802099999999997        0.0000000000000000     
+
+ Number of basis functions          35
+
+ # of terms in the reduced H=           62
+
+         195720 integrals have been read in from file 42
+       This file has been closed
+
+ Conditionning of H, total number of terms:         123
+
+ Time, timing for potcond
+  0.35202200000000000        0.0000000000000000     
+
+ Time, timing for matrix
+  0.35202200000000000        0.0000000000000000     
+
+ Time, timing for diagonalisation
+  0.35202200000000000        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           4   of  step           3
+
+                          vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+state #    1   deg= 1       1)        9721.570527          0.000000          1.000000   1
+state #    2   deg= 3       2)       11039.764883       1318.194356          1.000000   2
+                            3)       11039.764883       1318.194356          1.000000   3
+                            4)       11039.764883       1318.194356          1.000000   4
+state #    3   deg= 1       5)       12361.181342       2639.610815          0.999999   5
+state #    4   deg= 2       6)       12365.933511       2644.362984          1.000000   6
+                            7)       12365.933511       2644.362984          1.000000   7
+state #    5   deg= 3       8)       12366.248785       2644.678257          1.000000   8
+                            9)       12366.248785       2644.678258          1.000000   9
+                           10)       12366.248785       2644.678258          1.000000  10
+state #    6   deg= 3      11)       13691.646836       3970.076309          0.999999  11
+                           12)       13691.646836       3970.076309          0.999999  12
+                           13)       13691.646836       3970.076309          1.000000  13
+state #    7   deg= 3      14)       13699.048490       3977.477963          1.000000  14
+                           15)       13699.048490       3977.477963          1.000000  15
+                           16)       13699.048490       3977.477963          1.000000  16
+state #    8   deg= 3      17)       13699.105105       3977.534578          0.999999  17
+                           18)       13699.105105       3977.534578          0.999999  18
+                           19)       13699.105105       3977.534578          1.000000  19
+state #    9   deg= 1      20)       13700.179104       3978.608577          1.000000  20
+state #   10   deg= 1      21)       15031.854580       5310.284053          0.999999  21
+state #   11   deg= 2      22)       15032.027770       5310.457243          1.000000  22
+                           23)       15032.027770       5310.457243          1.000000  23
+state #   12   deg= 3      24)       15042.390704       5320.820177          1.000000  24
+                           25)       15042.390705       5320.820178          1.000000  25
+                           26)       15042.390705       5320.820178          1.000000  26
+state #   13   deg= 3      27)       15043.824365       5322.253838          1.000000  29
+                           28)       15043.824365       5322.253838          1.000000  30
+                           29)       15043.824365       5322.253838          1.000000  31
+state #   14   deg= 2      30)       15043.838312       5322.267785          1.000000  27
+                           31)       15043.838312       5322.267785          1.000000  28
+state #   15   deg= 1      32)       15060.544092       5338.973565          0.999999  32
+state #   16   deg= 3      33)       15064.383975       5342.813448          1.000000  33
+                           34)       15064.383975       5342.813448          1.000000  34
+                           35)       15064.383975       5342.813448          1.000000  35
+
+ maximum memory used up to this stage (octet)     5072798
+Step  3   ZPE  (1)(2)(3)(4).3-4 >                                                     9721.57052701
+  
+
+ # of different integral types in final contraction =         227
+
+ # of integral types allowing (anti)symmetryzation         134
+ Time, timing for integr1
+  0.38402399999999998       3.20019999999999749E-002
+
+
+      195720  integrals from contraction #           4  of step           3  have been written on file          46
+ 
+
+
+ =*=*=*=*=*=*=*=*=*=*=*=
+ general VMFCI STEP DONE
+ =*=*=*=*=*=*=*=*=*=*=*=
+
+
+ Contraction step number           4
+ ==========================
+
+  
+ Contraction scheme
+ ==================
+  
+ # of contractions:            4
+  
+Contraction  1 :  1
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  2 :  2
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  3 :  3
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  4 :  4
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+ # of basis function for contraction           1 =           5
+ # of basis function for contraction           2 =          15
+ # of basis function for contraction           3 =          35
+ # of basis function for contraction           4 =          35
+
+ Contraction number           1
+ =====================
+
+ Time, timing for basisucao
+  0.39202399999999998        0.0000000000000000     
+
+ Number of basis functions           5
+
+ # of terms in the reduced H=            6
+
+             75 integrals have been read in from file 43
+       This file has been closed
+
+ Conditionning of H, total number of terms:          11
+
+ Time, timing for potcond
+  0.39202399999999998        0.0000000000000000     
+
+ Time, timing for matrix
+  0.39202399999999998        0.0000000000000000     
+
+ Time, timing for diagonalisation
+  0.39202399999999998        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           1   of  step           4
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        9721.566212          0.000000          1.000000   1
+    2)       12696.252697       2974.686485          1.000000   2
+    3)       15684.456847       5962.890635          1.000000   3
+    4)       18795.931618       9074.365406          1.000000   4
+    5)       23473.014178      13751.447966          1.000000   5
+
+ maximum memory used up to this stage (octet)     5072798
+Step  4   ZPE  (1)(2)(3)(4).4-1 >                                                     9721.56621228
+  
+
+ # of different integral types in final contraction =           6
+
+ # of integral types allowing (anti)symmetryzation           6
+ Time, timing for integr1
+  0.39202399999999998        0.0000000000000000     
+
+
+          75  integrals from contraction #           1  of step           4  have been written on file          47
+
+ Contraction number           2
+ =====================
+
+ Time, timing for basisucao
+  0.39202399999999998        0.0000000000000000     
+
+ Number of basis functions          15
+
+ # of terms in the reduced H=           18
+
+           8310 integrals have been read in from file 44
+       This file has been closed
+
+ Conditionning of H, total number of terms:          35
+
+ Time, timing for potcond
+  0.39202399999999998        0.0000000000000000     
+
+ Time, timing for matrix
+  0.39202399999999998        0.0000000000000000     
+
+ Time, timing for diagonalisation
+  0.39202399999999998        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           2   of  step           4
+
+                          vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+state #    1   deg= 1       1)        9721.566387          0.000000          1.000000   1
+state #    2   deg= 2       2)       11253.974616       1532.408229          1.000000   2
+                            3)       11253.974616       1532.408229          1.000000   3
+state #    3   deg= 1       4)       12782.923532       3061.357145          1.000000   4
+state #    4   deg= 2       5)       12785.466802       3063.900416          1.000000   5
+                            6)       12785.466802       3063.900416          1.000000   6
+state #    5   deg= 2       7)       14315.110711       4593.544324          1.000000   7
+                            8)       14315.110711       4593.544324          1.000000   8
+state #    6   deg= 1       9)       14318.540639       4596.974253          1.000000   9
+state #    7   deg= 1      10)       14318.733048       4597.166661          1.000000  10
+state #    8   deg= 2      11)       15846.790619       6125.224233          1.000000  11
+                           12)       15846.790619       6125.224233          1.000000  12
+state #    9   deg= 1      13)       15846.795231       6125.228844          1.000000  13
+state #   10   deg= 2      14)       15850.120815       6128.554428          1.000000  14
+                           15)       15850.120815       6128.554429          1.000000  15
+
+ maximum memory used up to this stage (octet)     5072798
+Step  4   ZPE  (1)(2)(3)(4).4-2 >                                                     9721.56638668
+  
+
+ # of different integral types in final contraction =          54
+
+ # of integral types allowing (anti)symmetryzation          34
+ Time, timing for integr1
+  0.39602399999999999       4.00000000000000355E-003
+
+
+        8310  integrals from contraction #           2  of step           4  have been written on file          48
+
+ Contraction number           3
+ =====================
+
+ Time, timing for basisucao
+  0.39602399999999999        0.0000000000000000     
+
+ Number of basis functions          35
+
+ # of terms in the reduced H=           62
+
+         195720 integrals have been read in from file 45
+       This file has been closed
+
+ Conditionning of H, total number of terms:         123
+
+ Time, timing for potcond
+  0.39602399999999999        0.0000000000000000     
+
+ Time, timing for matrix
+  0.40002399999999999       4.00000000000000355E-003
+
+ Time, timing for diagonalisation
+  0.40002399999999999        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           3   of  step           4
+
+                          vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+state #    1   deg= 1       1)        9721.566376          0.000000          1.000000   1
+state #    2   deg= 3       2)       12784.122198       3062.555822          1.000000   2
+                            3)       12784.122209       3062.555833          1.000000   3
+                            4)       12784.122209       3062.555833          1.000000   4
+state #    3   deg= 1       5)       15863.471214       6141.904838          1.000000   5
+state #    4   deg= 3       6)       15925.305889       6203.739513          1.000000   6
+                            7)       15925.305889       6203.739513          1.000000   7
+                            8)       15925.305899       6203.739523          1.000000   8
+state #    5   deg= 2       9)       15950.115947       6228.549571          1.000000   9
+                           10)       15950.115962       6228.549586          1.000000  10
+state #    6   deg= 3      11)       19013.224850       9291.658474          1.000000  11
+                           12)       19013.224865       9291.658489          1.000000  12
+                           13)       19013.224865       9291.658489          1.000000  13
+state #    7   deg= 3      14)       19101.647064       9380.080688          1.000000  15
+                           15)       19101.647064       9380.080688          1.000000  14
+                           16)       19101.647064       9380.080688          1.000000  16
+state #    8   deg= 1      17)       19102.960371       9381.393995          1.000000  17
+state #    9   deg= 3      18)       19135.105901       9413.539525          1.000000  18
+                           19)       19135.105917       9413.539541          1.000000  19
+                           20)       19135.105917       9413.539541          1.000000  20
+state #   10   deg= 2      21)       22330.437657      12608.871281          1.000000  21
+                           22)       22330.437676      12608.871300          1.000000  22
+state #   11   deg= 1      23)       22336.946628      12615.380252          1.000000  23
+state #   12   deg= 3      24)       22482.826899      12761.260523          1.000000  24
+                           25)       22482.826899      12761.260523          1.000000  25
+                           26)       22482.826920      12761.260544          1.000000  26
+state #   13   deg= 2      27)       22538.867641      12817.301265          1.000000  27
+                           28)       22538.867645      12817.301269          1.000000  28
+state #   14   deg= 3      29)       22542.380542      12820.814166          1.000000  29
+                           30)       22542.380542      12820.814166          1.000000  30
+                           31)       22542.380555      12820.814179          1.000000  31
+state #   15   deg= 1      32)       23021.694146      13300.127770          1.000000  32
+state #   16   deg= 3      33)       23067.815830      13346.249454          1.000000  33
+                           34)       23067.815833      13346.249457          1.000000  34
+                           35)       23067.815833      13346.249457          1.000000  35
+
+ maximum memory used up to this stage (octet)     5072798
+Step  4   ZPE  (1)(2)(3)(4).4-3 >                                                     9721.56637603
+  
+
+ # of different integral types in final contraction =         227
+
+ # of integral types allowing (anti)symmetryzation         134
+ Time, timing for integr1
+  0.43202599999999997       3.20019999999999749E-002
+
+
+      195720  integrals from contraction #           3  of step           4  have been written on file          49
+
+ Contraction number           4
+ =====================
+
+ Time, timing for basisucao
+  0.43202599999999997        0.0000000000000000     
+
+ Number of basis functions          35
+
+ # of terms in the reduced H=           62
+
+         195720 integrals have been read in from file 46
+       This file has been closed
+
+ Conditionning of H, total number of terms:         123
+
+ Time, timing for potcond
+  0.43602700000000000        0.0000000000000000     
+
+ Time, timing for matrix
+  0.43602700000000000        0.0000000000000000     
+
+ Time, timing for diagonalisation
+  0.43602700000000000        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           4   of  step           4
+
+                          vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+state #    1   deg= 1       1)        9721.566379          0.000000          1.000000   1
+state #    2   deg= 3       2)       11039.638160       1318.071781          1.000000   2
+                            3)       11039.638160       1318.071781          1.000000   3
+                            4)       11039.638160       1318.071781          1.000000   4
+state #    3   deg= 1       5)       12360.933147       2639.366768          1.000000   5
+state #    4   deg= 2       6)       12365.686818       2644.120438          1.000000   6
+                            7)       12365.686818       2644.120438          1.000000   7
+state #    5   deg= 3       8)       12366.001220       2644.434841          1.000000   8
+                            9)       12366.001221       2644.434841          1.000000   9
+                           10)       12366.001221       2644.434841          1.000000  10
+state #    6   deg= 3      11)       13691.293247       3969.726867          1.000000  12
+                           12)       13691.293247       3969.726867          1.000000  11
+                           13)       13691.293247       3969.726868          1.000000  13
+state #    7   deg= 3      14)       13698.689015       3977.122636          1.000000  14
+                           15)       13698.689015       3977.122636          1.000000  15
+                           16)       13698.689015       3977.122636          1.000000  16
+state #    8   deg= 3      17)       13698.747667       3977.181288          1.000000  17
+                           18)       13698.747667       3977.181288          1.000000  18
+                           19)       13698.747667       3977.181288          1.000000  19
+state #    9   deg= 1      20)       13699.821196       3978.254816          1.000000  20
+state #   10   deg= 1      21)       15031.382449       5309.816070          1.000000  21
+state #   11   deg= 2      22)       15031.555694       5309.989314          1.000000  22
+                           23)       15031.555694       5309.989315          1.000000  23
+state #   12   deg= 3      24)       15041.913775       5320.347395          1.000000  24
+                           25)       15041.913775       5320.347396          1.000000  25
+                           26)       15041.913775       5320.347396          1.000000  26
+state #   13   deg= 3      27)       15043.350098       5321.783718          1.000000  27
+                           28)       15043.350098       5321.783719          1.000000  28
+                           29)       15043.350098       5321.783719          1.000000  29
+state #   14   deg= 2      30)       15043.362297       5321.795917          1.000000  30
+                           31)       15043.362297       5321.795917          1.000000  31
+state #   15   deg= 1      32)       15060.073855       5338.507475          1.000000  32
+state #   16   deg= 3      33)       15063.912913       5342.346534          1.000000  34
+                           34)       15063.912913       5342.346534          1.000000  33
+                           35)       15063.912914       5342.346534          1.000000  35
+
+ maximum memory used up to this stage (octet)     5072798
+Step  4   ZPE  (1)(2)(3)(4).4-4 >                                                     9721.56637949
+  
+
+ # of different integral types in final contraction =         227
+
+ # of integral types allowing (anti)symmetryzation         134
+ Time, timing for integr1
+  0.46802899999999997       3.20019999999999749E-002
+
+
+      195720  integrals from contraction #           4  of step           4  have been written on file          50
+ 
+
+
+ =*=*=*=*=*=*=*=*=*=*=*=
+ general VMFCI STEP DONE
+ =*=*=*=*=*=*=*=*=*=*=*=
+
+
+ Contraction step number           5
+ ==========================
+
+  
+ Contraction scheme
+ ==================
+  
+ # of contractions:            4
+  
+Contraction  1 :  1
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  2 :  2
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  3 :  3
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  4 :  4
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+ # of basis function for contraction           1 =           5
+ # of basis function for contraction           2 =          15
+ # of basis function for contraction           3 =          35
+ # of basis function for contraction           4 =          35
+
+ Contraction number           1
+ =====================
+
+ Time, timing for basisucao
+  0.47602899999999998        0.0000000000000000     
+
+ Number of basis functions           5
+
+ # of terms in the reduced H=            6
+
+             75 integrals have been read in from file 47
+       This file has been closed
+
+ Conditionning of H, total number of terms:          11
+
+ Time, timing for potcond
+  0.47602899999999998        0.0000000000000000     
+
+ Time, timing for matrix
+  0.47602899999999998        0.0000000000000000     
+
+ Time, timing for diagonalisation
+  0.47602899999999998        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           1   of  step           5
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        9721.566211          0.000000          1.000000   1
+    2)       12696.248226       2974.682015          1.000000   2
+    3)       15684.445934       5962.879723          1.000000   3
+    4)       18795.895877       9074.329666          1.000000   4
+    5)       23472.856313      13751.290102          1.000000   5
+
+ maximum memory used up to this stage (octet)     5072798
+Step  5   ZPE  (1)(2)(3)(4).5-1 >                                                     9721.56621105
+  
+
+ # of different integral types in final contraction =           6
+
+ # of integral types allowing (anti)symmetryzation           6
+ Time, timing for integr1
+  0.47602899999999998        0.0000000000000000     
+
+
+          75  integrals from contraction #           1  of step           5  have been written on file          51
+
+ Contraction number           2
+ =====================
+
+ Time, timing for basisucao
+  0.47602899999999998        0.0000000000000000     
+
+ Number of basis functions          15
+
+ # of terms in the reduced H=           18
+
+           8310 integrals have been read in from file 48
+       This file has been closed
+
+ Conditionning of H, total number of terms:          35
+
+ Time, timing for potcond
+  0.47602899999999998        0.0000000000000000     
+
+ Time, timing for matrix
+  0.47602899999999998        0.0000000000000000     
+
+ Time, timing for diagonalisation
+  0.47602899999999998        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           2   of  step           5
+
+                          vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+state #    1   deg= 1       1)        9721.566212          0.000000          1.000000   1
+state #    2   deg= 2       2)       11253.985337       1532.419125          1.000000   2
+                            3)       11253.985337       1532.419125          1.000000   3
+state #    3   deg= 1       4)       12782.945273       3061.379061          1.000000   4
+state #    4   deg= 2       5)       12785.488367       3063.922155          1.000000   5
+                            6)       12785.488367       3063.922155          1.000000   6
+state #    5   deg= 2       7)       14315.141466       4593.575254          1.000000   7
+                            8)       14315.141466       4593.575254          1.000000   8
+state #    6   deg= 1       9)       14318.571765       4597.005554          1.000000   9
+state #    7   deg= 1      10)       14318.764115       4597.197903          1.000000  10
+state #    8   deg= 2      11)       15846.831502       6125.265290          1.000000  11
+                           12)       15846.831502       6125.265290          1.000000  12
+state #    9   deg= 1      13)       15846.835496       6125.269284          1.000000  13
+state #   10   deg= 2      14)       15850.161987       6128.595776          1.000000  14
+                           15)       15850.161988       6128.595776          1.000000  15
+
+ maximum memory used up to this stage (octet)     5072798
+Step  5   ZPE  (1)(2)(3)(4).5-2 >                                                     9721.56621169
+  
+
+ # of different integral types in final contraction =          54
+
+ # of integral types allowing (anti)symmetryzation          34
+ Time, timing for integr1
+  0.48002899999999998       4.00000000000000355E-003
+
+
+        8310  integrals from contraction #           2  of step           5  have been written on file          52
+
+ Contraction number           3
+ =====================
+
+ Time, timing for basisucao
+  0.48002899999999998        0.0000000000000000     
+
+ Number of basis functions          35
+
+ # of terms in the reduced H=           62
+
+         195720 integrals have been read in from file 49
+       This file has been closed
+
+ Conditionning of H, total number of terms:         123
+
+ Time, timing for potcond
+  0.48002899999999998        0.0000000000000000     
+
+ Time, timing for matrix
+  0.48402999999999996       4.00099999999997680E-003
+
+ Time, timing for diagonalisation
+  0.48402999999999996        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           3   of  step           5
+
+                          vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+state #    1   deg= 1       1)        9721.566205          0.000000          1.000000   1
+state #    2   deg= 3       2)       12783.963849       3062.397644          1.000000   2
+                            3)       12783.963860       3062.397655          1.000000   3
+                            4)       12783.963860       3062.397655          1.000000   4
+state #    3   deg= 1       5)       15863.180819       6141.614613          1.000000   5
+state #    4   deg= 3       6)       15925.002986       6203.436781          1.000000   6
+                            7)       15925.002986       6203.436781          1.000000   7
+                            8)       15925.002996       6203.436791          1.000000   8
+state #    5   deg= 2       9)       15949.798142       6228.231937          1.000000   9
+                           10)       15949.798157       6228.231952          1.000000  10
+state #    6   deg= 3      11)       19012.815599       9291.249394          1.000000  11
+                           12)       19012.815614       9291.249409          1.000000  12
+                           13)       19012.815614       9291.249409          1.000000  13
+state #    7   deg= 3      14)       19101.185303       9379.619097          1.000000  14
+                           15)       19101.185303       9379.619097          1.000000  15
+                           16)       19101.185303       9379.619098          1.000000  16
+state #    8   deg= 1      17)       19102.535063       9380.968858          1.000000  17
+state #    9   deg= 3      18)       19134.640090       9413.073885          1.000000  18
+                           19)       19134.640106       9413.073901          1.000000  19
+                           20)       19134.640106       9413.073901          1.000000  20
+state #   10   deg= 2      21)       22329.803782      12608.237577          1.000000  21
+                           22)       22329.803801      12608.237596          1.000000  22
+state #   11   deg= 1      23)       22336.314949      12614.748744          1.000000  23
+state #   12   deg= 3      24)       22482.174351      12760.608145          1.000000  24
+                           25)       22482.174351      12760.608145          1.000000  25
+                           26)       22482.174372      12760.608166          1.000000  26
+state #   13   deg= 2      27)       22538.228190      12816.661985          1.000000  27
+                           28)       22538.228195      12816.661990          1.000000  28
+state #   14   deg= 3      29)       22541.737088      12820.170883          1.000000  29
+                           30)       22541.737088      12820.170883          1.000000  30
+                           31)       22541.737101      12820.170896          1.000000  31
+state #   15   deg= 1      32)       23020.978931      13299.412725          1.000000  32
+state #   16   deg= 3      33)       23067.095340      13345.529135          1.000000  33
+                           34)       23067.095342      13345.529137          1.000000  34
+                           35)       23067.095342      13345.529137          1.000000  35
+
+ maximum memory used up to this stage (octet)     5072798
+Step  5   ZPE  (1)(2)(3)(4).5-3 >                                                     9721.56620538
+  
+
+ # of different integral types in final contraction =         227
+
+ # of integral types allowing (anti)symmetryzation         134
+ Time, timing for integr1
+  0.51603100000000002       3.20010000000000572E-002
+
+
+      195720  integrals from contraction #           3  of step           5  have been written on file          53
+
+ Contraction number           4
+ =====================
+
+ Time, timing for basisucao
+  0.51603100000000002        0.0000000000000000     
+
+ Number of basis functions          35
+
+ # of terms in the reduced H=           62
+
+         195720 integrals have been read in from file 50
+       This file has been closed
+
+ Conditionning of H, total number of terms:         123
+
+ Time, timing for potcond
+  0.52003199999999994        0.0000000000000000     
+
+ Time, timing for matrix
+  0.52003199999999994        0.0000000000000000     
+
+ Time, timing for diagonalisation
+  0.52003199999999994        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           4   of  step           5
+
+                          vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+state #    1   deg= 1       1)        9721.566211          0.000000          1.000000   1
+state #    2   deg= 3       2)       11039.674300       1318.108089          1.000000   2
+                            3)       11039.674300       1318.108089          1.000000   3
+                            4)       11039.674300       1318.108090          1.000000   4
+state #    3   deg= 1       5)       12361.005724       2639.439513          1.000000   5
+state #    4   deg= 2       6)       12365.758022       2644.191811          1.000000   6
+                            7)       12365.758022       2644.191811          1.000000   7
+state #    5   deg= 3       8)       12366.073149       2644.506938          1.000000   8
+                            9)       12366.073149       2644.506938          1.000000   9
+                           10)       12366.073149       2644.506938          1.000000  10
+state #    6   deg= 3      11)       13691.397316       3969.831105          1.000000  12
+                           12)       13691.397316       3969.831105          1.000000  11
+                           13)       13691.397317       3969.831106          1.000000  13
+state #    7   deg= 3      14)       13698.793943       3977.227732          1.000000  14
+                           15)       13698.793943       3977.227732          1.000000  16
+                           16)       13698.793943       3977.227732          1.000000  15
+state #    8   deg= 3      17)       13698.851667       3977.285456          1.000000  17
+                           18)       13698.851667       3977.285456          1.000000  18
+                           19)       13698.851667       3977.285457          1.000000  19
+state #    9   deg= 1      20)       13699.926010       3978.359799          1.000000  20
+state #   10   deg= 1      21)       15031.520103       5309.953892          1.000000  21
+state #   11   deg= 2      22)       15031.693372       5310.127162          1.000000  22
+                           23)       15031.693373       5310.127162          1.000000  23
+state #   12   deg= 3      24)       15042.052395       5320.486184          1.000000  24
+                           25)       15042.052395       5320.486184          1.000000  25
+                           26)       15042.052395       5320.486184          1.000000  26
+state #   13   deg= 3      27)       15043.488290       5321.922079          1.000000  27
+                           28)       15043.488290       5321.922079          1.000000  28
+                           29)       15043.488290       5321.922079          1.000000  29
+state #   14   deg= 2      30)       15043.501112       5321.934901          1.000000  30
+                           31)       15043.501112       5321.934901          1.000000  31
+state #   15   deg= 1      32)       15060.209252       5338.643041          1.000000  32
+state #   16   deg= 3      33)       15064.048251       5342.482040          1.000000  33
+                           34)       15064.048251       5342.482040          1.000000  34
+                           35)       15064.048251       5342.482040          1.000000  35
+
+ maximum memory used up to this stage (octet)     5072798
+Step  5   ZPE  (1)(2)(3)(4).5-4 >                                                     9721.56621097
+  
+
+ # of different integral types in final contraction =         227
+
+ # of integral types allowing (anti)symmetryzation         134
+ Time, timing for integr1
+  0.55203400000000002       3.20020000000000859E-002
+
+
+      195720  integrals from contraction #           4  of step           5  have been written on file          54
+ 
+
+
+ =*=*=*=*=*=*=*=*=*=*=*=
+ general VMFCI STEP DONE
+ =*=*=*=*=*=*=*=*=*=*=*=
+
+
+ Contraction step number           6
+ ==========================
+
+  
+ Contraction scheme
+ ==================
+  
+ # of contractions:            4
+  
+Contraction  1 :  1
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  2 :  2
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  3 :  3
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  4 :  4
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+ # of basis function for contraction           1 =           5
+ # of basis function for contraction           2 =          15
+ # of basis function for contraction           3 =          35
+ # of basis function for contraction           4 =          35
+
+ Contraction number           1
+ =====================
+
+ Time, timing for basisucao
+  0.56003399999999992        0.0000000000000000     
+
+ Number of basis functions           5
+
+ # of terms in the reduced H=            6
+
+             75 integrals have been read in from file 51
+       This file has been closed
+
+ Conditionning of H, total number of terms:          11
+
+ Time, timing for potcond
+  0.56003399999999992        0.0000000000000000     
+
+ Time, timing for matrix
+  0.56003399999999992        0.0000000000000000     
+
+ Time, timing for diagonalisation
+  0.56003399999999992        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           1   of  step           6
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        9721.566205          0.000000          1.000000   1
+    2)       12696.249736       2974.683531          1.000000   2
+    3)       15684.450351       5962.884146          1.000000   3
+    4)       18795.914968       9074.348763          1.000000   4
+    5)       23472.947965      13751.381760          1.000000   5
+
+ maximum memory used up to this stage (octet)     5072798
+Step  6   ZPE  (1)(2)(3)(4).6-1 >                                                     9721.56620465
+  
+
+ # of different integral types in final contraction =           6
+
+ # of integral types allowing (anti)symmetryzation           6
+ Time, timing for integr1
+  0.56003399999999992        0.0000000000000000     
+
+
+          75  integrals from contraction #           1  of step           6  have been written on file          55
+
+ Contraction number           2
+ =====================
+
+ Time, timing for basisucao
+  0.56003399999999992        0.0000000000000000     
+
+ Number of basis functions          15
+
+ # of terms in the reduced H=           17
+
+           8310 integrals have been read in from file 52
+       This file has been closed
+
+ Conditionning of H, total number of terms:          33
+
+ Time, timing for potcond
+  0.56003399999999992        0.0000000000000000     
+
+ Time, timing for matrix
+  0.56003399999999992        0.0000000000000000     
+
+ Time, timing for diagonalisation
+  0.56003399999999992        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           2   of  step           6
+
+                          vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+state #    1   deg= 1       1)        9721.566205          0.000000          1.000000   1
+state #    2   deg= 2       2)       11253.982420       1532.416215          1.000000   2
+                            3)       11253.982420       1532.416215          1.000000   3
+state #    3   deg= 1       4)       12782.939429       3061.373224          1.000000   4
+state #    4   deg= 2       5)       12785.482542       3063.916337          1.000000   5
+                            6)       12785.482542       3063.916337          1.000000   6
+state #    5   deg= 2       7)       14315.133239       4593.567034          1.000000   7
+                            8)       14315.133239       4593.567034          1.000000   8
+state #    6   deg= 1       9)       14318.563383       4596.997178          1.000000   9
+state #    7   deg= 1      10)       14318.755744       4597.189539          1.000000  10
+state #    8   deg= 2      11)       15846.820508       6125.254303          1.000000  11
+                           12)       15846.820508       6125.254303          1.000000  12
+state #    9   deg= 1      13)       15846.824646       6125.258441          1.000000  13
+state #   10   deg= 2      14)       15850.150858       6128.584653          1.000000  14
+                           15)       15850.150858       6128.584653          1.000000  15
+
+ maximum memory used up to this stage (octet)     5072798
+Step  6   ZPE  (1)(2)(3)(4).6-2 >                                                     9721.56620490
+  
+
+ # of different integral types in final contraction =          54
+
+ # of integral types allowing (anti)symmetryzation          34
+ Time, timing for integr1
+  0.56403399999999992       4.00000000000000355E-003
+
+
+        8310  integrals from contraction #           2  of step           6  have been written on file          56
+
+ Contraction number           3
+ =====================
+
+ Time, timing for basisucao
+  0.56403399999999992        0.0000000000000000     
+
+ Number of basis functions          35
+
+ # of terms in the reduced H=           62
+
+         195720 integrals have been read in from file 53
+       This file has been closed
+
+ Conditionning of H, total number of terms:         123
+
+ Time, timing for potcond
+  0.56403399999999992        0.0000000000000000     
+
+ Time, timing for matrix
+  0.56803499999999996       4.00100000000003231E-003
+
+ Time, timing for diagonalisation
+  0.56803499999999996        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           3   of  step           6
+
+                          vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+state #    1   deg= 1       1)        9721.566205          0.000000          1.000000   1
+state #    2   deg= 3       2)       12783.974896       3062.408691          1.000000   2
+                            3)       12783.974907       3062.408702          1.000000   3
+                            4)       12783.974907       3062.408702          1.000000   4
+state #    3   deg= 1       5)       15863.201211       6141.635006          1.000000   5
+state #    4   deg= 3       6)       15925.024092       6203.457887          1.000000   6
+                            7)       15925.024092       6203.457887          1.000000   7
+                            8)       15925.024102       6203.457897          1.000000   8
+state #    5   deg= 2       9)       15949.820130       6228.253925          1.000000   9
+                           10)       15949.820145       6228.253940          1.000000  10
+state #    6   deg= 3      11)       19012.844275       9291.278070          1.000000  11
+                           12)       19012.844290       9291.278085          1.000000  12
+                           13)       19012.844290       9291.278085          1.000000  13
+state #    7   deg= 3      14)       19101.217417       9379.651213          1.000000  14
+                           15)       19101.217417       9379.651213          1.000000  15
+                           16)       19101.217418       9379.651213          1.000000  16
+state #    8   deg= 1      17)       19102.564672       9380.998468          1.000000  17
+state #    9   deg= 3      18)       19134.672302       9413.106097          1.000000  18
+                           19)       19134.672318       9413.106113          1.000000  19
+                           20)       19134.672318       9413.106113          1.000000  20
+state #   10   deg= 2      21)       22329.847668      12608.281463          1.000000  21
+                           22)       22329.847687      12608.281482          1.000000  22
+state #   11   deg= 1      23)       22336.358630      12614.792425          1.000000  23
+state #   12   deg= 3      24)       22482.219385      12760.653180          1.000000  24
+                           25)       22482.219385      12760.653180          1.000000  25
+                           26)       22482.219406      12760.653202          1.000000  26
+state #   13   deg= 2      27)       22538.272473      12816.706268          1.000000  27
+                           28)       22538.272477      12816.706272          1.000000  28
+state #   14   deg= 3      29)       22541.781596      12820.215392          1.000000  29
+                           30)       22541.781596      12820.215392          1.000000  30
+                           31)       22541.781609      12820.215404          1.000000  31
+state #   15   deg= 1      32)       23021.028006      13299.461801          1.000000  32
+state #   16   deg= 3      33)       23067.144692      13345.578487          1.000000  33
+                           34)       23067.144694      13345.578489          1.000000  34
+                           35)       23067.144694      13345.578489          1.000000  35
+
+ maximum memory used up to this stage (octet)     5072798
+Step  6   ZPE  (1)(2)(3)(4).6-3 >                                                     9721.56620487
+  
+
+ # of different integral types in final contraction =         227
+
+ # of integral types allowing (anti)symmetryzation         134
+ Time, timing for integr1
+  0.60003600000000001       3.20010000000000572E-002
+
+
+      195720  integrals from contraction #           3  of step           6  have been written on file          57
+
+ Contraction number           4
+ =====================
+
+ Time, timing for basisucao
+  0.60003600000000001        0.0000000000000000     
+
+ Number of basis functions          35
+
+ # of terms in the reduced H=           62
+
+         195720 integrals have been read in from file 54
+       This file has been closed
+
+ Conditionning of H, total number of terms:         123
+
+ Time, timing for potcond
+  0.60403699999999994        0.0000000000000000     
+
+ Time, timing for matrix
+  0.60403699999999994        0.0000000000000000     
+
+ Time, timing for diagonalisation
+  0.60403699999999994        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           4   of  step           6
+
+                          vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+state #    1   deg= 1       1)        9721.566205          0.000000          1.000000   1
+state #    2   deg= 3       2)       11039.669049       1318.102844          1.000000   3
+                            3)       11039.669049       1318.102844          1.000000   2
+                            4)       11039.669049       1318.102844          1.000000   4
+state #    3   deg= 1       5)       12360.995265       2639.429060          1.000000   5
+state #    4   deg= 2       6)       12365.747646       2644.181441          1.000000   6
+                            7)       12365.747646       2644.181441          1.000000   7
+state #    5   deg= 3       8)       12366.062726       2644.496521          1.000000   8
+                            9)       12366.062726       2644.496521          1.000000   9
+                           10)       12366.062726       2644.496521          1.000000  10
+state #    6   deg= 3      11)       13691.382342       3969.816137          1.000000  12
+                           12)       13691.382342       3969.816137          1.000000  11
+                           13)       13691.382343       3969.816138          1.000000  13
+state #    7   deg= 3      14)       13698.778734       3977.212529          1.000000  14
+                           15)       13698.778734       3977.212529          1.000000  15
+                           16)       13698.778734       3977.212529          1.000000  16
+state #    8   deg= 3      17)       13698.836552       3977.270347          1.000000  18
+                           18)       13698.836552       3977.270347          1.000000  17
+                           19)       13698.836552       3977.270347          1.000000  19
+state #    9   deg= 1      20)       13699.910861       3978.344656          1.000000  20
+state #   10   deg= 1      21)       15031.500086       5309.933881          1.000000  21
+state #   11   deg= 2      22)       15031.673357       5310.107152          1.000000  22
+                           23)       15031.673357       5310.107153          1.000000  23
+state #   12   deg= 3      24)       15042.032181       5320.465976          1.000000  24
+                           25)       15042.032181       5320.465976          1.000000  25
+                           26)       15042.032181       5320.465976          1.000000  26
+state #   13   deg= 3      27)       15043.468183       5321.901979          1.000000  27
+                           28)       15043.468184       5321.901979          1.000000  28
+                           29)       15043.468184       5321.901979          1.000000  29
+state #   14   deg= 2      30)       15043.480928       5321.914723          1.000000  30
+                           31)       15043.480929       5321.914724          1.000000  31
+state #   15   deg= 1      32)       15060.189349       5338.623144          1.000000  32
+state #   16   deg= 3      33)       15064.028319       5342.462114          1.000000  33
+                           34)       15064.028319       5342.462114          1.000000  34
+                           35)       15064.028319       5342.462114          1.000000  35
+
+ maximum memory used up to this stage (octet)     5072798
+Step  6   ZPE  (1)(2)(3)(4).6-4 >                                                     9721.56620489
+  
+
+ # of different integral types in final contraction =         227
+
+ # of integral types allowing (anti)symmetryzation         134
+ Time, timing for integr1
+  0.63603900000000002       3.20020000000000859E-002
+
+
+      195720  integrals from contraction #           4  of step           6  have been written on file          58
+ 
+
+
+ =*=*=*=*=*=*=*=*=*=*=*=
+ general VMFCI STEP DONE
+ =*=*=*=*=*=*=*=*=*=*=*=
+
+
+ Contraction step number           7
+ ==========================
+
+  
+ Contraction scheme
+ ==================
+  
+ # of contractions:            4
+  
+Contraction  1 :  1
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  2 :  2
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  3 :  3
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+Contraction  4 :  4
+Energy thresholds :     0.0
+Total energy threshold :     0.0
+  
+  
+ # of basis function for contraction           1 =           5
+ # of basis function for contraction           2 =          15
+ # of basis function for contraction           3 =          35
+ # of basis function for contraction           4 =          35
+
+ Contraction number           1
+ =====================
+
+ Time, timing for basisucao
+  0.64403899999999992        0.0000000000000000     
+
+ Number of basis functions           5
+
+ # of terms in the reduced H=            6
+
+             75 integrals have been read in from file 55
+       This file has been closed
+
+ Conditionning of H, total number of terms:          11
+
+ Time, timing for potcond
+  0.64403899999999992        0.0000000000000000     
+
+ Time, timing for matrix
+  0.64403899999999992        0.0000000000000000     
+
+ Time, timing for diagonalisation
+  0.64403899999999992        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           1   of  step           7
+
+  vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+    1)        9721.566205          0.000000          1.000000   1
+    2)       12696.249541       2974.683336          1.000000   2
+    3)       15684.449861       5962.883656          1.000000   3
+    4)       18795.913272       9074.347067          1.000000   4
+    5)       23472.940331      13751.374127          1.000000   5
+
+ maximum memory used up to this stage (octet)     5072798
+Step  7   ZPE  (1)(2)(3)(4).7-1 >                                                     9721.56620463
+  
+
+ # of different integral types in final contraction =           6
+
+ # of integral types allowing (anti)symmetryzation           6
+ Time, timing for integr1
+  0.64403899999999992        0.0000000000000000     
+
+
+          75  integrals from contraction #           1  of step           7  have been written on file          59
+
+ Contraction number           2
+ =====================
+
+ Time, timing for basisucao
+  0.64403899999999992        0.0000000000000000     
+
+ Number of basis functions          15
+
+ # of terms in the reduced H=           17
+
+           8310 integrals have been read in from file 56
+       This file has been closed
+
+ Conditionning of H, total number of terms:          33
+
+ Time, timing for potcond
+  0.64403899999999992        0.0000000000000000     
+
+ Time, timing for matrix
+  0.64403899999999992        0.0000000000000000     
+
+ Time, timing for diagonalisation
+  0.64403899999999992        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           2   of  step           7
+
+                          vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+state #    1   deg= 1       1)        9721.566205          0.000000          1.000000   1
+state #    2   deg= 2       2)       11253.982879       1532.416675          1.000000   2
+                            3)       11253.982879       1532.416675          1.000000   3
+state #    3   deg= 1       4)       12782.940353       3061.374149          1.000000   4
+state #    4   deg= 2       5)       12785.483459       3063.917254          1.000000   5
+                            6)       12785.483459       3063.917255          1.000000   6
+state #    5   deg= 2       7)       14315.134542       4593.568338          1.000000   7
+                            8)       14315.134543       4593.568338          1.000000   8
+state #    6   deg= 1       9)       14318.564704       4596.998499          1.000000   9
+state #    7   deg= 1      10)       14318.757062       4597.190858          1.000000  10
+state #    8   deg= 2      11)       15846.822240       6125.256036          1.000000  11
+                           12)       15846.822240       6125.256036          1.000000  12
+state #    9   deg= 1      13)       15846.826353       6125.260148          1.000000  13
+state #   10   deg= 2      14)       15850.152604       6128.586399          1.000000  14
+                           15)       15850.152604       6128.586399          1.000000  15
+
+ maximum memory used up to this stage (octet)     5072798
+Step  7   ZPE  (1)(2)(3)(4).7-2 >                                                     9721.56620464
+  
+
+ # of different integral types in final contraction =          54
+
+ # of integral types allowing (anti)symmetryzation          34
+ Time, timing for integr1
+  0.64803899999999992       4.00000000000000355E-003
+
+
+        8310  integrals from contraction #           2  of step           7  have been written on file          60
+
+ Contraction number           3
+ =====================
+
+ Time, timing for basisucao
+  0.64803899999999992        0.0000000000000000     
+
+ Number of basis functions          35
+
+ # of terms in the reduced H=           62
+
+         195720 integrals have been read in from file 57
+       This file has been closed
+
+ Conditionning of H, total number of terms:         123
+
+ Time, timing for potcond
+  0.64803899999999992        0.0000000000000000     
+
+ Time, timing for matrix
+  0.64803899999999992        0.0000000000000000     
+
+ Time, timing for diagonalisation
+  0.65203999999999995       4.00100000000003231E-003
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           3   of  step           7
+
+                          vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+state #    1   deg= 1       1)        9721.566205          0.000000          1.000000   1
+state #    2   deg= 3       2)       12783.968833       3062.402628          1.000000   2
+                            3)       12783.968844       3062.402639          1.000000   3
+                            4)       12783.968844       3062.402639          1.000000   4
+state #    3   deg= 1       5)       15863.190084       6141.623879          1.000000   5
+state #    4   deg= 3       6)       15925.012488       6203.446284          1.000000   6
+                            7)       15925.012488       6203.446284          1.000000   7
+                            8)       15925.012499       6203.446294          1.000000   8
+state #    5   deg= 2       9)       15949.807958       6228.241754          1.000000   9
+                           10)       15949.807973       6228.241769          1.000000  10
+state #    6   deg= 3      11)       19012.828593       9291.262389          1.000000  11
+                           12)       19012.828608       9291.262404          1.000000  13
+                           13)       19012.828608       9291.262404          1.000000  12
+state #    7   deg= 3      14)       19101.199727       9379.633523          1.000000  14
+                           15)       19101.199727       9379.633523          1.000000  15
+                           16)       19101.199728       9379.633523          1.000000  16
+state #    8   deg= 1      17)       19102.548379       9380.982174          1.000000  17
+state #    9   deg= 3      18)       19134.654460       9413.088255          1.000000  18
+                           19)       19134.654476       9413.088272          1.000000  19
+                           20)       19134.654476       9413.088272          1.000000  20
+state #   10   deg= 2      21)       22329.823386      12608.257181          1.000000  21
+                           22)       22329.823405      12608.257200          1.000000  22
+state #   11   deg= 1      23)       22336.334433      12614.768228          1.000000  23
+state #   12   deg= 3      24)       22482.194390      12760.628185          1.000000  24
+                           25)       22482.194390      12760.628185          1.000000  25
+                           26)       22482.194411      12760.628207          1.000000  26
+state #   13   deg= 2      27)       22538.247977      12816.681772          1.000000  27
+                           28)       22538.247981      12816.681777          1.000000  28
+state #   14   deg= 3      29)       22541.756948      12820.190743          1.000000  29
+                           30)       22541.756948      12820.190743          1.000000  30
+                           31)       22541.756961      12820.190756          1.000000  31
+state #   15   deg= 1      32)       23021.000616      13299.434411          1.000000  32
+state #   16   deg= 3      33)       23067.117101      13345.550897          1.000000  33
+                           34)       23067.117103      13345.550899          1.000000  34
+                           35)       23067.117103      13345.550899          1.000000  35
+
+ maximum memory used up to this stage (octet)     5072798
+Step  7   ZPE  (1)(2)(3)(4).7-3 >                                                     9721.56620463
+  
+
+ # of different integral types in final contraction =         227
+
+ # of integral types allowing (anti)symmetryzation         134
+ Time, timing for integr1
+  0.68404199999999993       3.20019999999999749E-002
+
+
+      195720  integrals from contraction #           3  of step           7  have been written on file          61
+
+ Contraction number           4
+ =====================
+
+ Time, timing for basisucao
+  0.68404199999999993        0.0000000000000000     
+
+ Number of basis functions          35
+
+ # of terms in the reduced H=           62
+
+         195720 integrals have been read in from file 58
+       This file has been closed
+
+ Conditionning of H, total number of terms:         123
+
+ Time, timing for potcond
+  0.68804199999999993        0.0000000000000000     
+
+ Time, timing for matrix
+  0.68804199999999993        0.0000000000000000     
+
+ Time, timing for diagonalisation
+  0.68804199999999993        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           4   of  step           7
+
+                          vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+state #    1   deg= 1       1)        9721.566205          0.000000          1.000000   1
+state #    2   deg= 3       2)       11039.670493       1318.104288          1.000000   3
+                            3)       11039.670493       1318.104288          1.000000   2
+                            4)       11039.670493       1318.104289          1.000000   4
+state #    3   deg= 1       5)       12360.998158       2639.431953          1.000000   5
+state #    4   deg= 2       6)       12365.750486       2644.184282          1.000000   6
+                            7)       12365.750487       2644.184282          1.000000   7
+state #    5   deg= 3       8)       12366.065594       2644.499389          1.000000   8
+                            9)       12366.065594       2644.499390          1.000000   9
+                           10)       12366.065594       2644.499390          1.000000  10
+state #    6   deg= 3      11)       13691.386488       3969.820283          1.000000  11
+                           12)       13691.386488       3969.820283          1.000000  12
+                           13)       13691.386488       3969.820284          1.000000  13
+state #    7   deg= 3      14)       13698.782916       3977.216711          1.000000  14
+                           15)       13698.782916       3977.216711          1.000000  15
+                           16)       13698.782916       3977.216711          1.000000  16
+state #    8   deg= 3      17)       13698.840698       3977.274493          1.000000  17
+                           18)       13698.840698       3977.274493          1.000000  18
+                           19)       13698.840698       3977.274493          1.000000  19
+state #    9   deg= 1      20)       13699.915038       3978.348833          1.000000  20
+state #   10   deg= 1      21)       15031.505572       5309.939367          1.000000  21
+state #   11   deg= 2      22)       15031.678844       5310.112639          1.000000  22
+                           23)       15031.678844       5310.112639          1.000000  23
+state #   12   deg= 3      24)       15042.037706       5320.471502          1.000000  24
+                           25)       15042.037707       5320.471502          1.000000  25
+                           26)       15042.037707       5320.471502          1.000000  26
+state #   13   deg= 3      27)       15043.473691       5321.907486          1.000000  27
+                           28)       15043.473691       5321.907486          1.000000  28
+                           29)       15043.473691       5321.907486          1.000000  29
+state #   14   deg= 2      30)       15043.486460       5321.920256          1.000000  30
+                           31)       15043.486460       5321.920256          1.000000  31
+state #   15   deg= 1      32)       15060.194749       5338.628545          1.000000  32
+state #   16   deg= 3      33)       15064.033717       5342.467512          1.000000  33
+                           34)       15064.033717       5342.467512          1.000000  34
+                           35)       15064.033717       5342.467513          1.000000  35
+
+ maximum memory used up to this stage (octet)     5072798
+Step  7   ZPE  (1)(2)(3)(4).7-4 >                                                     9721.56620464
+  
+
+ # of different integral types in final contraction =         227
+
+ # of integral types allowing (anti)symmetryzation         134
+ Time, timing for integr1
+  0.72004400000000002       3.20020000000000859E-002
+
+
+      195720  integrals from contraction #           4  of step           7  have been written on file          62
+ 
+
+
+ =*=*=*=*=*=*=*=*=*=*=*=
+ general VMFCI STEP DONE
+ =*=*=*=*=*=*=*=*=*=*=*=
+
+
+ Contraction step number           8
+ ==========================
+
+  
+ Contraction scheme
+ ==================
+  
+ # of contractions:            3
+  
+Contraction  1 :  1  3
+Energy thresholds :     0.0     0.0
+Total energy threshold : 48000.0
+  
+  
+Contraction  2 :  2
+Energy thresholds :     0.0
+Total energy threshold : 14000.0
+  
+  
+Contraction  3 :  4
+Energy thresholds :     0.0
+Total energy threshold : 14000.0
+  
+  
+ # of basis function for contraction           1 =         175
+ # of basis function for contraction           2 =          15
+ # of basis function for contraction           3 =          35
+
+ Contraction number           1
+ =====================
+
+ Time, timing for basisucao
+  0.73204499999999995        0.0000000000000000     
+
+ Number of basis functions         175
+
+ # of terms in the reduced H=           83
+
+             75 integrals have been read in from file 59
+       This file has been closed
+
+         195720 integrals have been read in from file 61
+       This file has been closed
+
+ Conditionning of H, total number of terms:         197
+
+ Time, timing for potcond
+  0.73604599999999998        0.0000000000000000     
+
+ Time, timing for matrix
+  0.74404599999999999       8.00000000000000711E-003
+
+  eigenvalues less than   23472.943868769886       cm-1 will be computed with dsyevr
+
+          70  eigenvectors among         175  have been computed with dsyevr
+ Time, timing for diagonalisation
+  0.75204700000000002       8.00100000000003586E-003
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           1   of  step           8
+
+                          vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+state #    1   deg= 1       1)        9704.901587          0.000000          0.998173   1   1
+state #    2   deg= 1       2)       12619.290038       2914.388451          0.982493   2   1
+state #    3   deg= 3       3)       12725.788448       3020.886861          0.999491   1   2
+                            4)       12725.788459       3020.886873          0.992688   1   4
+                            5)       12725.788459       3020.886873          0.992688   1   3
+state #    4   deg= 1       6)       15555.849547       5850.947960          0.956885   3   1
+state #    5   deg= 3       7)       15625.064045       5920.162459          0.964724   2   2
+                            8)       15625.064057       5920.162470          0.946136   2   3
+                            9)       15625.064057       5920.162470          0.946136   2   4
+state #    6   deg= 1      10)       15754.727866       6049.826279          0.939660   1   5
+state #    7   deg= 3      11)       15777.440023       6072.538436          0.987787   1   7
+                           12)       15777.440023       6072.538436          0.987787   1   6
+                           13)       15777.440033       6072.538446          0.993775   1   8
+state #    8   deg= 2      14)       15781.417956       6076.516369          0.994158   1   9
+                           15)       15781.417972       6076.516385          0.994158   1  10
+state #    9   deg= 3      16)       18587.165911       8882.264324          0.950508   3   2
+                           17)       18587.165922       8882.264335          0.915535   3   4
+                           18)       18587.165922       8882.264335          0.915535   3   3
+state #   10   deg= 1      19)       18624.421684       8919.520097          0.639624   4   1
+state #   11   deg= 2      20)       18666.005195       8961.103608          0.921260   2   9
+                           21)       18666.005211       8961.103624          0.921260   2  10
+state #   12   deg= 3      22)       18682.200122       8977.298535          0.887538   2   7
+                           23)       18682.200122       8977.298535          0.887538   2   6
+                           24)       18682.200132       8977.298545          0.935861   2   8
+state #   13   deg= 1      25)       18690.257700       8985.356114          0.593591   2   5
+state #   14   deg= 3      26)       18845.122655       9140.221068          0.997887   1  15
+                           27)       18845.122655       9140.221068          0.997887   1  14
+                           28)       18845.122655       9140.221069          0.999715   1  16
+state #   15   deg= 3      29)       18867.557847       9162.656260          0.968411   1  18
+                           30)       18867.557876       9162.656289          0.903491   1  20
+                           31)       18867.557876       9162.656289          0.903491   1  19
+state #   16   deg= 1      32)       18875.449215       9170.547628          0.923212   1  17
+state #   17   deg= 3      33)       18875.661655       9170.760068          0.961032   1  11
+                           34)       18875.661656       9170.760070          0.824935   1  12
+                           35)       18875.661656       9170.760070          0.824935   1  13
+state #   18   deg= 2      36)       21677.472715      11972.571128          0.878468   3   9
+                           37)       21677.472731      11972.571144          0.878468   3  10
+state #   19   deg= 1      38)       21680.644033      11975.742447          0.731553   3   5
+state #   20   deg= 3      39)       21695.236268      11990.334681          0.853629   3   6
+                           40)       21695.236268      11990.334681          0.853629   3   7
+                           41)       21695.236279      11990.334692          0.930388   3   8
+state #   21   deg= 1      42)       21818.558000      12113.656413          0.669722   2  17
+state #   22   deg= 3      43)       21839.414115      12134.512529          0.783558   2  15
+                           44)       21839.414115      12134.512529          0.783558   2  14
+                           45)       21839.414120      12134.512533          0.907079   2  16
+state #   23   deg= 3      46)       21844.214194      12139.312607          0.798268   2  18
+                           47)       21844.214198      12139.312612          0.679726   2  19
+                           48)       21844.214198      12139.312612          0.679726   2  20
+state #   24   deg= 3      49)       21875.120876      12170.219289          0.929463   4   2
+                           50)       21875.120887      12170.219300          0.844145   4   3
+                           51)       21875.120887      12170.219300          0.844145   4   4
+state #   25   deg= 2      52)       21894.010781      12189.109194          0.929832   1  21
+                           53)       21894.010789      12189.109202          0.929832   1  22
+state #   26   deg= 1      54)       21916.779708      12211.878121          0.788866   1  23
+state #   27   deg= 3      55)       21940.128441      12235.226854          0.799795   2  11
+                           56)       21940.128464      12235.226877          0.679628   2  12
+                           57)       21940.128464      12235.226877          0.679628   2  13
+state #   28   deg= 3      58)       22018.134339      12313.232752          0.830088   1  24
+                           59)       22018.134339      12313.232752          0.830088   1  25
+                           60)       22018.134356      12313.232769          0.961121   1  26
+state #   29   deg= 3      61)       22105.203323      12400.301737          0.847217   1  29
+                           62)       22105.203323      12400.301737          0.847217   1  30
+                           63)       22105.203328      12400.301741          0.948670   1  31
+state #   30   deg= 2      64)       22141.040922      12436.139335          0.920215   1  28
+                           65)       22141.040927      12436.139341          0.920215   1  27
+state #   31   deg= 3      66)       22600.087853      12895.186267          0.859819   1  34
+                           67)       22600.087853      12895.186267          0.859819   1  35
+                           68)       22600.087855      12895.186269          0.934099   1  33
+state #   32   deg= 1      69)       22605.066000      12900.164414          0.727288   1  32
+state #   33   deg= 1      70)       23168.535937      13463.634350          0.928584   5   1
+
+ maximum memory used up to this stage (octet)     5072798
+Step  8   ZPE  (1-3)(2)(4).8-1 >                                                      9704.90158678
+  
+
+ # of different integral types in final contraction =         467
+
+ # of integral types allowing (anti)symmetryzation         293
+ Time, timing for integr1
+   2.4521530000000000        1.6961060000000001     
+
+
+     1567930  integrals from contraction #           1  of step           8  have been written on file          63
+
+ Contraction number           2
+ =====================
+
+ Time, timing for basisucao
+   2.4521530000000000        0.0000000000000000     
+
+ Number of basis functions          15
+
+ # of terms in the reduced H=           18
+
+           8310 integrals have been read in from file 60
+       This file has been closed
+
+ Conditionning of H, total number of terms:          35
+
+ Time, timing for potcond
+   2.4521530000000000        0.0000000000000000     
+
+ Time, timing for matrix
+   2.4521530000000000        0.0000000000000000     
+
+ Time, timing for diagonalisation
+   2.4521530000000000        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           2   of  step           8
+
+                          vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+state #    1   deg= 1       1)        9721.566205          0.000000          1.000000   1
+state #    2   deg= 2       2)       11253.982763       1532.416558          1.000000   2
+                            3)       11253.982763       1532.416558          1.000000   3
+state #    3   deg= 1       4)       12782.940119       3061.373915          1.000000   4
+state #    4   deg= 2       5)       12785.483226       3063.917021          1.000000   5
+                            6)       12785.483226       3063.917022          1.000000   6
+state #    5   deg= 2       7)       14315.134213       4593.568008          1.000000   7
+                            8)       14315.134213       4593.568008          1.000000   8
+state #    6   deg= 1       9)       14318.564368       4596.998164          1.000000   9
+state #    7   deg= 1      10)       14318.756727       4597.190523          1.000000  10
+state #    8   deg= 2      11)       15846.821800       6125.255596          1.000000  11
+                           12)       15846.821800       6125.255596          1.000000  12
+state #    9   deg= 1      13)       15846.825919       6125.259714          1.000000  13
+state #   10   deg= 2      14)       15850.152158       6128.585954          1.000000  14
+                           15)       15850.152159       6128.585954          1.000000  15
+
+ maximum memory used up to this stage (octet)    26993202
+Step  8   ZPE  (1-3)(2)(4).8-2 >                                                      9721.56620463
+  
+
+ # of different integral types in final contraction =          54
+
+ # of integral types allowing (anti)symmetryzation          34
+ Time, timing for integr1
+   2.4561530000000000       4.00000000000000355E-003
+
+
+        8310  integrals from contraction #           2  of step           8  have been written on file          64
+
+ Contraction number           3
+ =====================
+
+ Time, timing for basisucao
+   2.4561530000000000        0.0000000000000000     
+
+ Number of basis functions          35
+
+ # of terms in the reduced H=           62
+
+         195720 integrals have been read in from file 62
+       This file has been closed
+
+ Conditionning of H, total number of terms:         123
+
+ Time, timing for potcond
+   2.4561530000000000        0.0000000000000000     
+
+ Time, timing for matrix
+   2.4601530000000000       4.00000000000000355E-003
+
+ Time, timing for diagonalisation
+   2.4601530000000000        0.0000000000000000     
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           3   of  step           8
+
+                          vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+state #    1   deg= 1       1)        9721.566205          0.000000          1.000000   1
+state #    2   deg= 3       2)       11039.670271       1318.104066          1.000000   2
+                            3)       11039.670271       1318.104066          1.000000   3
+                            4)       11039.670271       1318.104066          1.000000   4
+state #    3   deg= 1       5)       12360.997715       2639.431510          1.000000   5
+state #    4   deg= 2       6)       12365.750047       2644.183843          1.000000   6
+                            7)       12365.750048       2644.183843          1.000000   7
+state #    5   deg= 3       8)       12366.065153       2644.498948          1.000000   8
+                            9)       12366.065153       2644.498948          1.000000   9
+                           10)       12366.065153       2644.498948          1.000000  10
+state #    6   deg= 3      11)       13691.385853       3969.819649          1.000000  11
+                           12)       13691.385853       3969.819649          1.000000  12
+                           13)       13691.385854       3969.819649          1.000000  13
+state #    7   deg= 3      14)       13698.782272       3977.216067          1.000000  14
+                           15)       13698.782272       3977.216067          1.000000  15
+                           16)       13698.782272       3977.216067          1.000000  16
+state #    8   deg= 3      17)       13698.840058       3977.273853          1.000000  18
+                           18)       13698.840058       3977.273853          1.000000  17
+                           19)       13698.840058       3977.273854          1.000000  19
+state #    9   deg= 1      20)       13699.914396       3978.348191          1.000000  20
+state #   10   deg= 1      21)       15031.504725       5309.938520          1.000000  21
+state #   11   deg= 2      22)       15031.677996       5310.111792          1.000000  22
+                           23)       15031.677997       5310.111792          1.000000  23
+state #   12   deg= 3      24)       15042.036851       5320.470646          1.000000  24
+                           25)       15042.036851       5320.470647          1.000000  25
+                           26)       15042.036851       5320.470647          1.000000  26
+state #   13   deg= 3      27)       15043.472840       5321.906635          1.000000  27
+                           28)       15043.472840       5321.906635          1.000000  28
+                           29)       15043.472840       5321.906635          1.000000  29
+state #   14   deg= 2      30)       15043.485606       5321.919401          1.000000  30
+                           31)       15043.485606       5321.919401          1.000000  31
+state #   15   deg= 1      32)       15060.193908       5338.627703          1.000000  32
+state #   16   deg= 3      33)       15064.032875       5342.466670          1.000000  33
+                           34)       15064.032875       5342.466670          1.000000  34
+                           35)       15064.032875       5342.466670          1.000000  35
+
+ maximum memory used up to this stage (octet)    26993202
+Step  8   ZPE  (1-3)(2)(4).8-3 >                                                      9721.56620463
+  
+
+ # of different integral types in final contraction =         227
+
+ # of integral types allowing (anti)symmetryzation         134
+ Time, timing for integr1
+   2.4921549999999999       3.20019999999998639E-002
+
+
+      195720  integrals from contraction #           3  of step           8  have been written on file          65
+ 
+
+
+ =*=*=*=*=*=*=*=*=*=*=*=
+ general VMFCI STEP DONE
+ =*=*=*=*=*=*=*=*=*=*=*=
+
+
+ Contraction step number           9
+ ==========================
+
+  
+ Contraction scheme
+ ==================
+  
+ # of contractions:            1
+  
+Contraction  1 :  1  2  3
+Energy thresholds :     0.0     0.0     0.0
+Total energy threshold :  4225.0
+  
+  
+ # of basis function for contraction           1 =          47
+
+ Contraction number           1
+ =====================
+
+ Time, timing for basisucao
+   3.0081869999999999        0.0000000000000000     
+
+ Number of basis functions          47
+
+ # of terms in the reduced H=          454
+
+        1567930 integrals have been read in from file 63
+       This file has been closed
+
+           8310 integrals have been read in from file 64
+       This file has been closed
+
+         195720 integrals have been read in from file 65
+       This file has been closed
+
+ Conditionning of H, total number of terms:        2201
+
+ Time, timing for potcond
+   3.0281880000000001        0.0000000000000000     
+
+ Time, timing for matrix
+   3.0321889999999998       4.00099999999969924E-003
+
+ Time, timing for diagonalisation
+   3.0401889999999998       3.99999999999955946E-003
+
+ 
+ general VMFCI eigensolutions
+ ============================
+ 
+ 
+
+ Summary of contraction           1   of  step           9
+
+                          vec #       eigenvalues      wave numbers   dominant weight and basis function
+
+state #    1   deg= 1       1)        9704.767394          0.000000          0.999968   1   1   1
+state #    2   deg= 3       2)       11021.886681       1317.119288          0.999904   1   1   2
+                            3)       11021.886681       1317.119288          0.999904   1   1   3
+                            4)       11021.886682       1317.119288          0.999999   1   1   4
+state #    3   deg= 2       5)       11236.538701       1531.771308          1.000000   1   3   1
+                            6)       11236.538701       1531.771308          1.000000   1   2   1
+state #    4   deg= 1       7)       12326.446333       2621.678940          0.949473   1   1   5
+state #    5   deg= 3       8)       12342.287369       2637.519976          0.999848   1   1   8
+                            9)       12342.287370       2637.519976          0.997489   1   1  10
+                           10)       12342.287370       2637.519976          0.997489   1   1   9
+state #    6   deg= 2      11)       12346.770586       2642.003193          0.999327   1   1   6
+                           12)       12346.770587       2642.003193          0.999327   1   1   7
+state #    7   deg= 3      13)       12550.230280       2845.462887          0.999286   1   3   4
+                           14)       12550.230281       2845.462887          0.975420   1   2   2
+                           15)       12550.230281       2845.462887          0.975434   1   2   3
+state #    8   deg= 3      16)       12556.812151       2852.044757          0.996283   1   3   2
+                           17)       12556.812151       2852.044757          0.996292   1   3   3
+                           18)       12556.812151       2852.044757          1.000000   1   2   4
+state #    9   deg= 1      19)       12634.243099       2929.475705          0.947982   2   1   1
+state #   10   deg= 3      20)       12737.325984       3032.558590          0.999953   3   1   1
+                           21)       12737.325995       3032.558601          0.971644   5   1   1
+                           22)       12737.325995       3032.558601          0.971645   4   1   1
+state #   11   deg= 1      23)       12765.088955       3060.321561          0.997295   1   4   1
+state #   12   deg= 2      24)       12767.321333       3062.553939          0.999635   1   5   1
+                           25)       12767.321333       3062.553939          0.999635   1   6   1
+state #   13   deg= 3      26)       13672.629331       3967.861937          0.999174   1   1  12
+                           27)       13672.629331       3967.861937          0.999174   1   1  11
+                           28)       13672.629331       3967.861938          0.999905   1   1  13
+state #   14   deg= 3      29)       13679.919973       3975.152579          0.999607   1   1  14
+                           30)       13679.919973       3975.152579          0.999004   1   1  15
+                           31)       13679.919973       3975.152579          0.999079   1   1  16
+state #   15   deg= 3      32)       13680.318348       3975.550954          0.998845   1   1  18
+                           33)       13680.318348       3975.550954          0.998845   1   1  17
+                           34)       13680.318348       3975.550954          0.999838   1   1  19
+state #   16   deg= 1      35)       13680.722543       3975.955150          0.998565   1   1  20
+state #   17   deg= 2      36)       13880.675286       4175.907892          0.999404   1   2   5
+                           37)       13880.675286       4175.907892          0.999404   1   3   5
+state #   18   deg= 3      38)       13885.257368       4180.489974          1.000000   1   2   8
+                           39)       13885.257368       4180.489975          0.997559   1   3   9
+                           40)       13885.257368       4180.489975          0.997563   1   3  10
+state #   19   deg= 1      41)       13885.275368       4180.507975          0.500000   1   3   6
+state #   20   deg= 3      42)       13885.761535       4180.994141          0.983445   1   2   9
+                           43)       13885.761535       4180.994141          0.983453   1   2  10
+                           44)       13885.761535       4180.994141          0.999904   1   3   8
+state #   21   deg= 2      45)       13885.932137       4181.164744          0.998632   1   2   6
+                           46)       13885.932138       4181.164744          0.998632   1   2   7
+state #   22   deg= 1      47)       13886.535626       4181.768232          0.498748   1   3   7
+
+ maximum memory used up to this stage (octet)    26993202
+Step  9   ZPE  (1-2-3).9-1 >                                                          9704.76739355
+
+
+ =*=*=*=*=*=*=*=*=*=*=*=
+ general VMFCI STEP DONE
+ =*=*=*=*=*=*=*=*=*=*=*=
+
+ final time   3.0401889999999998     
