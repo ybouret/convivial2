@@ -82,7 +82,7 @@ Function {uiMakeWindows()} {open return_type void
               }
             }
             Fl_Group InfoGroup {
-              label {Molecule Information}
+              label {Molecule Information} open
               xywh {15 189 669 101} box ENGRAVED_FRAME labelfont 1 labelsize 12 align 17
             } {
               Fl_Input ComputationTitle {

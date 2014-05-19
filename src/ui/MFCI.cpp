@@ -422,14 +422,14 @@ void RemoveFiles(int i)
 		}
         
 		if (GetObsPath()!="norot") {
-			command = "rm $CONV_ROOT/src/ui/python/work/" + GetObsPath();
+			command = "rm -f $CONV_ROOT/src/ui/python/work/" + GetObsPath();
 			system(command.c_str());
 		}
         
-		command = "rm $CONV_ROOT/src/ui/python/work/" + GetPotPath();
+		command = "rm -f $CONV_ROOT/src/ui/python/work/" + GetPotPath();
 		system(command.c_str());
         
-		command = "rm $CONV_ROOT/src/ui/python/work/out";
+		command = "rm -f $CONV_ROOT/src/ui/python/work/out";
 		system(command.c_str());
         
 		command = "mv $CONV_ROOT/src/ui/python/work/out[0-9]* " + out;
@@ -445,10 +445,10 @@ void RemoveFiles(int i)
 			system(command.c_str());
 		}
         
-		command = "rm $CONV_ROOT/src/ui/python/work/modele.inp";
+		command = "rm -f $CONV_ROOT/src/ui/python/work/modele.inp";
 		system(command.c_str());
         
-		command = "rm $CONV_ROOT/src/ui/python/work/zpe_trie.out";
+		command = "rm -f $CONV_ROOT/src/ui/python/work/zpe_trie.out";
 		system(command.c_str());
 	}
     
@@ -459,7 +459,7 @@ void RemoveFiles(int i)
 		command = "mv $CONV_ROOT/src/ui/python/work/modele.inp " + out;
 		system(command.c_str());
         
-		command = "rm $CONV_ROOT/src/ui/python/work/zpe_trie.out";
+		command = "rm -f $CONV_ROOT/src/ui/python/work/zpe_trie.out";
 		system(command.c_str());
 	}
     
@@ -469,7 +469,7 @@ void RemoveFiles(int i)
 			system(command.c_str());
 		}
         
-		command = "rm $CONV_ROOT/src/ui/python/work/modele.inp";
+		command = "rm -f $CONV_ROOT/src/ui/python/work/modele.inp";
 		system(command.c_str());
         
 		command = "mv $CONV_ROOT/src/ui/python/work/inp " + out;
@@ -580,7 +580,7 @@ void Hierarchy()
 //Supprime tout le contenu du dossier work (en cas d'arret prématuré d'un script) puis recréé un lien symbolique conviv.e et les fichiers texte tol et trunc
 void Clean()
 {
-	std::string command = "rm -R " + GetConvroot();
+	std::string command = "rm -Rf " + GetConvroot();
 	system(command.c_str());
     
 	command = "mkdir " + GetConvroot();
