@@ -273,6 +273,7 @@ Function {uiMakeWindows()} {open return_type void
               }
               Fl_Button {} {
                 label {Delete !}
+                callback {DeleteMode();}
                 xywh {144 420 63 20} labelsize 12
                 code0 {o->color(FL_RED);}
                 class {FLTK::Matte_Button}
