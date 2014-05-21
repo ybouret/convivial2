@@ -3,8 +3,7 @@
 
 #include "./mode.hpp"
 
-typedef shared_ptr<Mode> ModePtr;
-class Modes : public vector<ModePtr>
+class Modes :public core::list_of_cpp<Mode>
 {
 public:
     explicit Modes() throw();

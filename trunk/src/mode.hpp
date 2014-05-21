@@ -19,16 +19,10 @@ public:
     const size_t  DOF;       //!< degrees of freedom : A|B=1, E=2, F=3
     Basis         basis;     //!< basis for this mode
     
-#if 0
-    class List : public core::list_of<Mode>
-    {
-    public:
-        explicit List() throw();
-        virtual ~List() throw();
-    private:
-        YOCTO_DISABLE_COPY_AND_ASSIGN(List);
-    };
-#endif
+    Mode *next;
+    Mode *prev;
+    
+    void print() const;
     
 private:
     YOCTO_DISABLE_COPY_AND_ASSIGN(Mode);

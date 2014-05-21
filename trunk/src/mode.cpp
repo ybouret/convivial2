@@ -58,7 +58,21 @@ Mode:: Mode(const string              &ch,
             const BasisInfo::DataBase &basis_db ) :
 character( __get_ch(ch,sym)  ),
 DOF( __get_dof(character) ),
-basis( basis_id, basis_db )
+basis( basis_id, basis_db ),
+next(0),
+prev(0)
 {
     
 }
+
+
+void Mode:: print() const
+{
+    std::cerr << "Mode '" << character << "'" << std::endl;
+    std::cerr << "|_DOF    = " << DOF << std::endl;
+    std::cerr << "|_Basis  = " << basis.name << std::endl;
+    std::cerr << "  |_size = " << basis.size << std::endl;
+    std::cerr << "  |_#prm = " << basis.param.size() << std::endl;
+    
+}
+
