@@ -73,6 +73,10 @@ void Mode:: print() const
     std::cerr << "|_Basis  = " << basis.name << std::endl;
     std::cerr << "  |_size = " << basis.size << std::endl;
     std::cerr << "  |_#prm = " << basis.param.size() << std::endl;
+    for(size_t i=1;i<=basis.param.size();++i)
+    {
+        std::cerr << "    |_<" << basis.param[i] << ">" << std::endl;
+    }
     
 }
 
