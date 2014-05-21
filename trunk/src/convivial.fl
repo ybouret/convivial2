@@ -289,7 +289,7 @@ Function {uiMakeWindows()} {open return_type void
               code0 {o->column_char('\\t');}
             }
             Fl_Button {} {
-              label {Create New Mode}
+              label {Create Mode}
               callback {CreateNewMode();}
               xywh {28 82 300 23} labelsize 12
               class {FLTK::Matte_Button}
