@@ -48,6 +48,7 @@ input()
         group->add(box);
         box->value("0.0");
         y += bh;
+        input.push_back(box);
     }
     
     

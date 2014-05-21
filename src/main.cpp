@@ -6,12 +6,6 @@
 Conviv             *App       = 0;
 uiBasis::DataBase  *uiBasisDB = 0;
 
-static inline void SetBasisType( Fl_Widget *, void *)
-{
-    std::cerr << "[[ SetBasisType ]]" << std::endl;
-    Fl_Widget *w = BasisTabs->value();
-    std::cerr << "\t[" << w->label() << "]" << std::endl;
-}
 
 int main( int argc, char *argv[] )
 {
@@ -67,7 +61,6 @@ int main( int argc, char *argv[] )
             if( ! uiBasisDB->insert(p) )
                 throw exception("Unexpected multiple uiBasis");
         }
-        BasisTabs->callback( SetBasisType );
         
         
         SetTheme();
