@@ -256,8 +256,9 @@ Function {uiMakeWindows()} {open return_type void
               xywh {28 110 300 360} box ENGRAVED_FRAME labelfont 1 labelsize 12 align 17 deactivate
             } {
               Fl_Choice ModeSym {
-                label {Symbol:} open
-                xywh {84 145 65 23} down_box BORDER_BOX labelsize 12 textfont 1 textsize 12 textcolor 1
+                label {Symbol:}
+                callback {UpdateMode();} open
+                xywh {84 145 65 23} down_box BORDER_BOX labelsize 12 when 1 textfont 1 textsize 12 textcolor 1
               } {}
               Fl_Value_Input BasisSize {
                 label {size:}
