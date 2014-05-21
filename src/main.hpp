@@ -30,6 +30,7 @@ void BrowseObsFile();
 void CreateNewMode();
 void UpdateMode();
 void OnSelectedMode();
+void DeleteMode();
 
 //MFCI.cpp
 void BrowseExeConviv();

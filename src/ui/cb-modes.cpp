@@ -83,6 +83,25 @@ void OnSelectedMode()
     std::cerr << "Selected Mode #" << browser_line << std::endl;
 }
 
+#include "yocto/code/utils.hpp"
+
+void DeleteMode()
+{
+    if( !Confirm("Delete This Mode?"))
+        return;
+    
+    const int browser_line = ModeBrowser->value();
+    Mode *mode = App->modes.fetch(browser_line-1);
+    delete App->modes.unlink(mode);
+    ModesToUI();
+    if(App->modes.size)
+    {
+        ModeBrowser->value(max_of<int>(browser_line-1,1));
+        OnSelectedMode();
+    }
+}
+
+
 //==============================================================================
 // create and append a new mode
 //==============================================================================
