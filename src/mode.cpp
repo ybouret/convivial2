@@ -83,7 +83,11 @@ void Mode:: print() const
 void Mode::make_info()
 {
     info = character + '\t' + basis.name;
-    
+    info += '\t' + vformat("%u",unsigned(basis.size));
+    for(size_t i=1;i<=basis.param.size();++i)
+    {
+        info += '\t' + vformat("%.6g", basis.param[i]);
+    }
 }
 
 

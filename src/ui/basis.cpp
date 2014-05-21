@@ -1,11 +1,19 @@
 #include "./basis.hpp"
 #include "FL/Fl_Box.H"
-#include "FL/Fl_Input.H"
+#include "FL/Fl_Float_Input.H"
 
 uiBasis:: ~uiBasis() throw()
 {
 }
 
+
+void UpdateMode();
+
+static
+void ChangeCB( Fl_Widget *, void *)
+{
+    UpdateMode();
+}
 
 uiBasis:: uiBasis( Fl_Group &tabs, const BasisInfo  &bi ) :
 name( bi.name ),
@@ -38,7 +46,7 @@ input()
     {
         y += hskip;
         const string &param = bi.param[i];
-        Fl_Input *box = new Fl_Input(x,y,100,bh,param.c_str());
+        Fl_Float_Input *box = new Fl_Float_Input(x,y,100,bh,param.c_str());
         box->labeltype( FL_NORMAL_LABEL );
         box->align(FL_ALIGN_RIGHT);
         box->labelfont(FL_HELVETICA);
@@ -46,9 +54,11 @@ input()
         box->textsize(12);
         box->textfont(FL_HELVETICA);
         group->add(box);
-        box->value("0.0");
+        box->value("0");
         y += bh;
         input.push_back(box);
+        box->callback(ChangeCB);
+        box->when(FL_WHEN_CHANGED);
     }
     
     
