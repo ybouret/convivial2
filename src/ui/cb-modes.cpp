@@ -1,14 +1,16 @@
 #include "convivial.h"
 
-void CreateNewMode()
+
+Mode *ReadModeFromUI()
 {
-    std::cerr << "Creating New Mode" << std::endl;
     
+    std::cerr << "ReadModeFromUI" << std::endl;
     const uiBasis::DataBase &db = *uiBasisDB;
     
-    //create and editable mode from current settings
-    
+    //__________________________________________________________________________
+    //
     // get the current symetry group
+    //__________________________________________________________________________
     const int isym = Symetry->value()+1;
     const Schoenflies &schoenflies = App->data.schoenflies(isym);
     std::cerr << "Using Group [[" << schoenflies.symbol << "]]" << std::endl;
@@ -27,6 +29,20 @@ void CreateNewMode()
     if(!ppBasisUI)
         throw exception("Unexpected unknow basis '%s'", basisID.c_str());
     
+    // ready to create the mode and fill data
+    
+    Mode mode( ch, schoenflies, (*ppBasisUI)->name, App->data.basisDB );
+    
+    
+    return 0;
+}
+
+void CreateNewMode()
+{
+    std::cerr << "Creating New Mode" << std::endl;
+    
+    
+    ReadModeFromUI();
     
     //create an entry for the browser
     
