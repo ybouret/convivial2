@@ -43,7 +43,7 @@ Mode *ReadModeFromUI()
         const string V     = I->value();
         if(V.size()>0)
         {
-            const double value = strconv::to<double>( I->value(), "basis parameter" );
+            const double value = strconv::to<double>( V, "basis parameter" );
             basis.param.push_back(value);
         }
         else
