@@ -95,6 +95,14 @@ void OnSelectedMode()
         }
     }
     
+    //Set the Tabs
+    const string &base_name = mode->basis.name;
+    uiBasis::Pointer *ppB = uiBasisDB->search(base_name);
+    if(!ppB)
+        throw exception("Can't find UI Tab for '%s'", base_name.c_str());
+    Fl_Widget *w = (**ppB).group;
+    BasisTabs->value(w);
+    
 }
 
 
