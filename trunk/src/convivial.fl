@@ -262,10 +262,12 @@ Function {uiMakeWindows()} {open return_type void
               } {}
               Fl_Value_Input BasisSize {
                 label {size:}
+                callback {UpdateMode();}
                 xywh {75 369 40 23} labelsize 12 maximum 100 step 1 value 10 textsize 12
               }
-              Fl_Tabs BasisTabs {open
-                xywh {36 192 282 157} labeltype NO_LABEL labelsize 12
+              Fl_Tabs BasisTabs {
+                callback {UpdateMode();} open
+                xywh {36 192 282 157} labeltype NO_LABEL labelsize 12 when 1
                 class {FLTK::Gel_Tabs}
               } {}
               Fl_Box ModeSymInfo {

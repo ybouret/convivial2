@@ -40,8 +40,14 @@ Mode *ReadModeFromUI()
     for(size_t i=1;i<=input.size();++i)
     {
         Fl_Input    *I     = input[i];
-        const double value = strconv::to<double>( I->value(), "basis parameter" );
-        basis.param.push_back(value);
+        const string V     = I->value();
+        if(V.size()>0)
+        {
+            const double value = strconv::to<double>( I->value(), "basis parameter" );
+            basis.param.push_back(value);
+        }
+        else
+            basis.param.push_back(0);
     }
     
     mode->print();
@@ -67,7 +73,7 @@ void ModesToUI()
     NumModes->value(num_modes);
     NumDOF->value(num_dof);
     
-
+    
     if(num_modes<=0)
     {
         Symetry->activate();
@@ -96,18 +102,37 @@ void OnSelectedMode()
     }
     
     //Set the Tabs
-    const string &base_name = mode->basis.name;
-    uiBasis::Pointer *ppB = uiBasisDB->search(base_name);
+    const string     &base_name = mode->basis.name;
+    uiBasis::Pointer *ppB       = uiBasisDB->search(base_name);
     if(!ppB)
         throw exception("Can't find UI Tab for '%s'", base_name.c_str());
-    Fl_Widget *w = (**ppB).group;
+    
+    uiBasis   &ui_basis = **ppB;
+    Fl_Widget *w        = ui_basis.group;
     BasisTabs->value(w);
+    
+    //propagate values
+    BasisSize->value( mode->basis.size );
+    
+    for(size_t i=1;i<=mode->basis.param.size();++i)
+    {
+        const string s = vformat("%.6g",mode->basis.param[i]);
+        ui_basis.input[i]->value( s.c_str() );
+    }
     
 }
 
 
 void UpdateMode()
 {
+    const int n    = ModeBrowser->value();
+    Mode     *old_mode = App->modes.fetch(n-1);
+    Mode     *new_mode = ReadModeFromUI();
+    App->modes.replace(old_mode, new_mode);
+    delete old_mode;
+    ModesToUI();
+    ModeBrowser->select(n);
+    OnSelectedMode();
     
 }
 
