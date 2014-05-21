@@ -19,7 +19,7 @@ Function {uiMakeWindows()} {open return_type void
     xywh {355 129 700 760} type Double resizable visible
   } {
     Fl_Tabs MainTabs {open
-      xywh {0 0 700 757} labeltype NO_LABEL resizable
+      xywh {0 0 700 760} labeltype NO_LABEL resizable
       class {FLTK::Gel_Tabs}
     } {
       Fl_Group WatcorGroup {
@@ -31,7 +31,7 @@ Function {uiMakeWindows()} {open return_type void
         xywh {0 24 700 736} labelfont 5
       } {
         Fl_Tabs ConvivTabs {open
-          xywh {8 38 684 710} labeltype NO_LABEL
+          xywh {8 38 684 714} labeltype NO_LABEL
           class {FLTK::Gel_Tabs}
         } {
           Fl_Group {} {
@@ -271,10 +271,17 @@ Function {uiMakeWindows()} {open return_type void
                 label label
                 xywh {154 145 66 23} box ENGRAVED_BOX labelfont 1 labelsize 12 labelcolor 1
               }
+              Fl_Button {} {
+                label {Delete !}
+                xywh {144 420 63 20} labelsize 12
+                code0 {o->color(FL_RED);}
+                class {FLTK::Matte_Button}
+              }
             }
             Fl_Browser ModeBrowser {
               label {Modes List}
-              xywh {344 110 338 360} labelfont 1 labelsize 12 align 1 textsize 12 deactivate
+              callback {OnSelectedMode();}
+              xywh {344 110 338 360} type Hold labelfont 1 labelsize 12 align 1 when 3 textsize 12 deactivate
               code0 {o->column_char('\\t');}
             }
             Fl_Button {} {

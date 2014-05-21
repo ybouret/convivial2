@@ -46,14 +46,41 @@ Mode *ReadModeFromUI()
     
     mode->print();
     
-    
+    SetDirty();
     return mode.yield();
 }
 
 
 void ModesToUI()
 {
+    int num_modes = 0;
+    int num_dof   = 0;
+    ModeBrowser->clear();
+    for( Mode *mode = App->modes.head; mode; mode=mode->next )
+    {
+        ++num_modes;
+        num_dof += mode->DOF;
+        mode->make_info();
+        ModeBrowser->add(mode->info.c_str());
+    }
     
+    NumModes->value(num_modes);
+    NumDOF->value(num_dof);
+    
+
+    if(num_modes<=0)
+    {
+        Symetry->activate();
+        ModeParam->deactivate();
+        ModeBrowser->deactivate();
+    }
+    
+}
+
+void OnSelectedMode()
+{
+    const int browser_line = ModeBrowser->value();
+    std::cerr << "Selected Mode #" << browser_line << std::endl;
 }
 
 //==============================================================================
@@ -67,6 +94,10 @@ void CreateNewMode()
     auto_ptr<Mode> mode( ReadModeFromUI() );
     
     //create an entry for the browser
+    App->modes.push_back( ReadModeFromUI() );
+    ModesToUI();
+    // select the last one
+    ModeBrowser->select(App->modes.size);
     
     //success
     Symetry->deactivate();

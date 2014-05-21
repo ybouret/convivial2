@@ -80,3 +80,10 @@ void Mode:: print() const
     
 }
 
+void Mode::make_info()
+{
+    info = character + '\t' + basis.name;
+    
+}
+
+
