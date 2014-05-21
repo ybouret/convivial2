@@ -81,6 +81,26 @@ void OnSelectedMode()
 {
     const int browser_line = ModeBrowser->value();
     std::cerr << "Selected Mode #" << browser_line << std::endl;
+    const Mode *mode = App->modes.fetch(browser_line-1);
+    
+    //Set the ModeSym
+    const string &ch  = mode->character;
+    const int     isym = Symetry->value()+1;
+    const Schoenflies &schoenflies = App->data.schoenflies(isym);
+    for(size_t i=1;i<=schoenflies.characters.size();++i)
+    {
+        if(ch == schoenflies.characters[i])
+        {
+            ModeSym->value(i-1);
+        }
+    }
+    
+}
+
+
+void UpdateMode()
+{
+    
 }
 
 #include "yocto/code/utils.hpp"

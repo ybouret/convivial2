@@ -29,7 +29,7 @@ void BrowseObsFile();
 //cb-mode.cpp
 void CreateNewMode();
 void UpdateMode();
-void OnSelectedMode();
+void OnSelectedMode(); //!< Mode->UI
 void DeleteMode();
 
 //MFCI.cpp
