@@ -33,9 +33,9 @@ public:
     //--------------------------------------------------------------------------
     string pot_fmt; //!< character(len=8)
     string fn;      //!< charater(len=256)
-    string m;      //!< charater(len=256)
-    string o;      //!< charater(len=256)
-    string c;      //!< charater(len=256)
+    string m;       //!< charater(len=256)
+    string o;       //!< charater(len=256)
+    string c;       //!< charater(len=256)
     static const size_t fn_max = 256;
     
     
