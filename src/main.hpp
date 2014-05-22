@@ -32,6 +32,10 @@ void UpdateMode();
 void OnSelectedMode(); //!< Mode->UI
 void DeleteMode();
 
+//cb-save.cpp
+void SaveFile();
+
+
 //MFCI.cpp
 void BrowseExeConviv();
 void BrowseConvivInput();

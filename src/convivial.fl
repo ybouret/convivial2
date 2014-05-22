@@ -35,11 +35,11 @@ Function {uiMakeWindows()} {open return_type void
           class {FLTK::Gel_Tabs}
         } {
           Fl_Group {} {
-            label Configuration open selected
+            label Configuration open
             xywh {8 60 684 692} labelfont 5 labelsize 12
           } {
             Fl_Group IOGroup {
-              label {Input/Output}
+              label {Input/Output} open
               xywh {16 79 668 88} box ENGRAVED_FRAME labelfont 1 labelsize 12 align 17
             } {
               Fl_Output FileName {
@@ -58,13 +58,8 @@ Function {uiMakeWindows()} {open return_type void
               }
               Fl_Button SaveButton {
                 label Save
+                callback {SaveFile();}
                 xywh {545 114 63 23} labelsize 12
-                code0 {o->color(FL_ORANGE);}
-                class {FLTK::Matte_Button}
-              }
-              Fl_Button SaveAsButton {
-                label {Save As}
-                xywh {610 114 63 23} labelsize 12
                 code0 {o->color(FL_ORANGE);}
                 class {FLTK::Matte_Button}
               }
@@ -112,11 +107,11 @@ Function {uiMakeWindows()} {open return_type void
               } {
                 Fl_Value_Output NumModes {
                   label {\#Modes=}
-                  xywh {586 235 48 20} labelsize 12 textsize 12
+                  xywh {586 235 48 20} labelsize 12 textfont 1 textsize 12
                 }
                 Fl_Value_Output NumDOF {
-                  label {\#DOF=}
-                  xywh {586 257 48 20} labelsize 12 textsize 12
+                  label {\#DOF=} selected
+                  xywh {586 257 48 20} labelsize 12 textfont 1 textsize 12
                 }
               }
             }

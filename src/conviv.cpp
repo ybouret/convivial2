@@ -26,6 +26,7 @@ void Conviv:: reset() throw()
     fn.clear();
     fnrot   = "norot";
     title.clear();
+    modes.clear();
 }
 
 

@@ -38,6 +38,22 @@ void Conviv:: save(const string &filename) const
     jo["title"] = title;
     
     
+    //----------------------------------------------------------------------
+    // modes
+    //----------------------------------------------------------------------
+    {
+        JSON::Value mv_val(JSON::IsArray);
+        JSON::Array &mv = mv_val.asArray();
+        for( const Mode *mode = modes.head;mode;mode=mode->next)
+        {
+            JSON::Value m_val(JSON::IsArray);
+            JSON::Array &m = mv_val.asArray();
+            
+            mv.push(m_val);
+        }
+        jo["modes"].swap_with(mv_val);
+    }
+    
     //==========================================================================
     // output object
     //==========================================================================
@@ -54,7 +70,7 @@ void Conviv:: load( const string &filename )
     {
         lingua::input input( new ios::icstream(filename) );
         const JSON::Value  &jv = data.js(input);
-        const JSON::Object &jo = jv.asObject(); 
+        const JSON::Object &jo = jv.asObject();
         
         {
             ios::ocstream out( ios::cstderr );
@@ -67,7 +83,7 @@ void Conviv:: load( const string &filename )
         sym_name = jo["sym_name"].asString();
         ValidateSymName();
         
-        switch ( jo["sym"].type ) 
+        switch ( jo["sym"].type )
         {
             case JSON::IsTrue:
                 sym = true;
