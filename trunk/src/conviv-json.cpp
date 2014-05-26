@@ -49,6 +49,8 @@ void Conviv:: save(const string &filename) const
             JSON::Value m_val(JSON::IsArray);
             JSON::Array &m = mv_val.asArray();
             
+            // character
+            
             mv.push(m_val);
         }
         jo["modes"].swap_with(mv_val);
