@@ -80,6 +80,13 @@
 		"abelian" : true
 	},
 	
+    "D2h" :
+    {
+        "info" : "Dihedral2+h",
+        "char" : ["Ag","B1g","B2g","B3g","Au","B1u","B2u","B3u"],
+        "abelian" : true
+    },
+    
 	"Td" :
 	{
 		"info" : "Tetrahedron",
