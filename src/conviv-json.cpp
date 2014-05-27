@@ -9,7 +9,7 @@ void Conviv:: save(const string &filename) const
     ValidateAll();
     
     JSON::Value   jv( JSON::IsObject );
-    JSON::Object &jo = jv.asObject();
+    JSON::Object &jo = jv.as<JSON::Object>();
     
     //==========================================================================
     // fill object
@@ -43,15 +43,27 @@ void Conviv:: save(const string &filename) const
     //----------------------------------------------------------------------
     {
         JSON::Value mv_val(JSON::IsArray);
-        JSON::Array &mv = mv_val.asArray();
+        JSON::Array &mv = mv_val.as<JSON::Array>();
         for( const Mode *mode = modes.head;mode;mode=mode->next)
         {
-            JSON::Value m_val(JSON::IsArray);
-            JSON::Array &m = mv_val.asArray();
+            JSON::Array &m = mv.append<JSON::Array>();
             
             // character
+            m.append<JSON::String>() = mode->character;
             
-            mv.push(m_val);
+            // basis
+            const Basis &b = mode->basis;
+            
+            m.append<JSON::String>() = b.name;
+            m.append<JSON::Number>() = b.size;
+            
+            JSON::Array &prm = m.append<JSON::Array>();
+            for(size_t i=1;i<=b.param.size();++i)
+            {
+                prm.append<JSON::Number>() = b.param[i];
+            }
+            
+            
         }
         jo["modes"].swap_with(mv_val);
     }
@@ -72,7 +84,7 @@ void Conviv:: load( const string &filename )
     {
         lingua::input input( new ios::icstream(filename) );
         const JSON::Value  &jv = data.js(input);
-        const JSON::Object &jo = jv.asObject();
+        const JSON::Object &jo = jv.as<JSON::Object>();
         
         {
             ios::ocstream out( ios::cstderr );
@@ -82,7 +94,7 @@ void Conviv:: load( const string &filename )
         //----------------------------------------------------------------------
         // statement 1
         //----------------------------------------------------------------------
-        sym_name = jo["sym_name"].asString();
+        sym_name = jo["sym_name"].as<JSON::String>();
         ValidateSymName();
         
         switch ( jo["sym"].type )
@@ -102,19 +114,24 @@ void Conviv:: load( const string &filename )
         //----------------------------------------------------------------------
         // statement 2
         //----------------------------------------------------------------------
-        pot_fmt = jo["pot_fmt"].asString(); ValidatePotFmt();
-        fn      = jo["fn"].asString();      ValidateFn();
+        pot_fmt = jo["pot_fmt"].as<JSON::String>(); ValidatePotFmt();
+        fn      = jo["fn"].as<JSON::String>();      ValidateFn();
         
         
         //----------------------------------------------------------------------
         // statement 3
         //----------------------------------------------------------------------
-        fnrot = jo["fnrot"].asString(); ValidateFnRot();
+        fnrot = jo["fnrot"].as<JSON::String>(); ValidateFnRot();
         
         //----------------------------------------------------------------------
         // statement 4
         //----------------------------------------------------------------------
-        title = jo["title"].asString(); ValidateTitle();
+        title = jo["title"].as<JSON::String>(); ValidateTitle();
+        
+        //----------------------------------------------------------------------
+        // modes
+        //----------------------------------------------------------------------
+        
     }
     catch(...)
     {
