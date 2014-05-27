@@ -47,8 +47,8 @@ class step:
 		os.system('cd work ; $CONV_ROOT/src/ui/python/work/conviv.e < $CONV_ROOT/src/ui/python/work/modele.inp > $CONV_ROOT/src/ui/python/work/out')
 
 		if self.getStep()==0:
-			os.system('grep " 1)" $CONV_ROOT/src/ui/python/work/out >> $CONV_ROOT/src/ui/python/work/zpe.out')
-			os.system('sort -k2 $CONV_ROOT/src/ui/python/work/zpe.out > $CONV_ROOT/src/ui/python/work/zpe_trie.out')
+			os.system('grep " 1 )" $CONV_ROOT/src/ui/python/work/out >> $CONV_ROOT/src/ui/python/work/zpe.out')
+			os.system('sort -k3 $CONV_ROOT/src/ui/python/work/zpe.out > $CONV_ROOT/src/ui/python/work/zpe_trie.out')
 
 		else:
 			os.system('grep "' + str(self.getStep()) + ' ZPE" $CONV_ROOT/src/ui/python/work/out >> $CONV_ROOT/src/ui/python/work/zpe.out')
@@ -80,8 +80,8 @@ class step:
 		#au step 0 l'energie est la colonne 2
 		#la fonction split permet de separer chaque colonne dans une liste
 		if self.getStep()==0:
-			deb = (texte[0].split())[1]
-			fin = (texte[len(texte)-1].split())[1]
+			deb = (texte[0].split())[2]
+			fin = (texte[len(texte)-1].split())[2]
 
 		else:
 			deb = (texte[0].split())[len(texte[0].split())-1]
