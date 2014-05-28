@@ -34,91 +34,113 @@ class model:
 	#Ecriture modele.inp en out ou no (sans les couples a la fin, ie changement de step, rajout prise en compte fichier de restart pour le nouveau step)
 	#Ecriture en out : pour SCF
 	#Ecriture en no pour tours de danse lors du pairing
+        #pcc suppose no window of eigenvectors  anyway the script will fail if debug mode
 	def modelWriting(self,no_out):
 	
-		modele = open(self.link + '/src/ui/python/work/modele.inp','r+')
+	    modele = open(self.link + '/src/ui/python/work/modele.inp','r+')
 		
-		#On stocke toutes les lignes du modele
-		texte = []
-		for line in modele:
-			texte.append(line)
+	    #On stocke toutes les lignes du modele
+	    texte = []
+	    for line in modele:
+		texte.append(line)
 
-		modele.close()
+	    modele.close()
 
-		modele = open(self.link + '/src/ui/python/work/modele.inp','w')
+	    modele = open(self.link + '/src/ui/python/work/modele.inp','w')
 
-		#Recup num ancien step et calcul nouveau
-		old_step = int(texte[4])
-		new_step = old_step + 1
+	    #Recup num ancien step et calcul nouveau
+	    old_step = int(texte[4])
+	    new_step = old_step + 1
 
-		#On verifie si le step avant l'ancien step (old_step-1) est en IN ou NO afin de calculer le nombre de lignes a reecrire (si IN on ne prendra plus compte 			#de la ligne
-		#qui contient le nom du step
-		ligne = texte[5 + old_step].split()
+	    #Reecriture from start up to debug flag
+	    for i in range(0,4):
+		modele.write(texte[i])
 
-		if ligne[0]=='NO':
-			step_in = False
-			plus_ligne = 0
-		if ligne[0]=='IN':
-			step_in= True
-			plus_ligne = 1
+	    modele.write(str(new_step) + '\n')
+	    modele.write(texte[5])
 
-		else:
-			step_in = False
-			plus_ligne = 0
+            if old_step==0:
+	        ligne = texte[6].split()
 
-		ligne = texte[5 + old_step + 1 + plus_ligne].split()
-
-		#On verifie si l'ancien step (old_step) est en NO ou OUT (si OUT il faut recuperer le nom)
-		if ligne[0]=='NO':
-			plus_ligne = plus_ligne - 1
-			step_no = True
-
-			if old_step==0:
-				plus=-1
-		else:
-			step_no = False
-			plus=0
-
-		#Recup du nom de l'ancien step
-		if  old_step==0:
-			name_old_step = texte[6+old_step+1]
-
-		else:
-			name_old_step = texte[6+old_step+1+plus_ligne]
-
-
-		#Reecriture debut (NO, OUT...)
-		for i in range(0,4):
-			modele.write(texte[i])
-
-		modele.write(str(new_step) + '\n')
-
-		modele.write(texte[5])
-
-		for i in range(0,old_step):
-				modele.write('NO' + '\n')
-
-		if step_no==True:
-			modele.write('NO' + '\n')
-
-		else:
-			modele.write('IN' + '\n')
-			modele.write(name_old_step)
+                if ligne[0]=='NO':
+	            modele.write(texte[6])
+	            plus_ligne = 0
+                #if IN or OUT found, consider that restart files exist
+                # and restart from these files
+	        elif ligne[0]=='IN':
+	            modele.write(texte[6])
+	            modele.write(texte[7])
+	            plus_ligne = 1
+	        elif ligne[0]=='OUT': 
+		    modele.write('IN' + '\n')
+	            modele.write(texte[7])
+	            plus_ligne = 1
+                else:
+                    print "Could not find proper restart keyword for step 0"
 
 		if no_out=='OUT':
 			modele.write('OUT' + '\n')
 			modele.write('step' + str(new_step) + '\n')
+		else:
+			modele.write('NO' + '\n')
+
+	        #Reecriture de la fin 
+		for i in range(7+plus_ligne,len(texte)):
+		     modele.write(texte[i])
+
+            else:
+                # at least 2 steps
+		#analyse restart keyword for all steps before last 
+		#afin de calculer le nombre de lignes a reecrire 
+                #if IN or OUT they will be transformed into NO and a line has to be deduced
+                i=0
+                j=0
+                while ( i < old_step ):
+	            ligne = texte[6 + i + j].split()
+                    if ligne[0]!='NO' and ligne[0]!='IN' and ligne[0]!='OUT':
+                        print "Could not find proper restart keyword for step",i
+	            if ligne[0]!='NO':
+                        j=j+1
+                    i=i+1
+		#nb ligne de l'ancien dernier step
+                line_nb=6 + i + j
+
+		#analyse restart keyword for last step
+	        ligne = texte[line_nb].split()
+
+                if ligne[0]=='NO':
+	            step_in = False
+	            plus_ligne = 0
+                #if IN or OUT found, consider that restart files exist
+                # and restart from these files
+	        elif ligne[0]=='IN' or ligne[0]=='OUT':
+		    #Recup du nom de l'ancien dernier step
+		    name_old_step = texte[line_nb+1]
+	            step_in= True
+	            plus_ligne = 1
+                else:
+                    print "Could not find proper restart keyword for last old step",i
+
+
+		for i in range(0,old_step):
+			modele.write('NO' + '\n')
+
+		if step_in==True:
+			modele.write('IN' + '\n')
+			modele.write(name_old_step)
 
 		else:
 			modele.write('NO' + '\n')
 
-		if old_step==0:
-			for i in range(old_step+8+plus,len(texte)):
-				modele.write(texte[i])
-
+		if no_out=='OUT':
+			modele.write('OUT' + '\n')
+			modele.write('step' + str(new_step) + '\n')
 		else:
-			for i in range(old_step+8+plus_ligne,len(texte)):
-				modele.write(texte[i])
+			modele.write('NO' + '\n')
+
+	        #Reecriture de la fin 
+		for i in range(line_nb+plus_ligne+1,len(texte)):
+		     modele.write(texte[i])
 		
 		modele.close()		
 
