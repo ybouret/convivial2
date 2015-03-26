@@ -94,7 +94,7 @@ INCLUDE_DIRECTORIES( ${PYTHON_INCLUDE_PATH} )
 
 ADD_EXECUTABLE(convivial ${MAIN_SRCS} ${convivial_SOURCES} ${UI_SRCS} ${RESOURCES})
 TARGET_LINK_LIBRARIES(convivial conviv)
-TARGET_LINK_YOCTO(convivial fltk json lingua)
+TARGET_LINK_YOCTO(convivial fltk json lang)
 TARGET_LINK_FLTK(convivial)
 TARGET_LINK_LIBRARIES(convivial ${PYTHON_LIBRARIES})
 

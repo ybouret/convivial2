@@ -31,9 +31,9 @@ js()
         //----------------------------------------------------------------------
         // load and parse the resource
         //----------------------------------------------------------------------
-        //auto_ptr<ios::istream> fp( rc.load_stream( "schoenflies.js" ) );
-        lingua::input          fp( rc.load_stream( "schoenflies.js" ) );
-        JSON::Value           &jv = js( fp );
+        auto_ptr<ios::istream> fp( rc.load_stream( "schoenflies.js" ) );
+        //lingua::input          fp( rc.load_stream( "schoenflies.js" ) );
+        JSON::Value           &jv = js( *fp );
         if( jv.type != JSON::IsObject )
             throw exception("invalid schoenflies.js");
         
@@ -96,9 +96,9 @@ js()
         //----------------------------------------------------------------------
         // load and parse the resource
         //----------------------------------------------------------------------
-        //auto_ptr<ios::istream> fp( rc.load_stream( "basis.js" ) );
-        lingua::input          fp( rc.load_stream( "basis.js" ) );
-        JSON::Value           &jv = js( fp );
+        auto_ptr<ios::istream> fp( rc.load_stream( "basis.js" ) );
+        //lingua::input          fp( rc.load_stream( "basis.js" ) );
+        JSON::Value           &jv = js( *fp );
         if( jv.type != JSON::IsObject )
             throw exception("invalid basis.js");
         

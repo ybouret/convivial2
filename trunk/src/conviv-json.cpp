@@ -82,7 +82,7 @@ void Conviv:: load( const string &filename )
     reset();
     try
     {
-        lingua::input input( new ios::icstream(filename) );
+        ios::icstream input(filename);
         const JSON::Value  &jv = data.js(input);
         const JSON::Object &jo = jv.as<JSON::Object>();
         

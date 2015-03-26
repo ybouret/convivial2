@@ -3,7 +3,7 @@ INCLUDE_DIRECTORIES(..)
 ADD_EXECUTABLE(test-io test-io.cpp)
 
 TARGET_LINK_LIBRARIES(test-io conviv)
-TARGET_LINK_YOCTO(test-io json lingua)
+TARGET_LINK_YOCTO(test-io json lang)
 
 GET_TARGET_PROPERTY(the_exe test-io LOCATION)
 
