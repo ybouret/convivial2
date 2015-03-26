@@ -92,11 +92,14 @@ SOURCE_GROUP(fltk FILES ${convivial_SOURCES})
 FIND_PACKAGE(PythonLibs REQUIRED)
 INCLUDE_DIRECTORIES( ${PYTHON_INCLUDE_PATH} )
 
-ADD_EXECUTABLE(convivial ${MAIN_SRCS} ${convivial_SOURCES} ${UI_SRCS} ${RESOURCES})
+FILE( GLOB CONVIVIAL_PYTHON ui/python/*.py)
+ 
+ADD_EXECUTABLE(convivial ${MAIN_SRCS} ${convivial_SOURCES} ${UI_SRCS} ${RESOURCES} ${CONVIVIAL_PYTHON})
 TARGET_LINK_LIBRARIES(convivial conviv)
 TARGET_LINK_YOCTO(convivial fltk json lang)
 TARGET_LINK_FLTK(convivial)
 TARGET_LINK_LIBRARIES(convivial ${PYTHON_LIBRARIES})
+
 
 
 ########################################################################
