@@ -1,5 +1,5 @@
 # data file for the Fltk User Interface Designer (fluid)
-version 1.0302 
+version 1.0303 
 header_name {.h} 
 code_name {.cxx}
 decl {\#include "main.hpp"} {public global
@@ -43,7 +43,7 @@ Function {uiMakeWindows()} {open return_type void
               xywh {16 79 668 88} box ENGRAVED_FRAME labelfont 1 labelsize 12 align 17
             } {
               Fl_Output FileName {
-                label {Edited File:}
+                label {Edited File:} selected
                 xywh {20 114 455 23} labelsize 12 align 5 textsize 12
               }
               Fl_Box Modified {
@@ -110,7 +110,7 @@ Function {uiMakeWindows()} {open return_type void
                   xywh {586 235 48 20} labelsize 12 textfont 1 textsize 12
                 }
                 Fl_Value_Output NumDOF {
-                  label {\#DOF=} selected
+                  label {\#DOF=}
                   xywh {586 257 48 20} labelsize 12 textfont 1 textsize 12
                 }
               }
@@ -162,7 +162,7 @@ Function {uiMakeWindows()} {open return_type void
               }
             }
             Fl_Group MFCIGroup {
-              label {MFCI Types}
+              label {MFCI Types} open
               xywh {16 533 668 205} box ENGRAVED_FRAME labelfont 1 labelsize 12 align 17
             } {
               Fl_Output ExecutableConviv {

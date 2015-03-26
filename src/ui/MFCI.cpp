@@ -40,13 +40,15 @@ void BrowseExeConviv()
 	std::string conviv =  App->c.c_str();
     
 	//Adresse à partir de laquelle l'interface est exécutée
-	char temp[PATH_MAX];
+	char temp[PATH_MAX+1];
+    memset(temp,0,sizeof(temp));
 	getcwd(temp, PATH_MAX);
 	std::string pwd = temp;
     std::cerr << "PWD=" << pwd << std::endl;
-    
+
 	std::string command = "ln -s " + pwd + "/" + conviv + " " + GetConvroot();
     std::cerr << "Command='" << command << "'" << std::endl;
+    
 	system(command.c_str());
     
 	SetDirty();
