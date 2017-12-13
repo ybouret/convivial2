@@ -15,10 +15,19 @@ ConvivData:: ~ConvivData() throw()
 {
 }
 
+static inline
+JSON::Value & load_from( ios::resources &rc, const char *filename )
+{
+    const string           fn(filename);
+    Lang::Input            fp( rc.load_stream(fn) );
+    Lang::Module::Handle   hM( new Lang::Module(fn,fp) );
+    Lang::Source           JS(hM);
+    return JSON::Value::LoadFrom(JS);
+}
+
 ConvivData:: ConvivData( const char *application_path ) :
 schoenflies(32,as_capacity),
-htmlManual(),
-js()
+htmlManual()
 {
     ios::resources rc( application_path );
     
@@ -31,9 +40,7 @@ js()
         //----------------------------------------------------------------------
         // load and parse the resource
         //----------------------------------------------------------------------
-        auto_ptr<ios::istream> fp( rc.load_stream( "schoenflies.js" ) );
-        //lingua::input          fp( rc.load_stream( "schoenflies.js" ) );
-        JSON::Value           &jv = js( *fp );
+        JSON::Value           &jv = load_from(rc,"schoenflies.js");
         if( jv.type != JSON::IsObject )
             throw exception("invalid schoenflies.js");
         
@@ -65,7 +72,7 @@ js()
             const JSON::Array &arr = data["char"].as<JSON::Array>();
             const size_t       nc  = arr.length();
             ch.reserve(nc);
-            for( size_t i=0; i < nc; ++i ) ch.push_back( arr[i].as<JSON::String>() );
+            for( size_t i=1; i <= nc; ++i ) ch.push_back( arr[i].as<JSON::String>() );
             
             if( !schoenflies.insert(sym) )
                 throw exception("unexpected multiple Schoenflies '%s'", symbol.c_str() );
@@ -74,7 +81,7 @@ js()
         //----------------------------------------------------------------------
         // free resources
         //----------------------------------------------------------------------
-        jv.nullify();
+        jv.clear();
     }
     
     
@@ -96,9 +103,8 @@ js()
         //----------------------------------------------------------------------
         // load and parse the resource
         //----------------------------------------------------------------------
-        auto_ptr<ios::istream> fp( rc.load_stream( "basis.js" ) );
-        //lingua::input          fp( rc.load_stream( "basis.js" ) );
-        JSON::Value           &jv = js( *fp );
+        JSON::Value           &jv = load_from(rc,"basis.js");
+
         if( jv.type != JSON::IsObject )
             throw exception("invalid basis.js");
         
@@ -111,7 +117,7 @@ js()
             if( P.value.type != JSON::IsArray )
                 throw exception("invalid value for '%s'", P.name.c_str());
             const JSON::Array &arr = P.value.as<JSON::Array>();
-            for( size_t i=0; i < arr.length(); ++i )
+            for( size_t i=1; i <= arr.length(); ++i )
             {
                 const JSON::Value &jstr = arr[i];
                 if( jstr.type != JSON::IsString )

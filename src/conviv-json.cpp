@@ -72,7 +72,7 @@ void Conviv:: save(const string &filename) const
     // output object
     //==========================================================================
     ios::ocstream fp(  filename, false );
-    jv.output(fp);
+    //jv.output(fp);
 }
 
 
@@ -82,13 +82,15 @@ void Conviv:: load( const string &filename )
     reset();
     try
     {
-        ios::icstream input(filename);
-        const JSON::Value  &jv = data.js(input);
+        //ios::icstream input(filename);
+        Lang::Module::Handle hModule( new Lang::Module(filename) );
+        Lang::Source         source(hModule);
+        const JSON::Value  &jv = JSON::Value::LoadFrom(source);
         const JSON::Object &jo = jv.as<JSON::Object>();
         
         {
             ios::ocstream out( ios::cstderr );
-            jv.output(out);
+            //jv.output(out);
         }
         
         //----------------------------------------------------------------------

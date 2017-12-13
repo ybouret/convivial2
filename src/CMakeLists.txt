@@ -8,14 +8,14 @@ PROJECT(convivial2)
 ##
 ########################################################################
 IF(WIN32)
-	SET(YROOT E:/program/yocto4/sdk)
+	SET(YROOT E:/program/yocto/sdk)
 ELSE(WIN32)
-	SET(YROOT $ENV{HOME}/program/yocto4/sdk)
+	SET(YROOT $ENV{HOME}/program/yocto/sdk)
 	#SET(CONV_ROOT $ENV{HOME}/QCP/Perso-ware/convivial)
 	#MESSAGE( adresse ${CONV_ROOT} )
 ENDIF(WIN32)
 
-INCLUDE( ${YROOT}/share/yocto/rules.cmake)
+INCLUDE( ${YROOT}/share/yocto/yocto.cmake)
 
 SET(CMAKE_INSTALL_PREFIX ${PROJECT_SOURCE_DIR}/../sdk)
 

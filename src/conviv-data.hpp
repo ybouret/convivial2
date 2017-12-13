@@ -3,7 +3,7 @@
 
 #include "./schoenflies.hpp"
 #include "./basis-info.hpp"
-#include "yocto/json/parser.hpp"
+#include "yocto/json/value.hpp"
 
 class ConvivData 
 {
@@ -14,7 +14,7 @@ public:
     Schoenflies::DataBase schoenflies;
     vector<char>          htmlManual;
     BasisInfo::DataBase   basisDB;
-    mutable JSON::Parser  js;
+    //mutable JSON::Parser  js;
 
     void displaySchoenflies( std::ostream &os ) const;
 
