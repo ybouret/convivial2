@@ -20,8 +20,7 @@ JSON::Value & load_from( ios::resources &rc, const char *filename )
 {
     const string           fn(filename);
     Lang::Input            fp( rc.load_stream(fn) );
-    Lang::Module::Handle   hM( new Lang::Module(fn,fp) );
-    Lang::Source           JS(hM);
+    Lang::Source           JS( Lang::Module::Open(fn,fp) );
     return JSON::Value::LoadFrom(JS);
 }
 

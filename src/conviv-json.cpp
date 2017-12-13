@@ -83,8 +83,7 @@ void Conviv:: load( const string &filename )
     try
     {
         //ios::icstream input(filename);
-        Lang::Module::Handle hModule( new Lang::Module(filename) );
-        Lang::Source         source(hModule);
+        Lang::Source         source( Lang::Module::OpenFile(filename) );
         const JSON::Value  &jv = JSON::Value::LoadFrom(source);
         const JSON::Object &jo = jv.as<JSON::Object>();
         
